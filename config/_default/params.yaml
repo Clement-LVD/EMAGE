@@ -28,6 +28,7 @@ marketing:
     description: 'Analyses de vos données, enquêtes et conseils en communication. Another French data-scientist website.'
   analytics:
     google_analytics: 'G-BE4TGDH8NC'
+    google_optimize: true
   verification:
     google: ''
     baidu: ''

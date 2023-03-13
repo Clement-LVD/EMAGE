@@ -3,57 +3,11 @@
 ALLER VOIR LE SUPER TUTO SUR : https://www.freecodecamp.org/news/your-first-hugo-blog-a-practical-guide/
 et la docu hugo : https://gohugo.io/templates/introduction/
 */
-/*card c'est la mosaique de projects par exemple ! */
 
-/* on veut ajouter un effet de la mort pour qu'une barre verticale descende et nuance l'image ! ! */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+des fonctions customs pour modifier l'affichage 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
-.card-clickable {
-
-  text-align: justify; 
-  padding: 2%;
-  
-  --b: 0.5em;   /* the thickness of the line */
-  --c: black; /* the color */
-  
-  color: black; 
-  background: 
-    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
-  transition: .3s var(--_s,.1s) linear ;
-} 
-  
-   
-.card-clickable:hover {
-  background-color: #164382;
-  
-  /* effet quand la souris over ! */
-  --_p: 100%;
-  --_s: .2s;
-  
-  .card-clickable-text a {  
-  color: white;}
-  
-  /* ça c'est la classe du petit résumé ! */
-  
- .card-clickable-text p {  
-  color: white;
-   left: 10px;
- }
-}
- 
-
-.card-clickable-text a {  color: black;}
-
-/* ici on paramètre une classe pour les photos d'avatar dans des fleches */
-.avatar-square { 
-  margin-right: 0px;
-  padding-right: 0px;
-  float: left;
-  
-  clip-path: polygon(14% 8%, 75% 8%, 50% 50%, 75% 95%, 14% 97%, 0% 50%);
-}
 
 /* on justifie le texte des articles et on fait une fonction "align-left"
 */
@@ -65,6 +19,13 @@ et la docu hugo : https://gohugo.io/templates/introduction/
 
 .alignleft {
     text-align: left;
+}
+
+
+/* un style pour envoyer le texte en bas du contenair */
+#bottom {
+  border: 1px solid blue;
+  margin-top: auto;
 }
 
 /* XXXXXXXXXX
@@ -135,6 +96,7 @@ figure {
 figcaption {
 font-style: italic;}
 
+/* afficher les images inline ! */
 /* on modifie également des classes qui reçoivent des images, pour les afficher les images sur la même ligne (et de même pour les svg) */
 img, svg {
   display: inline-block;
@@ -160,6 +122,15 @@ img, svg {
   filter: grayscale(100%);
 }
 
+/* ici on paramètre une classe pour les photos d'avatar dans des fleches */
+.avatar-square { 
+  margin-right: 0px;
+  padding-right: 0px;
+  float: left;
+  
+  clip-path: polygon(14% 8%, 75% 8%, 50% 50%, 75% 95%, 14% 97%, 0% 50%);
+}
+
 /* XXXXXXXXXXXXXXXXXXXXX
  FEUILLES DE STYLES 
  XXXXXXXXXXXXXXXXXXXX*/
@@ -170,14 +141,32 @@ img, svg {
   background: black;
 }
 
-/* un style pour envoyer le texte en bas du contenair */
-#bottom {
-  border: 1px solid blue;
-  margin-top: auto;
+
+/* Des styles de parties particulières, par exemple le about en fond blanc */
+/* 		quelques images de fond =>	  url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Mont_Blanc_%28from_Les_Saisies%29.jpg/800px-Mont_Blanc_%28from_Les_Saisies%29.jpg?20090925205731');*/
+
+
+#about {  	
+  background-color: white;
+  color: white;
+  }
+
+
+#home {
+  
+   background-color: black;
+  color: white;
+  
 }
 
-/* Les styles standards */
+/* ICI ON VA REGLER LES OPTIONS DU TAG CLOUD 
+.tag-cloud a {
+  color: black; 
+  margin-bottom: 0px;
+}
+*/ 
 
+/* Les styles standards de classes de titres */
 h1 {
     margin-top: 55px; /* Remplacez "100px" par la valeur de votre choix */
 }
@@ -224,9 +213,82 @@ h3-little {
 --text-background-color: black;  
 }*/ 
 
-/* XXXXXXXXXX
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+PORTFOLIO ET CARTES CLIQUABLES
+(classe spécifique au custom code de portfolio)
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+ /* xxxxxxxxxxxxxxxx
+autres style du portfolio 
+ xxxxxxxxxxxxxxxxx*/
+ /*card c'est la mosaique de projects par exemple ! */
+/* mais on l'a transformé en card-clickable avec un custom shortcode ! */
+
+/* on veut ajouter un effet de la mort pour qu'une barre verticale descende et nuance l'image ! ! */
+
+.card-clickable {
+
+  text-align: justify; 
+  padding: 2%;
+  
+  --b: 0.6em;   /* the thickness of the line */
+  --c: white; /* the color */
+  
+  color: black; 
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,.1s) linear ; /* le temps que la barre met à descendre et remonter quand la souris est dessus et s'en va! */
+} 
+  
+   
+.card-clickable:hover {
+  background-color: #164382;
+  
+  /* effet quand la souris over ! */
+  --_p: 100%; /* jusqu'ou va la barre assez grossierement */
+  --_s: .2s;
+  
+  .card-clickable-text a {  
+  color: white;}
+  
+  /* ça c'est le petit résumé en dessous, il devient blanc ;) ! */
+  
+ .card-clickable-text p {  
+  color: white;
+   left: 10px;
+  transition: .1s var(--_s,.75s) linear ; /* le temps que met le texte à devenir blanc wazzza */
+    transition-duration: .05s;
+    transition-delay: .4s;
+ }
+}
+ 
+/* enfin le texte de la carte (quand il est pas hover) mais qu'importe ! 
+.card-clickable-text a {  color: black;}*/
+
+
+/* les boutons du menu du portfolio */
+.btn.btn-primary.btn-lg {
+  
+  color: white;
+  font-weight: bold;
+  background-color: #100c08;
+  border-width: 6px; 
+  border: solid;
+  border-color: #232b2b; 
+}
+
+/* il y a d'autres styles pour lui caler un hovering par exemple,background: 
+;et on a aussi une classe pour le active bouton, une fois cliqué */
+ 
+
+
+
+/* XXXXXXXXXXxxxxxxxxxxxxxxxx
 LES BOUTONS CLIGNOTANTS
-XXXXXXXXXXXXX*/
+XXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxx*/
 
 
 /* ON crée un bouton clignotant */
@@ -365,29 +427,10 @@ body {
 
 /* c'est terminé pour le bouton shine */
 
-/* Des styles de parties particulières, par exemple le about en fond blanc */
-/* 		quelques images de fond =>	  url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Mont_Blanc_%28from_Les_Saisies%29.jpg/800px-Mont_Blanc_%28from_Les_Saisies%29.jpg?20090925205731');*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+des animations encore
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
-
-#about {  	
-  background-color: white;
-  color: white;
-  }
-
-
-#home {
-  
-   background-color: black;
-  color: white;
-  
-}
-
-/* ICI ON VA REGLER LES OPTIONS DU TAG CLOUD 
-.tag-cloud a {
-  color: black; 
-  margin-bottom: 0px;
-}
-*/ 
 
 /* ON VA DEFINIR UNE ZONE DE TEXTE QUI DEFILE ! */
 

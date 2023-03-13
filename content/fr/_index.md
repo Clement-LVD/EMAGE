@@ -138,7 +138,7 @@ sections:
   design:
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["20px", "0px", "0px", "0"]
+      padding: ["20px", "0px", "5px", "0"]
     background:
       gradient_end: black
       gradient_start: black
@@ -146,7 +146,7 @@ sections:
   content:
     title: 
     subtitle:
-    text:  </div></div> <center> <br> + </i>
+    text:  </div></div> <center> <br> 
             <div class="waviy">
           <span style="--i:1"> <i class="fa fa-plus-square" ></i></span>
           <span style="--i:2"><i class="fa fa-plus-circle"></i></span>
@@ -168,21 +168,27 @@ sections:
             <div><div> <i class="fa fa-database"></i>     BASES DE DONNÉES</div></div></h3>
            
             
-           <h3><br> ET D'AUTRES MÉTHODES...</h3></div></div>  
+           <h3><br> ET D'AUTRES MÉTHODES...</h3></div></div>  </div>
 
 
+
+    # - name: Analyses supervisées (textes & meta-analysis)
+    #   tag: Analyse thématique supervisée
+    # - name: Analyses non-supervisées (textes & meta-analysis)
+    #   tag: Analyse thématique non-supervisée
       
 - block: portfolio
   id: projects
   content:
-    title: Cas d'études
+    title: <hr> Quelques cas d'études
     subtitle: 
     buttons:
-    - name: Tout voir
+    - name: Tous les thèmes
       tag: '*'
     - name: Textes & meta-analysis
-      tag: Text-analysis
-    - name: Facebook & mass-media
+      tag: Analyses de textes
+      category: Analyse de textes
+    - name: Facebook
       tag: Facebook
     - name: Communication
       tag: Communication
@@ -192,10 +198,17 @@ sections:
     filters:
       folders:
       - post
-  design:
+  design: 
+    spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["10px", "0", "10px", "0"] 
+    background:
+      gradient_end: black
+      gradient_start: black
+      text_color_light: true
     columns: "1"
     # flip_alt_rows: true
-    # view: project #ou showcase est très bien
+    # view: project #ou masonry est très bien
     view: masonry
     show_project_dates: false
 
