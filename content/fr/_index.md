@@ -47,7 +47,7 @@ sections:
     # ICI TU A TRAFFIQUé cette fonction pour réagir à certaines variables et les envoyer en tooltipbox
     - icon: layer-group
       icon_pack: fa
-      name: Analyses de données<br>&
+      name: Analyses de données
       description: '<div><a href="/category/analyse-de-textes/" title="Vers des exemples"> Textes <i class="fa fa-file-text" fa-1x></i></a></div>
                       <div><a href="/category/enquetes/" title="Vers des exemples"> Enquêtes & questionnaires <i class="fa fa-check" fa-1x></i></a></div>
                       <div><a href="/category/cartes-et-analyses-geospatiales/" title="Vers des exemples"> Cartes <i class="fa fa-map" fa-1x></i></a></div>
@@ -56,14 +56,14 @@ sections:
                       
     - icon: open-data #description: 85%
       icon_pack: ai
-      name: Présentation des résultats<br>&
+      name: Présentation des résultats
       description: 'Rendus programmés et vérifiés : <br>- Figures & tables   <i class="fa fa-file-image" fa-2x></i> <i class="fa fa-table" aria-hidden="true"></i>
       <br> - Cartes                  <img src="/media/icons/globe-bw.svg" width="33px" height="55"  > 
       <br>- Réseaux & diagrammes <img src="/media/icons/network.png" width="25px" height="30" class="inverted-image"> 
       <br> - Analyses statistiques <i class="fa fa-bar-chart" fa-2x></i> <i class="fa fa-pie-chart" ></i>'
     - icon: handshake-angle
       icon_pack: fa 
-      name: Conseils<br>&
+      name: Conseils
       description: "- Conseils & bilans en communication"
       # tooltip_titre: '<a href="theses.hal.science/tel-03457426">Voir ma thèse sur la communication de crise et le maintien de réputation</a>'
     - icon: scirate

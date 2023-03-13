@@ -119,7 +119,9 @@ module:
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
+    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-seo
     
+# tu a juste ajouté le seo 
 
 ############################
 ## ADVANCED
@@ -139,7 +141,7 @@ permalinks:
   categories: '/category/:slug/'
   publication_types: '/publication-type/:slug/'
   # posts: /:year/:month/:title/
-disableAliases: true
+disableAliases: false
 outputs:
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]
