@@ -85,7 +85,7 @@ sections:
       name: html
     - icon: plus #description: 25%
       icon_pack: fab
-      name: and more
+      name: and more 
       
 - block: features
   design:

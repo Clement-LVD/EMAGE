@@ -14,7 +14,7 @@ sections:
     title: <h1> BIENVENUE SUR LE SITE D'<strong>E-MAGE</strong> </h1>
     subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
       
-        <br> <a href="{{< ref "#contact" >}}" class="btn btn-cligno"><h3-little><i class="fa fa-graduation-cap"></i> Contacts</h3-little> </a>  <br>
+        <br> <a href="{{< ref "#contact" >}}" class="btn btn-cligno"><h3-little><i class="fa fa-paper-plane"></i> Contacts</h3-little> </a>  <br>
         <br><a href="#services">
         ╭─<i class="fa fa-circle-down"></i>─╮</a>
   # text: 

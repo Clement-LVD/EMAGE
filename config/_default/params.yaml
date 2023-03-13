@@ -23,8 +23,8 @@ appearance:
 marketing:
   seo:
     site_type: "LocalBusiness"
-    local_business_type: 'ProfessionalService'
-    org_name: 'E-MAGE'
+    local_business_type: ProfessionalService
+    org_name: 'E-MAGE Diag'
     description: 'Just another French data-scientist website.'
   analytics:
     google_analytics: ''

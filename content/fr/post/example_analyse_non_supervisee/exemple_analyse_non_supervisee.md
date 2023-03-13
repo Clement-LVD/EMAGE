@@ -2,8 +2,8 @@
 date: "2023-03-10T00:00:00Z"
 # le filename en fait c'est dans le asset/media folder qu'il va chercher l'image !
 image:
-  filename: avatar_du_diage_mage_croped.png
-  caption: 'This image was created with the assistance of ["DALL·E 2"](https://openai.com/)'
+  filename: wordcloud_analyse_non_supervisée.png
+  caption: Principaux thèmes du site, d'après la [section "tags"](/#tag_cloud)
   focal_point: Smart
 summary: Analyse non supervisée
 tags:

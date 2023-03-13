@@ -2,7 +2,7 @@
 date: "2023-03-13T00:00:00Z"
 # external_link: false
 image:
-  filename: mountain_bw.png
+  filename: map_voronoi_superettes_parisiennes.jpg
   caption: 
   focal_point: Smart
 summary: Un petit résumé.

@@ -42,6 +42,7 @@ cascade:
     share: true
     authorbox: false
     date: false
+    show_date: false
     
   # Configure project posts
   - _target:
@@ -54,6 +55,7 @@ cascade:
     authorbox: false
     show_breadcrumb: false
     share: true # il faut régler les boutons dans le dossier de paramètres "page_sharer..."
+    show_date: false
     
 ##### Définir l'affichage du widget "Relative Content" ####
 # widget_relative_content:

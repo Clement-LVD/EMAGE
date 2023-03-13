@@ -5,7 +5,7 @@ image:
   filename: inondation_yvette_2016.png
   caption: Inondations de 2016 à<br>Bures-sur-Yvette (gauche)<br> et Longjumeau (droite)
   focal_point: Smart
-summary: Un petit résumé.
+summary: [À faire]
 tags:
 - Cartes
 - Communication
@@ -16,5 +16,6 @@ categories:
 title: Bilan de l'efficacité de communications de crise
 
 ---
-tes
+
+En construction...
 

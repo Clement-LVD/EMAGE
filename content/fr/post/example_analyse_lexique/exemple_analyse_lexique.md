@@ -3,8 +3,8 @@ date: "2023-03-10T00:00:00Z"
 # le filename en fait c'est dans le asset/media folder qu'il va chercher l'image !
 external_link: ""
 image:
-  filename: bw_library_crop.png
-  caption: 'This image was created<br> with the assistance<br> of Craiyon.com'
+  filename: wordcloud_analyse_supervisee.png
+  caption:  Principaux thèmes du site, d'après la [section "tags"](/#tag_cloud)
   focal_point: Smart
 # links:
 # - icon: linkedin
