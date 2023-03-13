@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+Thumbs.db
+.hugo_build.lock
+.Rprofile
+.README_pour_myself.md
+.EMAGE_WEBSITE.Rproj
+/resources/
+/BROUILLONS_WEBSITE/
+.Rdata
+.httr-oauth

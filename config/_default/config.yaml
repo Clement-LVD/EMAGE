@@ -1,5 +1,7 @@
 theme: "github.com/wowchemy/wowchemy-hugo-themes"
 # "hugo-theme-air" #celui là propose une arrivée propre !
+# tu peux te retrouver avec des chemins merdiques si tu importe des thèmes de github ;
+# "github.com/wowchemy/wowchemy-hugo-themes"
 # Configuration of Hugo
 # Guide: https://wowchemy.com/docs/getting-started/
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
@@ -108,14 +110,13 @@ removePathAccents: true
 ############################
 ## MODULES
 ############################
-
- 
+#  l'original : 
 module:
   imports:
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify-cms
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal
-    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5 
+    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
     
 
 ############################
