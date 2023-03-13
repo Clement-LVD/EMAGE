@@ -23,11 +23,11 @@ appearance:
 marketing:
   seo:
     site_type: "LocalBusiness"
-    local_business_type: ProfessionalService
+    local_business_type: "ProfessionalService"
     org_name: 'E-MAGE Diag'
-    description: 'Just another French data-scientist website.'
+    description: 'Analyses de vos données, enquêtes et conseils en communication. Another French data-scientist website.'
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-BE4TGDH8NC'
     baidu_tongji: ''
   verification:
     google: ''
