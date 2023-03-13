@@ -1,0 +1,27 @@
+{{ $tags := index site.Taxonomies "tags" }}
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            {{ range $tag1name, $tag1 := $tags }}
+                <th>{{ $tag1name }}</th>
+            {{ end }}
+        </tr>
+    </thead>
+    <tbody>
+        {{ range $tag1name, $tag1 := $tags }}
+            <tr>
+                <th>{{ $tag1name }}</th>
+                {{ range $tag2name, $tag2 := $tags }}
+                    {{ if eq $tag1name $tag2name }}
+                        <td>{{ len $tag1.Pages }}</td>
+                    {{ else }}
+                        {{ $pages := $tag1.Pages }}
+                        {{ $pages = intersect $pages $tag2.Pages }}
+                        <td>{{ len $pages }}</td>
+                    {{ end }}
+                {{ end }}
+            </tr>
+        {{ end }}
+    </tbody>
+</table>

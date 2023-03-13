@@ -8,6 +8,7 @@ Thumbs.db
 .Rprofile
 .README_pour_myself.md
 .EMAGE_WEBSITE.Rproj
+/public/
 /resources/
 /BROUILLONS_WEBSITE/
 .Rdata

@@ -1,0 +1,4 @@
+{{ with .Get "file" }}
+    {{ $svg := readFile . }}
+    <div class="svg-container" style="width:{{ $.Get "width" | default "100%" }}; height:{{ $.Get "height" | default "auto" }}; display:inline-block; margin-right: 10px;">
+        {{ $svg | replaceRE "\\s(width|height)=\"[^\"]+\"" "" | safeHTML }}    </div>{{ end }}

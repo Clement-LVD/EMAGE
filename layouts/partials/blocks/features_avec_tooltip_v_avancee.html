@@ -1,0 +1,65 @@
+
+{{/* dans cette version, il te faut indiquer le nom complet du fichier => ce code permet d'intégrer une image .png en guise de featurette-icon*/}}
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+<div class="row featurette">
+  {{ with $block.content.title }}
+  <div class="col-md-12 section-heading">
+    <h1>{{ . | markdownify | emojify }}</h1>
+    {{ if $block.content.subtitle }}<p>{{ $block.content.subtitle | markdownify | emojify }}</p>{{ end }}
+  </div>
+  {{ end }}
+{{ with $block.content.text }}
+
+  <div class="col-md-12">
+    {{ . | emojify | markdownify }}
+  </div>
+  {{ end }}
+{{ range $block.content.items }}
+{{ $pack := or .icon_pack "fas" }}
+{{ $pack_prefix := $pack }}
+{{ if in (slice "fab" "fas" "far" "fal") $pack }}
+{{ $pack_prefix = "fa" }}
+{{ end }}
+
+{{/* Nouvelle variable pour stocker la classe de l'icône */}}
+{{ $icon_class := or .icon_class "default-icon-class" }}
+{{/* Nouvelle variable pour stocker le chemin de l'icône, en fonction de l'icon_pack */}}
+{{ $icon_path := "" }}
+{{ if eq $pack "custom" }}
+{{ $icon_path = printf "media/icons/%s" .icon }} 
+{{/* chemin de l'icône pour l'icône personnalisée */}}
+{{ else if eq $pack "emoji" }}
+{{ $icon_path = .icon }}   
+{{/* chemin de l'icône pour l'emoji */}}
+{{ else }}
+{{ $icon_path = printf "%s %s-%s" $pack $pack_prefix .icon }}   
+{{/* chemin de l'icône pour Font Awesome */}}
+{{ end }}
+
+<div class="col-12 col-sm-4">
+  <maxilarge-tooltip data-toggle="tooltip" data-trigger="hover click" data-placement="auto" data-html="true" title="{{ .description }}">
+    {{ with .icon }}
+    <div class="featurette-icon">
+      {{- if eq $pack "emoji" -}}
+      {{- . | emojify -}}  {{/* affiche l'emoji */}}
+      {{- else if eq $pack "custom" -}}
+      {{- $svg_icon := resources.Get $icon_path -}}   {{/* stocke l'icône personnalisée dans une variable */}}
+      {{- if $svg_icon -}}<img src="{{ $svg_icon.RelPermalink }}" alt="{{.}}" class="svg-icon svg-baseline {{ $icon_class }}" loading="lazy">{{- end -}}
+      {{/* affiche l'icône personnalisée ↑ */}}
+      {{- else -}}
+      <i class="{{ $pack }} {{ $pack_prefix }}-{{ . }} {{ $icon_class }}"></i>  {{/* affiche l'icône Font Awesome */}}
+      {{- end -}}
+    </div>
+    {{ end }}
+    <div class="section-subheading">
+      <maxilarge-tooltip data-toggle="tooltip" data-trigger="hover click" data-placement="left" data-html="true" title="{{ .tooltip_titre }}">
+        {{ .name | markdownify | emojify }}   {{/* affiche le nom de l'icône avec la tooltip */}}
+      </maxilarge-tooltip>
+    </div>
+  </div>
+  {{ end }}
+</maxilarge-tooltip>
+</div>
