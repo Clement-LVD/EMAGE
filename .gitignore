@@ -11,5 +11,6 @@ Thumbs.db
 /public/
 /resources/
 /BROUILLONS_WEBSITE/
+/R/
 .Rdata
 .httr-oauth

@@ -7,7 +7,6 @@ type: landing
 # https://connorrothschild.github.io/v2/post/animate-hugo-academic/
 sections:
 
-
 # Your landing page sections - add as many different content blocks as you like
 - block: markdown
   id: home
