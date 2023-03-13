@@ -108,7 +108,7 @@ sections:
             <i class="fa fa-code" ></i> Méthodes programmées, supervisées & non-supervisées
              <br><i class="fa fa-file" ></i> <i class="fa fa-book" ></i>  ''Petits'' et gros ensembles de textes
             <br><i class="fa fa-newspaper" ></i> <i class="fa-brands fa-facebook fa-1x"></i> Discours journalistique ou politique
-            <br> <img src="/svg/book-with-marker.svg" width="17px" height="28px"  class="inverted-image"> <img src="/media/icons/bookshelf.svg" width="22px" height="28px" >   Analyses de littérature              
+            <br> <img src="/svg/book-with-marker.svg" width="17px" height="28px"  class="inverted-image"> <img src="/svg/bookshelf.svg" width="22px" height="28px" >   Analyses de littérature              
             <br><i class="fa fa-users fa-1x"></i><i class="fa fa-commenting fa-1x"></i><img src="/svg/survey_text_writed.svg" width="32px" height="55px" > Langage naturel                      
             <br> (e.g., réponses à des questionnaires ou entretiens, commentaires d'usagers, posts Facebook et tweets)<br>...
       tooltip_titre: "Cliquez pour voir des exemples"
@@ -204,7 +204,7 @@ sections:
   design: 
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["10px", "0", "0px", "0"] 
+      padding: ["10px", "0", "10px", "0"] 
     background:
       gradient_end: #ededed
       gradient_start: white
@@ -234,7 +234,7 @@ sections:
   <p>
     <button type="submit">Envoi</button>
   </p> </h3-little>
-</form> 
+</form> <br>
                   '
               
 - block: markdown
@@ -270,7 +270,7 @@ sections:
     columns: '1'  
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["10px", "0", "0px", "0"] 
+      padding: ["15px", "0", "0px", "0"] 
     background:
       gradient_end: '#000000'
       gradient_start: '#000000'

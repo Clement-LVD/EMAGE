@@ -15,6 +15,7 @@ title: null
 type: landing
 sections:
 - block: hero
+  id: description-clem
   content:
      # on ajoutera plus tard des bouttons en pur html
     # cta:
@@ -26,8 +27,8 @@ sections:
     #   url: mailto:clementlvd@gmail.com
     #   
 
-    # image:
-    #   filename: skills_diagram.svg
+    image:
+      filename: skills_diagram.svg
     text: |-
       
       <br><h1>
