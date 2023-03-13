@@ -77,14 +77,33 @@ cascade:
 #     order = "desc"
 #     excerpt_length = 80
 
-# related:
-#   name: test
-#   includeNewer: false # options globales qu'on pourrait envoyer pour chaque tag.
-#   indices:
-#   - name: keywords  # The name of the indice, same as Front Matter's .Param key.
-#     weight: 100 # We don't really need this, but omitting it would disable the indice.
-#   - name: tags
-#     weight: 80
+# une syntaxe en toml à reprendre :
+# [related]
+#     threshold = 0 
+#     includeNewer = true
+#     toLower = false
+# 
+#     [[related.indices]]
+#         name = "categories"
+#         weight = 100
+# 
+#     [[related.indices]]
+#         name = "date"
+#         weight = 10
+
+# ci-dessous on indique le poids à donner au relative content !
+related:
+ # name: test
+  threshold: 0
+  includeNewer: true # options globales qu'on pourrait envoyer pour chaque tag.
+  indices:
+  - name: tags
+    weight: 10
+    # toLower: false   
+  - name: categories
+    weight: 100
+  # - name: keywords  # The name of the indice, same as Front Matter's .Param key.
+  #   weight: 100 # We don't really need this, but omitting it would disable the indice.
 #   threshold: 80
 #   toLower: false #Set to true to lower case keywords in both the indexes and the queries.
 
@@ -119,7 +138,7 @@ module:
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
-    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-seo
+    # - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-seo
     
 # tu a juste ajouté le seo 
 

@@ -14,6 +14,7 @@ image:
 # slides: example
 summary: [à faire]
 tags:
+- Cartes
 - Facebook
 - Text-analysis
 - Lexiques
@@ -21,7 +22,6 @@ tags:
 - Communication
 categories: 
 - Analyse de textes
-- Cartes et analyses géospatiales
 - Stratégies & analyses de communications
 title: "Analyser l'influence sur Facebook d'un ensemble d'organisations & comparaisons entre concurrents"
 url_code: ""

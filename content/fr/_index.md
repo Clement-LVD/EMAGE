@@ -171,22 +171,22 @@ sections:
            <h3><br> ET D'AUTRES MÉTHODES...</h3></div></div>  </div>
 
 
-
+ # <hr>
     # - name: Analyses supervisées (textes & meta-analysis)
     #   tag: Analyse thématique supervisée
-    # - name: Analyses non-supervisées (textes & meta-analysis)
+    # - name: Analyses non-supervisées (textes & meta-analysis) 
     #   tag: Analyse thématique non-supervisée
       
 - block: portfolio
   id: projects
   content:
-    title: <hr> Quelques cas d'études
+    title: Quelques cas d'études
     subtitle: 
     buttons:
     - name: Tous les thèmes
       tag: '*'
     - name: Textes & meta-analysis
-      tag: Analyses de textes
+      tag: text-analysis
       category: Analyse de textes
     - name: Facebook
       tag: Facebook

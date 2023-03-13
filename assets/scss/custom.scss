@@ -4,12 +4,10 @@ ALLER VOIR LE SUPER TUTO SUR : https://www.freecodecamp.org/news/your-first-hugo
 et la docu hugo : https://gohugo.io/templates/introduction/
 */
 
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-des fonctions customs pour modifier l'affichage 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
-
-/* on justifie le texte des articles et on fait une fonction "align-left"
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+on justifie le texte des articles
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
 
 .article-style {
@@ -17,16 +15,21 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
   
 }
 
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+des fonctions customs pour modifier l'affichage 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
 .alignleft {
     text-align: left;
 }
 
 
-/* un style pour envoyer le texte en bas du contenair */
+/* pour des marges...
 #bottom {
   border: 1px solid blue;
   margin-top: auto;
-}
+} */
 
 /* XXXXXXXXXX
 LES TOOLTIPS 
@@ -136,11 +139,11 @@ img, svg {
  XXXXXXXXXXXXXXXXXXXX*/
 
 /* Des icônes qui vont s'afficher en blanc !*/
-.fas {color: grey}
+.fas {color: white}
 .ai {color: white;
   background: black;
 }
-
+.fas {color: grey}
 
 /* Des styles de parties particulières, par exemple le about en fond blanc */
 /* 		quelques images de fond =>	  url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Mont_Blanc_%28from_Les_Saisies%29.jpg/800px-Mont_Blanc_%28from_Les_Saisies%29.jpg?20090925205731');*/
@@ -159,12 +162,7 @@ img, svg {
   
 }
 
-/* ICI ON VA REGLER LES OPTIONS DU TAG CLOUD 
-.tag-cloud a {
-  color: black; 
-  margin-bottom: 0px;
-}
-*/ 
+
 
 /* Les styles standards de classes de titres */
 h1 {
@@ -202,28 +200,17 @@ h3-little {
   
   text-align: left; font-size: 1em;
 }
-/* wowchemy crée à tout prix des polices h1, h2, etc. */
-/* donc les titres du haut de la page 'hero' l'élement d'arrivé chez wowchemy */
-/* Modifier la couleur de ce qui s'affiche en "about"  */
 
-/* ON VEUT CREER DES STYLES POUR AFFICHER DES TEXTES AVEC DES COULEURS DE FOND ET UN EFFET GLOWING Clignotant*/
-/*Ajoutez une nouvelle variable CSS personnalisée au début de votre fichier style .css 
-
-:root {
---text-background-color: black;  
-}*/ 
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 PORTFOLIO ET CARTES CLIQUABLES
 (classe spécifique au custom code de portfolio)
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
- /* xxxxxxxxxxxxxxxx
-autres style du portfolio 
- xxxxxxxxxxxxxxxxx*/
- /*card c'est la mosaique de projects par exemple ! */
-/* mais on l'a transformé en card-clickable avec un custom shortcode ! */
+ 
+ /*card c'est une classe assez utilisée par Hugo Wowchemy, dans la mosaique de projects par exemple ! */
 
+/* mais on l'a transformé en card-clickable avec un custom shortcode ! */
 /* on veut ajouter un effet de la mort pour qu'une barre verticale descende et nuance l'image ! ! */
 
 .card-clickable {
@@ -248,14 +235,15 @@ autres style du portfolio
   background-color: #164382;
   
   /* effet quand la souris over ! */
-  --_p: 100%; /* jusqu'ou va la barre assez grossierement */
+  --_p: 100%; /* jusqu'ou va la barre */
   --_s: .2s;
   
   .card-clickable-text a {  
   color: white;}
   
-  /* ça c'est le petit résumé en dessous, il devient blanc ;) ! */
+  /* ↑ ça c'est le petit résumé en dessous du titre, il devient blanc avec le hover ;) ! */
   
+  /* ci-dessous le texte et notamment l'animation et le changement de couleur (de noir à blanc => il devient visible) */
  .card-clickable-text p {  
   color: white;
    left: 10px;
@@ -265,7 +253,7 @@ autres style du portfolio
  }
 }
  
-/* enfin le texte de la carte (quand il est pas hover) mais qu'importe ! 
+/* sii besoin de modifier le texte de la carte (quand il est pas hover) mais qu'importe il est noir par défaut :) ! 
 .card-clickable-text a {  color: black;}*/
 
 
@@ -278,11 +266,19 @@ autres style du portfolio
   border-width: 6px; 
   border: solid;
   border-color: #232b2b; 
+  
+  
+  
 }
 
-/* il y a d'autres styles pour lui caler un hovering par exemple,background: 
-;et on a aussi une classe pour le active bouton, une fois cliqué */
- 
+/* xxxxxxxxxxxxxxxx
+autres style du portfolio 
+ xxxxxxxxxxxxxxxxx*/
+/* le menu: 
+
+↓  la police du bouton pour le bouton sélectionné */ 
+
+.btn.btn-primary.btn-lg.active { color: white}
 
 
 
@@ -302,11 +298,9 @@ XXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxx*/
   font-size: 25px;
  animation: color-change 5s infinite;
   user-select: none;
- /* pour le passer en bouton shine c'est simple, il suffit d'ajouter =>
+ /* pour le passer en bouton shine il suffit de retirer l'antimation et d'ajouter =>
  background: linear-gradient(to right, #202020 0, #F0F0F0 10%, #080808 20%);
   animation: shine 5s infinite linear; */
-  
-  
   
   &:hover {
 			color: ivory;
@@ -330,17 +324,9 @@ XXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxx*/
   margin-bottom: 20px;
 }
 
-/* la classe fas c'est juste les micro caractères qui s'affichent parfois automatiquement */
-/*
-.fas {
-  color: black;
-  background-color: white
-}
 
-/* il y a aussi plein de classes pour les icones font awesome et ai 
-*/
 
-/* la classe btn c'est notre btn-primary non clignotant (sert aussi pour les formulaires de wowcherry !) */
+/* la classe btn c'est notre btn-primary en gros (sert pour les formulaires de wowcherry !) */
 
 .btn {
   color: #FFFFFF;

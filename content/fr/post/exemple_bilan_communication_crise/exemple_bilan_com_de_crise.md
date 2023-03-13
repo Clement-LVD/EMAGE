@@ -11,7 +11,6 @@ tags:
 - Communication
 - Communication de crise
 categories: 
-- Cartes et analyses géospatiales
 - Stratégies & analyses de communications
 title: Bilan de l'efficacité de communications de crise
 
