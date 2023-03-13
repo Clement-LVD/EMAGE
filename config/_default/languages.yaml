@@ -1,0 +1,27 @@
+# Languages
+#   Create a section for each of your site's languages.
+#   Documentation: https://wowchemy.com/docs/guide/language/
+
+# Default language
+# ici tu peux lui balancer dans la gueule des options de menus (qu'on retrouve dans "menus.yaml", 
+# MAIS CELA OVERPASSE LES OPTIONS DU MENUS.YAML ET LE RENDENT USELESS, UNE HONTE)
+# 
+#  menu:
+#    main:
+#      - name: Enquêtes, Analyses & Diagnostics
+#        url: '#contact'
+#        weight: 1
+# Uncomment the lines below to configure your website in a second language.
+fr:
+ languageCode: fr
+ contentDir: content/fr
+ title: E-MAGE Diag 
+ params:
+   description: 'Another data-scientist website.'
+   author: "Clément L."
+
+en:
+  languageCode: en-us
+  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+  contentDir: content/en
+

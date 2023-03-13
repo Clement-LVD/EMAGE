@@ -1,0 +1,163 @@
+theme: "github.com/wowchemy/wowchemy-hugo-themes"
+# "hugo-theme-air" #celui là propose une arrivée propre !
+# Configuration of Hugo
+# Guide: https://wowchemy.com/docs/getting-started/
+# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+title: E-MAGE # Website name
+baseURL: 'emage.netlify.app/' # Website URL
+params:
+  AuthorName: Clément LVD
+  GitHubUser: CLEMENT-LVD
+  email: emagediag@gmail.com
+  ListOfFoo:
+  - foo1
+  - foo2
+  SidebarRecentLimit: 5
+  Subtitle: Ph.D 
+ 
+# en gros à partir de la tu peux accéder aux paramètres d'une page avec le shortcode param et le short_code global_param (que tu a crée) accède aux paramètres globaux du site
+# {{< global_param "email" >}} ou bien {{< param "email" >}} pour les valeurs de la page
+
+enableInlineShortcodes: true
+############################
+## QUELQUES OPTIONS DES PAGES
+############################
+# Control page features for an entire collection of pages by using Hugo cascades in config.yaml.
+
+# For example, to configure blog posts in config.yaml:
+cascade:
+  # Configure blog posts
+  - _target:
+      path: /post/**
+    pager: true
+    editable: false
+    reading_time: true
+    commentable: false
+    show_related: true
+    show_breadcrumb: false
+    share: true
+    authorbox: false
+    date: false
+    
+  # Configure project posts
+  - _target:
+      path: /project/**
+    pager: false
+    # truncate: 1500
+    editable: false
+    commentable: false
+    show_related: true
+    authorbox: false
+    show_breadcrumb: false
+    share: true # il faut régler les boutons dans le dossier de paramètres "page_sharer..."
+    
+##### Définir l'affichage du widget "Relative Content" ####
+# widget_relative_content:
+#   enabled: true # activer ou désactiver le widget
+#   weight: 10 # définir l'ordre d'affichage
+#   title: "Articles relatifs" # définir le titre du widget
+#   show_excerpt: true # afficher ou masquer les extraits d'article
+#   show_date: true # afficher ou masquer la date de publication
+#   show_thumbnail: true # afficher ou masquer les images miniatures
+#   show_categories: true # afficher ou masquer les catégories des articles
+  
+# Show related content at the bottom of pages?
+# a voir dans https://gohugo.io/content-management/related/
+# 
+# widgets.relative_content:
+#   name = "Similar Articles"
+#     filter_tag = "deep-learning"
+#     limit = 3
+#     order = "desc"
+#     excerpt_length = 80
+
+# related:
+#   name: test
+#   includeNewer: false # options globales qu'on pourrait envoyer pour chaque tag.
+#   indices:
+#   - name: keywords  # The name of the indice, same as Front Matter's .Param key.
+#     weight: 100 # We don't really need this, but omitting it would disable the indice.
+#   - name: tags
+#     weight: 80
+#   threshold: 80
+#   toLower: false #Set to true to lower case keywords in both the indexes and the queries.
+
+# rien de tout cela ne fonctionne...
+# related:
+#   title: test
+#   threshold: 80
+#   includeNewer: false
+#   toLower: true
+#   indices:
+#     - name: tags
+#       weight: 100
+#     - name: categories
+#       weight: 70
+      
+############################
+## LANGUAGE
+############################
+
+defaultContentLanguage: fr
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: false
+removePathAccents: true
+
+############################
+## MODULES
+############################
+
+ 
+module:
+  imports:
+    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify-cms
+    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify
+    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal
+    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5 
+    
+
+############################
+## ADVANCED
+############################
+
+
+enableGitInfo: false
+summaryLength: 30
+paginate: 10
+enableEmoji: true
+enableRobotsTXT: true
+footnotereturnlinkcontents: <sup>^</sup>
+ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+permalinks:
+  event: '/talk/:slug/'
+  tags: '/tag/:slug/'
+  categories: '/category/:slug/'
+  publication_types: '/publication-type/:slug/'
+  # posts: /:year/:month/:title/
+disableAliases: true
+outputs:
+  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
+  section: [HTML, RSS]
+imaging:
+  resampleFilter: lanczos
+  quality: 75
+  anchor: smart
+timeout: 600000
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+  author: authors
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  _merge: deep
+security:
+  _merge: deep
+sitemap:
+  _merge: deep
+minify:
+  _merge: deep

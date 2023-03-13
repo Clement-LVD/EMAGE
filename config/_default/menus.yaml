@@ -1,0 +1,60 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+#  To link to a section on your homepage, start your URL with a hastag #. 
+# To link to a new webpage on your website, start your URL with a backslash /.
+
+main:
+  - name: "| <i class='fa fa-home'></i> ACCUEIL"
+    url: '#home'
+    weight: 10
+  - name: "| <i class='fa fa-magic' aria-hidden='true'></i>🌟️ SERVICES"
+    url: '#services'
+    weight: 15
+  - name: "| <i class='fa fa-microscope'></i> CAS D'ÉTUDES"
+    url: '#projects'
+    weight: 20
+  - name:  "| <i class='fa fa-paper-plane'></i>  CONTACT"
+    url: '#contact'
+    weight: 30
+    # identifier: Contacts
+  - name:  "| <span class='gray-emoji'>🧙</span> L'ÉQUIPE"
+    url: '#about'
+    weight: 40
+  # - name: Contacter E-MAGE
+  #   parent: Contacts
+  #   url: '#contact'
+  #   weight: 10
+  # - name: Page universitaire
+  #   parent: Contacts
+  #   url: 'academic_resume/description_clement/'
+  #   weight: 10
+    
+# main:
+#   - name: "| <i class='fa fa-home'></i> Services"
+#     url: '#home'
+#     weight: 10
+#   - name: "| <i class='fa fa-toolbox'></i> Méthodes"
+#     url: '#projects'
+#     weight: 20
+#   - name:  "| <i class='fa fa-paper-plane'></i> Contacts"
+#     url: '#contact'
+#     weight: 30
+#     
+  # - name: Formulaire de contact
+  #   url: '#contact'
+  #   weight: 1
+    # parent = "Contact"
+  # - name: Profil universitaire
+  #   url: 'academic_resume/description_clement/'
+  #   # parent = "Contacts"
+  #   weight: 2
+
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
+#  - name: CV
+#    url: uploads/resume.pdf
+#    weight: 70
