@@ -1,0 +1,902 @@
+
+/* 
+ALLER VOIR LE SUPER TUTO SUR : https://www.freecodecamp.org/news/your-first-hugo-blog-a-practical-guide/
+et la docu hugo : https://gohugo.io/templates/introduction/
+*/
+/*card c'est la mosaique de projects par exemple ! */
+.card {
+
+  text-align: justify;
+  
+  
+}
+
+.avatar-square { 
+  
+  clip-path: polygon(14% 8%, 75% 8%, 50% 50%, 75% 95%, 14% 95%, 0% 50%);
+}
+
+.card:hover {
+  background-color: #ffff4d;
+}
+
+.card-text a {  color: black;}
+
+/*déjà on justifie le texte des articles et on fait une fonction "align-left"
+*/
+
+.article-style {
+  text-align: justify;
+  
+}
+
+.alignleft {
+    text-align: left;
+}
+
+/* XXXXXXXXXX
+LES TOOLTIPS 
+XXXXXXXXXXXXX*/
+/*on va utiliser bootstrap pour les tooltips en javascript, mais on colle parfois des classe css pour faire des maxi tooltip  */
+.maxilarge-tooltip {
+  max-width: 200%;
+  font-size: 35px;
+  border: none;
+}
+
+
+
+.tooltip {
+  z-index: 99999;
+  color: white;
+  border: none;
+  /* background-color: black; */
+  background-color: rgba(0, 0, 0, 1); /* Noir avec une opacité de 1 parce qu'on va définir l'opacité juste après : */
+}
+
+
+.tooltip.show {
+  opacity: 0.97; /* Opacité à 1 pour le contenu du tooltip */
+}
+
+.tooltip .tooltip-inner { /* ça c'est la couleur de fon et l'opacité ! */
+  max-width: 400px;
+  z-index: 99999;
+  
+  /* la on ajoute une autre animation pour la barrette qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
+  
+  animation: glowing-blue 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowing-blue {
+  from {
+    box-shadow: 0 0 2px grey, 0 0 4px #3f0000, 0 0 6px darkred, 0 0 8px #400c4b, 0 0 10px #340b40,  
+  }
+  to {
+    box-shadow: 0 0 3px  #400c4b,  0 0 6px #6c006c, 0 0 9px transparent, 0 0 12px  lightgrey,  0 0 15px cornsilk , 0 0 18px white;
+  }
+}
+
+.tooltip .arrow:before {
+  border-width: 10px; /*en mettant 0px ici ou none tu désactive la fleche  */
+  z-index: 99999;
+  /*border-bottom-color: rgba(0, 0, 0, 0.4); un miroir de la micro fleche */
+  border-top-color:  rgba(256, 256, 256, 0.1); 
+}
+
+  
+/*fin du code relatif au réglage des tooltips ! */
+
+
+/* XXXXXXXXXX
+LES FIGURES 
+XXXXXXXXXXXXX*/
+/* on crée une classe pour présenter les figures avec des legendes dans des box */
+figure {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 0px;
+}
+
+/*et dans cette classe on ajoute des "captions" de texte en italique et basta ! */
+figcaption {
+font-style: italic;}
+
+/* on modifie également des classes qui reçoivent des images, pour les afficher les images sur la même ligne (et de même pour les svg) */
+img, svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.svg-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* FONCTIONS DE MODIFICATIONS D'IMAGES */
+
+/* on veut pouvoir inverser les images */
+.inverted-image {  
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+} 
+ 
+   
+/* on veut aussi pouvoir transforemr les images en noir et blanc */
+.gray-emoji {
+  filter: grayscale(100%);
+}
+
+/* XXXXXXXXXXXXXXXXXXXXX
+ FEUILLES DE STYLES 
+ XXXXXXXXXXXXXXXXXXXX*/
+
+/* Des icônes qui vont s'afficher en blanc !*/
+.fas {color: grey}
+.ai {color: white;
+  background: black;
+}
+
+/* un style pour envoyer le texte en bas du contenair */
+#bottom {
+  border: 1px solid blue;
+  margin-top: auto;
+}
+
+/* Les styles standards */
+
+h1 {
+    margin-top: 55px; /* Remplacez "100px" par la valeur de votre choix */
+}
+
+/* ON VA FAIRE 3 STYLES DE TEXTES EN BLANC POUR CENTRER AISEMENT*/
+h3 {color: white;
+  font-size: 2;
+  text-align: left; font-size: 28px;
+}
+
+/* ON VA FAIRE 3 STYLES DE TEXTES EN BLANC POUR CENTRER AISEMENT*/
+h3.little {color: white;
+  font-size: 2;
+  line-height: 1em; /* ça veut dire égal à la taille du texte !*/
+  text-align: left; font-size: 18px;
+}
+
+h4 {color: white; font-size: 28px;
+  text-align: center;
+}
+
+h5 {color: white;
+  text-align: right; font-size: 28px;
+}
+/* les polices mini !*/
+
+h5-little {
+  
+  text-align: right; font-size: 1em;
+}
+
+h3-little {
+  
+  text-align: left; font-size: 1em;
+}
+/* wowchemy crée à tout prix des polices h1, h2, etc. */
+/* donc les titres du haut de la page 'hero' l'élement d'arrivé chez wowchemy */
+/* Modifier la couleur de ce qui s'affiche en "about"  */
+
+/* ON VEUT CREER DES STYLES POUR AFFICHER DES TEXTES AVEC DES COULEURS DE FOND ET UN EFFET GLOWING Clignotant*/
+/*Ajoutez une nouvelle variable CSS personnalisée au début de votre fichier style .css 
+
+:root {
+--text-background-color: black;  
+}*/ 
+
+/* XXXXXXXXXX
+LES BOUTONS CLIGNOTANTS
+XXXXXXXXXXXXX*/
+
+
+/* ON crée un bouton clignotant */
+.btn-cligno {
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-text-stroke: 0.85px white; /* ici on va appliquer un effet stroke au texte ! */
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 25px;
+ animation: color-change 5s infinite;
+  user-select: none;
+ /* pour le passer en bouton shine c'est simple, il suffit d'ajouter =>
+ background: linear-gradient(to right, #202020 0, #F0F0F0 10%, #080808 20%);
+  animation: shine 5s infinite linear; */
+  
+  
+  
+  &:hover {
+			color: ivory;
+    font-weight: bold; 
+    -webkit-text-stroke: 1.2px black; /* ici on va appliquer un effet stroke au texte ! */
+    text-stroke: 3px black; 
+			font-size: 26px;
+			/*text-shadow: 0px 1px 0px white;*/ 
+			
+		}
+  
+}
+
+
+/* le bouton alternatif est comme le bouton de base ! */
+.hero-cta-alt {
+  color: #FFFFFF;
+  background-color: #000000;
+  /*animation: color-change 5s infinite;*/
+  border: none;
+  margin-bottom: 20px;
+}
+
+/* la classe fas c'est juste les micro caractères qui s'affichent parfois automatiquement */
+/*
+.fas {
+  color: black;
+  background-color: white
+}
+
+/* il y a aussi plein de classes pour les icones font awesome et ai 
+*/
+
+/* la classe btn c'est notre btn-primary non clignotant (sert aussi pour les formulaires de wowcherry !) */
+
+.btn {
+  color: #FFFFFF;
+  background-color: #000000;
+  border: none;
+}
+
+/*
+body {
+  animation: color-change 5s infinite;
+ /* animation: animate-bg 1s infinite linear; 
+}
+*/
+
+/* LA fonction du changement de couleur (pour les bouton clignotants) ! */
+
+@keyframes color-change {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+
+/* ON VA FAIRE UN AUTRE BOUTON CLIGNO, le btn-shine :) */
+/* pour intégrer un bouton shine il faut ajouter par exemple
+<a href="https://usecheck.com/" class="btn-shine" >Get early access</a> */
+
+
+/* ON crée un bouton clignotant */
+.btn-shine2 {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 26px;
+ /*animation: color-change 5s infinite;*/
+  user-select: none;
+   /* pour le passer en bouton shine c'est simple, il suffit d'ajouter =>*/
+ background: linear-gradient(to right, #202020 0, #F0F0F0 10%, #080808 20%);
+  animation: shine 5s infinite linear;
+  
+  &:hover {
+			color: ivory;
+    font-weight: bold;
+    display: inline-block;
+    -webkit-text-stroke: 1px black; /* ici on va appliquer un effet stroke au texte ! */
+    text-stroke: 2px black; 
+	/*	 font-size: 26px; 
+			text-shadow: 0px 1px 0px white;*/
+			
+				height: 130%;
+				width: 100%;
+			
+		}
+  
+  
+}
+ 
+ /* seuls deux parametres sont utiles en gros >
+ background: linear-gradient(to right, #202020 0, #F0F0F0 10%, #080808 20%);
+  animation: shine 5s infinite linear;  
+  et c'est tout */
+    
+@keyframes shine {
+  0% {
+    background-position: 0
+  }
+  60% {
+    background-position: 200px
+  }
+  100% {
+    background-position: 460px
+  }
+
+}
+
+
+/* c'est terminé pour le bouton shine */
+
+/* Des styles de parties particulières, par exemple le about en fond blanc */
+/* 		quelques images de fond =>	  url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Mont_Blanc_%28from_Les_Saisies%29.jpg/800px-Mont_Blanc_%28from_Les_Saisies%29.jpg?20090925205731');*/
+
+
+#about {  	
+  background-color: white;
+  color: white;
+  }
+
+
+#home {
+  
+   background-color: black;
+  color: white;
+  
+}
+
+/* ICI ON VA REGLER LES OPTIONS DU TAG CLOUD 
+.tag-cloud a {
+  color: black; 
+  margin-bottom: 0px;
+}
+*/ 
+
+/* ON VA DEFINIR UNE ZONE DE TEXTE QUI DEFILE ! */
+
+/* Bonne chance il y a plusieurs blocs */
+#container {
+  color: black;
+  text-transform: uppercase;
+  font-size:35px;
+  font-weight:bold;
+  padding-top:8px;  
+  position:relative;
+  width:100%;
+  bottom:0%;
+  display:inline;
+}
+
+#flip {
+  height:60px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  font-size: 1em;
+  font-weight: bold;
+  padding:5px 5px;
+  height:55px;
+  margin-bottom:3px; /* la marge entre les lignes de textes qui vont se dérouler */
+  /* cette marge est malheureusement assez critique comme on saute des lignes manuellement dans le code...*/
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 30s linear infinite;
+  
+  animation-direction: normal;
+}
+
+/* on peut parametrer plusieurs couleurs pour notre animation de textes mais on va garder que le noir tranquillement */
+#flip div div {
+  background: black;
+}
+#flip div:first-child div {
+  background: black;
+}
+#flip div:last-child div {
+  background: black;
+}
+
+@keyframes show {
+  0% {margin-top: 65px;}
+  10% {margin-top: -75px;}
+  20% {margin-top: -150px;}
+  30% {margin-top: -225px;}
+  40% {margin-top: -300px;}
+  50% {margin-top: -225px;}
+  60% {margin-top: -150px;}
+  70% {margin-top: -75px;}
+  80% {margin-top: 10px;}
+  90% {margin-top: -300px;}
+  100% {margin-top: 65px;}
+}
+
+/* fin du code de la mort !*/
+/* 
+un exemple de keyframe original
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+   100% {margin-top:-260px;} 
+*/
+
+.portrait-title {font-size: 30px;
+  text-align: left;
+}
+
+/* la classe col-12 col-sm-4 est utilisée par des bouts de shortcode qui crée des choses sur 3 colonnes, typiquement une liste de featurette (icones) et leurs titres ou leurs descriptions... */
+.col-12.col-sm-4 {
+  
+  
+  border-right: 0.5px solid #808080;
+  
+}
+
+.col-12.col-sm-4:hover,
+.col-12.col-sm-4:active {
+  letter-spacing: 1px;
+}
+
+.col-12.col-sm-4:after,
+.col-12.col-sm-4:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.col-12.col-sm-4:hover:after,
+.col-12.col-sm-4:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+  
+  /* la on ajoute une autre animation pour la barrette qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
+  -webkit-animation: glowing 1s ease-in-out infinite alternate;
+  -moz-animation: glowing 1s ease-in-out infinite alternate;
+  animation: glowing 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowing {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff, 0 0 50px #e60073, 0 0 60px red, 0 0 70px darkred;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.col-12.col-sm-4:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+/* les featurette sont les logos accompagnés de textes (titre et description)*/
+
+.featurette-icon {
+  color: white;
+  fill: #000000;
+  font-size: 50px; /* taille en pixels */
+  /*border-right: 0.1px solid #808080;*/
+  /*border-left: 0.1px solid #808080;*/
+  padding-right: 10px;
+  margin-right: 6px;
+  margin-bottom: -10px;
+  
+  /*ci-dessous un code pour le faire bouger quand la souris passe dessus ! 
+  transform: perspective(1500px) rotateY(15deg);
+  border-style: outset;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+
+  &:hover {
+    transform: perspective(3000px) rotateY(5deg);
+  }*/
+}
+
+
+/* pour meettre les images dans des cercles */
+
+.image-circled {
+  border-radius: 50%;
+  /*filter: grayscale(100%);*/
+  float: left;
+  margin-right: 20px;
+  width: 200px;
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx 
+une petite animation de texte toute mignone 
+pour faire tourner les lettres et les icônes
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.waviy {
+  
+}
+
+.waviy span {
+  float: left;
+  display: inline-block;
+  font-size: 40px;
+  /*color: #fff;
+  text-transform: uppercase;*/
+  animation: flippy 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flippy {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+/* ON PEUT FAIRE DU CODE CSS POUR ANIMER DES IMAGES SUR L'ACCEUIL */
+
+/*Ci ensuite une fonction key frames pour faire apparaître successivement des textes les uns-après-les-autres 
+(l'idée est de caler ce texte dynamique dans le champ "description" de widgets hugo pour voir) !! */
+/* Style pour animer des termes en les affichant un par un */
+
+ 
+
+.animation-texte {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: 0.07px black; /* ici on va appliquer un effet stroke au texte ! */
+  margin: 0;
+  white-space: nowrap;
+  word-wrap: break-word; 
+}
+
+.animation-texte span {
+  float: left;
+  display: inline-block;
+  opacity: 0;
+  animation: animTexte 8s infinite;
+}
+
+.animation-texte span:nth-child(1) {
+  animation-delay: 0s;
+  left: 0;
+}
+
+.animation-texte span:nth-child(2) {
+  animation-delay: 2s;
+  left: 5%;
+}
+
+.animation-texte span:nth-child(3) {
+  animation-delay: 4s;
+  left: 10%;
+}
+
+.animation-texte span:nth-child(4) {
+  animation-delay: 6s;
+  left: 15%;
+}
+
+.animation-texte span:nth-child(5) {
+  animation-delay: 7s;
+  left: 20%;
+}
+
+/*
+.animation-texte span:nth-child(6) {
+  animation-delay: 10s;
+  left: 25%;
+}
+
+.animation-texte span:nth-child(7) {
+  animation-delay: 12s;
+  left: 30%;
+}*/
+ 
+
+@keyframes animTexte {
+  0% {
+    opacity: 0.001;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+  }
+  3% {
+    opacity: 1;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  }
+  5% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  25% {
+    opacity: 1;
+    text-shadow: none;
+  }
+  30% {
+    opacity: 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+  }
+}
+ 
+ /* --------------------
+ UNE AUTRE ANIMATION DE TEXTES 
+ QUI CHANGENT L'UN APRES L'AUTRE 
+ -----------------------*/
+ 
+h-changetext {
+  color:transparent; // text shadow does all the work
+  position:absolute;
+  opacity:0;
+  margin-top: 0.05em;
+  margin-left:-.1em;
+  animation: cinematicInOut 15s infinite;
+}
+
+h-changetext:nth-child(2) {
+  animation-delay:3s;
+}
+h-changetext:nth-child(3) {
+  animation-delay:6s;
+}
+
+h-changetext:nth-child(4) {
+  animation-delay:9s;
+}
+-changetext:nth-child(5) {
+  animation-delay:12s;
+}
+
+@keyframes cinematicInOut {
+  0% {
+    text-shadow:none;
+    opacity:0;
+    margin-left:0em;
+  }
+  25% {
+    text-shadow:0 0 0 white;
+    opacity:1;
+    margin-left:0;
+  }
+  50% {
+    text-shadow:none;
+    opacity:0;
+    margin-left:0;
+  }
+  74% {
+    text-shadow: 0 0 1em white;
+    opacity:1;
+    margin-left:0;
+  }
+  99% {
+    text-shadow: none;
+    opacity:0;
+    margin-left:0;
+  }
+  100% {
+    text-shadow: none;
+    opacity:0;
+    margin-left:0;
+  }
+}
+ 
+/*xxxxxxxxxxxxxxxxxxxxxx
+CONFIGURER LA navbar 
+xxxxxxxxxxxxxxxxxxxxxx*/
+
+.navbar {
+  height: 52px;
+  background: $sta-menu-primary;
+/* this is the part that takes out the shadow & the only edit */
+  box-shadow: none;  
+  font-size: 20px;
+  font-weight: 900 !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; /* on peut jouer avec cette valeur pour prioriser ce qui s'affiche dans le site  */
+  padding: 0 1rem;
+  
+  card-simple {
+  background: #fff;
+/* this is the part that takes out the shadow */
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,0);
+  border-radius: 3px;
+  margin-top: 20px;
+  padding: 15px 20px 25px 20px;
+}
+
+/* ici on pourrait ajouter une image dans la zone du logo (va voir le brouillons.rmd) ! 
+(on surexpose donc : parce qu'on demande aussi a wowcherry d'afficher le nmoo du site dans cette zone ! */
+
+.navbar-brand {
+    text-align: left;
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    -webkit-text-stroke: 0.5px white; /* ici on va appliquer un effet stroke au texte ! */
+    text-stroke: 2px black;
+    font-family: "Arial black", sans-serif;
+    position: relative; /* permet d'utiliser z-index */
+    z-index: 3; /* le texte est au premier plan */
+}
+
+
+
+.card {
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #fff;
+/* this is the part that takes out the shadow */
+  box-shadow: none;
+  transition: all 0.2s ease-out;
+}
+  
+}
+
+/* XXXXXXXXXX
+ON VA MODIFIER LE TAG_CLOUD  
+XXXXXXXXXXXXX*/
+
+/* la suite est un featuring de chat-gpt en roue libre*/
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag-cloud a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.25rem 0.25rem;
+  border-radius: 0.5rem;
+  background-color: #eee;
+  color: #444;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.tag-cloud a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.tag-cloud a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+/* fin de la modif du nuage de termes */
+ 
+ 
+ /*des animations de la mort */  
+ 
+/* y'a plus qu'à faire 
+<div class="clouds"></div>*/ 
+ 
+/*
+
+@keyframes para {
+	100% {
+		background-position: 
+			-0px 20%,
+			50px 50%,
+			100px 50%,
+			1000px 100%,
+			400px 0;
+		}
+	}
+	
+*/
+
+ 
+/* on va crééer une autre animation de gros dur */
+ 
+ 
+ 
+/* UN BROUILLON DE GROS DUR POUR FAIRE UNE ANIMATION WTF SUR LA PAGE ! */
+/*
+
+html {
+	height: 100%;
+	/* max-height: 600px; *//* 
+	width: 1000px;
+	background-color: hsla(200,40%,30%,.4);
+	background-image:		
+		url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+		url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+		url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+	background-repeat: repeat-x;
+	background-position: 
+		0 20%,
+		0 100%,
+		0 50%,
+		0 100%,
+		0 0;
+	background-size: 
+		2500px,
+		800px,
+		500px 200px,
+		1000px,
+		400px 260px;
+	animation: 50s para infinite linear;
+	}
+	
+	
+	
+	ou encore dans le même style
+	  
+#about {	
+  background-color: hsla(200,40%,30%,.4);
+	background-image:	
+		/*url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), */
+		/* des sapins ↑ et ↓ *//*
+		url("https://pngimg.com/d/forest_PNG23.png"),
+		/*url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+		/* la foret merdique*//*
+		url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'), 
+		/* les nuages ↑ *//*
+		url("/mountain.png"),
+		/* ↑ une super image de montagne *//*
+		url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png'),
+		/* ↑ encore des nuages *//*
+	  	url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Ararat.png");
+		/*url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png');
+		 ↑ une autre image de montagne *//*
+	background-repeat: repeat-x;
+	background-position: 
+	/* 	0 100%, */ /* on indique d'abord la vitesse de dééfilement si on veut les sapins au premier plan */
+	/*	0 130%,  la foret merdique au second plan !*/
+	/* 	0 0%, les nuages */
+	/*	0 90%,  une image de montagne */
+	/*	0 0%,  nuage bis */
+	/*	0 100%;  encore une image de montagne *//*
+	background-size:  
+		800px 300px,
+		500px 200px,
+		4000px 400px,
+		1800px 260px,
+		3500px 400px;
+	animation: 100s para infinite linear;
+	
+}
+
+
+*/
+
+
