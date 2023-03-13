@@ -8,7 +8,7 @@ theme: "github.com/wowchemy/wowchemy-hugo-themes"
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: E-MAGE # Website name
-baseURL: 'emage.netlify.app/' # Website URL
+baseURL: 'https://emage.netlify.app/' # Website URL
 params:
   AuthorName: Clément LVD
   GitHubUser: CLEMENT-LVD
