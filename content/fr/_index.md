@@ -11,7 +11,7 @@ sections:
 - block: markdown
   id: home
   content:
-    title: <h1> BIENVENUE SUR LE SITE D'<strong>E-MAGE</strong> </h1>
+    title: xxx👷 👷  Site en construction 👷 👷 xxx<h1> BIENVENUE SUR LE SITE D'<strong>E-MAGE</strong> </h1>
     subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
       
         <br> <a href="{{< ref "#contact" >}}" class="btn btn-cligno"><h3-little><i class="fa fa-paper-plane"></i> Contacts</h3-little> </a>  <br>

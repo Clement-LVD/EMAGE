@@ -15,6 +15,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   
 }
 
+/* le texte entre ` ` prends la clases "p" */
+
+code {color: black}
+
+blockquote {color: black}
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 des fonctions customs pour modifier l'affichage 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -200,7 +205,6 @@ h3-little {
   
   text-align: left; font-size: 1em;
 }
-
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 PORTFOLIO ET CARTES CLIQUABLES

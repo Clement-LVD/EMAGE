@@ -28,12 +28,9 @@ gallery_item:
   caption: Carte des restaurants parisiens (Data ODbL - CC-BY-SA 2.0)
 ---
 
-👷🏻 👷🏼 👷🏽 👷🏾 👷🏿 
+> <strong> ✨Dans cet article, nous allons identifier des zones d'implantations potentielles pour un service, en fonction de la densité des autres services du même type (point de vente, service ou service public). </strong>
 
-
-<i class="fa-solid fa-hat-wizard"></i> <strong> `🎯 Dans cet article, nous allons identifier des zones d'implantations potentielles pour un point de ventes, un service ou un service publics, en fonction de la densité des autres services du même type. ` </strong>
-
-Dans un milieu saturé par la concurrence, la densité des commerces est une données intéressante pour déterminer une zone d'implantation. Pour déterminer une zone d'implantation, cette notion de densité de la concurrence est complémentaire d'autres données (e.g., prix au m² et revenus moyens, densité de population ou flux de touristes <i class="fa-solid fa-person-walking-luggage"></i>).
+Dans un milieu saturé par la concurrence, la densité des commerces est une données intéressante pour déterminer une zone d'implantation 🎯. La densité des concurrents est complémentaire d'autres données (e.g., prix au m² et revenus moyens, densité de population ou flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>).
 
 Les figures ci-dessous présentent la densité des cliniques et de plusieurs enseignes parisiennes (vente de matériaux; supérettes et restaurants).
 
@@ -42,4 +39,8 @@ Les figures ci-dessous présentent la densité des cliniques et de plusieurs ens
    <figcaption> Les "zones d'influences" (A, B et C) sont calculées en Voronoï. Data ODbL (CC-BY-SA 2.0)</figcaption> </figcaption>
 </figure>
 
-De même pour certains vendeurs itinérants, par exemple un camion de restaurateurs ou de coiffeurs ambulants. 
+De même pour planifier le démarrage de l'activité de certains vendeurs itinérants, comme un camion de restaurateurs ou de coiffeurs ambulants. 
+
+- 🔮 Identifier les commerces comparables
+
+- <i class="fa-solid fa-hat-wizard"></i> Identifier les zones les moins denses
