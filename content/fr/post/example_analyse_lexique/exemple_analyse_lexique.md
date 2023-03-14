@@ -20,7 +20,7 @@ tags:
 categories: 
 - Analyse de textes
 - Réseaux de relations
-- Conception d’enquêtes et de recherches
+- Enquêtes
 title: Analyse thématique supervisée par des lexiques
 url_code: ""
 url_pdf: ""

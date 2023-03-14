@@ -1,7 +1,7 @@
 # Navigation
 
 - id: toggle_navigation
-  translation: Ouvrir la barre de navigation
+  translation: Barre de navigation
 
 - id: table_of_contents
   translation: Table des matières
@@ -24,16 +24,16 @@
 # General
 
 - id: related
-  translation: Sur le même sujet
+  translation: Sur le même thème
 
 - id: minute_read
   translation: min de lecture
 
 - id: previous
-  translation: Précédent
+  translation: Article précédent
 
 - id: next
-  translation: Suivant
+  translation: Article suivant
 
 - id: figure
   translation: 'Figure %d:'
@@ -110,7 +110,7 @@
 # Accomplishments widget
 
 - id: see_certificate
-  translation: Voir certificat
+  translation: Voir le certificat
 
 # Experience widget
 
@@ -123,7 +123,7 @@
   translation: Voir tout
 
 - id: more_posts
-  translation: Plus de posts
+  translation: Plus d'articles
 
 - id: more_talks
   translation: Plus de présentations
@@ -265,4 +265,4 @@
 # Published with
 
 - id: published_with
-  translation: Published with {wowchemy} — the free, {repo_link}open source{/repo_link} website builder that empowers creators.
+  translation: Site développé avec [Hugo](https://github.com/gohugoio/hugo) et {wowchemy} 

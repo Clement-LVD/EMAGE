@@ -6,132 +6,197 @@
 
 header:
   navbar:
-    enable: false
+    enable: true
+sidebar_left: true
 content: 
-  page_type: widget_page
+  page_type: landing
 active: true
 date: 2023-03-13
 title: null
 type: landing
 sections:
-- block: hero
-  id: description-clem
+
+           
+- block: markdown
+  id: about
   content:
-     # on ajoutera plus tard des bouttons en pur html
-    # cta:
-    #   label: → **Visiter le site d'E-MAGE (page pro)**
-    #   url: '#about'
-    #   
-    # cta_alt:
-    #   label: "**@→ Écrire un mail à Clément**"
-    #   url: mailto:clementlvd@gmail.com
-    #   
-
-    image:
-      filename: skills_diagram.svg
-    text: |-
-      
-      <br><h1>
-      <a href="{{< ref "/" >}}" class="btn btn-shine2">Voir la page pro : E-MAGE Consulting</a> </h1>
-      <!--Custom spacing-->
-      <div class="mb-3"></div>
-     
-      
-      <!--GitHub Button JS-->
-      <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
-      
-      <!-- ICI LE TITRE DE LA PAGE !! -->
-    title: <br>Clément L.<br><br>Résumé académique
-      <!-- voir les couleurs sur => https://www.html.am/html-codes/color/color-code-chart.cfm -->
-      <!-- toujours 4 espaces pour les commentaires 
-      et ils peuvent faire deux lignes !  -->
-      <!-- a l'origine eux ils proposent le gradient_end à '#1976d2' et le start a '#004ba0' comme couleurs -->  
-
-  
-           <!--
-      ci-dessous le username !
-      BREF => le "username" ne renvoie en fait PAS au dossier qui s'apelle "admin" 
-      (lequel dossier admin spécifie des thèmes pour le serveur)
-      non, en réalité il renvoie à une putain de page / dossier dans le repertoire content "authors", 
-      dans laquelle il y a un dossier "admin"
-      
-      -->
-  
-              <!-- ICI ON EST EN TRAIN DE CR2ER UNE CLASSE "features" 
-              on utilise deux packs d'icones => fa et ai (https://jpswalsh.github.io/academicons/)-->
-- block: features
+    title: Profil universitaire
+    subtitle: 
+    text: <img src="/svg/clem_himself.jpg" alt="Clément" class="avatar-square" id = "myself_picture"> <h1>**Clément L.**<br>
+          <div class="waviy"><span style="--i:1"> Ph.</span><span style="--i:2">D.</span></div>   
+           <a href="{{< ref "/" >}}" class="btn btn-cligno"> <span class='gray-emoji'>🧙</span> Voir la page pro E-MAGE consulting</a></h1>
+        <span> <a href="https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"><i class="fab fa-linkedin fa-2x"></i></a> </span>
+        <span> <a href="https://www.researchgate.net/profile/Clement-Laverdet/"> <i class="ai inverted-image ai-researchgate ai-2x"></i></a> </span> 
+        <span> <a href="mailto:clementlvd@gmail.com"> <i class="fa fa-paper-plane fa-2x"></i></a> </span>   clementlvd@gmail.com
+    
+  contact_links:
+    - icon: "graduation-cap"
+      icon_pack: fas
+      link: 'academic_resume/description_clement/'
+    - icon: linkedin
+      icon_pack: fab
+      label: Profil Linkedin
+      link: "https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"
+    - icon: cv
+      icon_pack: ai
+      link: uploads/resume.pdf
+    - icon: researchgate
+      icon_pack: ai
+      link: https://www.researchgate.net/profile/Clement-Laverdet
+      name: Mon profil researchgate
+    - icon: linkedin
+      icon_pack: fab
+      name: Mon profil Linkedin
+      link: "https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"
   design:
+    columns: '1'  
+    spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["75px", "0", "0px", "0"] 
+    background:
+      gradient_end: '#000000'
+      gradient_start: '#000000'
+      text_color_light: true
+      
+
+
+- block: features_avec_tooltip 
+  id: caracteristiques-myself
+  design:
+    spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["25px", "0", "25px", "0"]
     background:
       gradient_end: '#000000'
       gradient_start: '#000000'
       text_color_light: true
   content:
-    title: Skills
+    title:
     items:
-    - icon: r-project #description: 85%
-      icon_pack: fab
-      name: R
-    - icon: python #description: 70%
-      icon_pack: fab
-      name: Python
-    - icon: asterisk #description: 80%
-      icon_pack: fab
-      name: RegEx
-    - icon: dataverse #description: 25%
-      icon_pack: ai
-      name: SQL
-    - icon: code #description: 25%
+    - icon: code
       icon_pack: fa
-      name: html
-    - icon: plus #description: 25%
-      icon_pack: fab
-      name: and more 
-      
-- block: features
+      name: PROGRAMMATION
+      description: '
+      <i class="fa-brands fa-r-project fa-1x"></i> <i class="fa-brands fa-python fa-1x"></i>   R & Python
+      <br><i class="fa fa-asterisk fa-1x"></i>     RegEx      
+      <br> [_+_] APIs, SQL, html, etc. </h5> </span> '
+    - icon: scirate
+      icon_pack: ai
+      name: PSYCHO-SOCIOLOGUE
+      tooltip_titre: "Titre de psychologue social"
+      description: '
+      <i class="fa fa-user-secret fa-1x"></i>   Secret pro     
+      <br><i class="fa fa-user-md" aria-hidden="true"></i>  Déontologie'
+    - icon: graduation-cap
+      icon_pack: fa
+      name: Ph.D. en Ψ
+      tooltip_titre: "Thèse ：Bilans de l'influence sur Facebook et des rôles des communications et de Facebook pendant les crises <br> <a href='theses.hal.science/tel-03457426'> Voir cette thèse en ligne </a>"  
+      description: "Travaux de recherches sur :<br>- La communication préventive<br>- La communication de crise<br>-Les accidents de la route<br>- Les crises politiques, catastrophes naturelles, accidents majeurs et conflits"
+     
+
+- block: features_avec_tooltip_v_avancee
+  id: methodes
   design:
+    spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["5px", "0", "0px", "0"]
     background:
       gradient_end: '#000000'
       gradient_start: '#000000'
+      text_color_light: true 
+  content:
+    title:  <hr><hr> <h4> Méthodes </h4> 
+    items:
+    - icon: "book_stylised.svg"
+      icon_pack: custom
+      icon_class: "inverted-image"
+      name: <a href="/category/analyse-de-textes/" title="Vers des explications plus détaillées"> Analyses de textes </a>
+      description: |-
+            <i class="fa fa-code" ></i> Méthodes programmées, supervisées & non-supervisées
+             <br><i class="fa fa-file" ></i> <i class="fa fa-book" ></i>  ''Petits'' et gros ensembles de textes
+            <br><i class="fa fa-newspaper" ></i> <i class="fa-brands fa-facebook fa-1x"></i> Discours journalistique ou politique
+            <br> <img src="/svg/book-with-marker.svg" width="17px" height="28px"  class="inverted-image"> <img src="/svg/bookshelf.svg" width="22px" height="28px"  class="inverted-image">   Analyses de littérature              
+            <br><i class="fa fa-users fa-1x"></i><i class="fa fa-commenting fa-1x"></i><img src="/svg/survey_text_writed.svg" width="32px" height="55px" > Langage naturel                      
+            <br> (e.g., réponses à des questionnaires ou entretiens, commentaires d'usagers, posts Facebook et tweets)<br>...
+      tooltip_titre: "Cliquez pour voir des exemples"
+    - icon: globe-bw.svg
+      icon_pack: custom  
+      name:  <a href="/category/cartes-et-analyses-geospatiales/" title="Vers des explications plus détaillées"> Cartes et analyses géospatiales</a> 
+      tooltip_titre: "Cliquez pour voir des exemples"
+      description: '
+      <i class="fa fa-leaf" aria-hidden="true" fa-1x></i> Leaflet.js 
+      <br> <i class="fa fa-database" aria-hidden="true" fa-1x></i>  OpenStreetMap Data (API)
+      <br> <i class="fa fa-map" aria-hidden="true" fa-1x></i>     Cartes topographiques'
+    - name:   <a href="/category/reseaux-de-relations/" title="Vers des explications plus détaillées"> Réseaux de relations</a>
+      icon: "network.png"
+      icon_pack: custom
+      icon_class: "inverted-image" 
+      tooltip_titre: "Cliquez pour voir des exemples"  
+      description: |-
+            <i class="fa fa-database fa-1x"></i> Réseaux de citations, mentions, partages
+            <br><i class="fa-brands fa-facebook fa-1x"></i> <i class="fa-brands fa-twitter"></i> Réseaux sociaux numériques 
+            <br><i class="ai ai-pubpeer ai-2x"></i> Réseaux de concepts (p. ex. coexistences de concepts)
+            <br><i class="ai ai-dataverse ai-1x"></i> Réseaux de communications, d'agents, d'organisations, etc.  
+     
+
+ 
+- block: markdown
+  id: autres-methodes
+  design:
+    spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["20px", "0px", "5px", "0"]
+    background:
+      gradient_end: black
+      gradient_start: black
       text_color_light: true
   content:
-    title: Skills
-    items:      
-    - icon: pubpeer #description: 80%
-      icon_pack: ai
-      name: Relationships network
-    - icon: chart-line #description: 100%
-      icon_pack: fa
-      name: Statistics
-    - icon: file-text #description: 90%
-      icon_pack: fa
-      name: Text-analysis
-    - icon: scirate #description: 100%
-      icon_pack: ai
-      name: Psychosociology
-    - icon: th-list #description: 85%
-      icon_pack: fa
-      name: Survey design & analysis
-    - icon: open-data
-      icon_pack: ai
-      name: Présenter les résultats
-      
+    title: 
+    subtitle:
+    text:     <br> 
+        <div class="waviy">
+          <span style='--i:1'> <i class='fa fa-plus-square' ></i></span>
+          <span style="--i:2"><i class="fa fa-plus-circle"></i></span>
+          <span style="--i:3"><i class="fa fa-plus-square" ></i></i></span>
+          <span style="--i:4"><i class="fa fa-plus-circle" ></i></span>
+          <span style="--i:5"><i class="fa fa-plus-square" ></i></span></div>     {{< spoiler text="<strong>ET D'AUTRES MÉTHODES...</strong>" >}}
+          
+          <h3> <div id=flip> 
+          <div><div> <i class="fa fa-check-square"></i>     QUESTIONNAIRES</div></div>
+          <div><div> <i class="fa fa-comments"></i>     ENTRETIENS</div></div> 
+           
+           <div><div> <i class="fa fa-search"></i>     OBSERVATIONS</div></div>
+           
+           <div><div> <i class="fa fa-gears"></i>     DONNÉES DE CAPTEURS</div></div>
+           
+           <div><div> <i class="fa fa-users"></i>     EXPÉRIMENTATIONS</div></div>
+           
+           <div><div> <i class="fa fa-commenting"></i>     MESURES DE LA PERTINENCE DES COMMUNICATIONS</div></div>
+           
+            <div><div> <i class="fa fa-database"></i>     BASES DE DONNÉES</div></div></h3>
+          {{< /spoiler >}}   <hr>
+
+
 - block: features
   design:
+    spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["25px", "0px", "5px", "0"]
     background:
-      gradient_end: '#000000'
-      gradient_start: '#000000'
+      gradient_end: black
+      gradient_start: black
       text_color_light: true
   content: 
     items:
     - icon: grav
       icon_pack: fab
-      name: Automie & rigueur
+      name: Autonomie & rigueur
       
 - block: experience
   content:
     date_format: Jan 2006
     items:
-    - company: . **E-Mage**
+    - company:  **E-Mage**
         <!-- et le logo il faut aller le chercher dans "asset/media/icons/brands" (wtf)
         et il ne prends que du svg -->
       company_logo: wizard_hat
@@ -217,6 +282,11 @@ sections:
   design:
     columns: "2"
     view: compact
+    background:
+      gradient_end: lightgrey 
+      gradient_start: white
+      gradient_angle: -180
+      text_color_light: false
   id: posts
 # - block: markdown
 #   content:
@@ -260,31 +330,31 @@ sections:
 #     columns: "2"
 #     view: compact
 #   id: talks
-- block: contact
-  content:
-    address:
-      city: 
-      country: France
-      country_code: FR
-      postcode: ""
-      # region: Île-de-France
-      street: 
-    <!--appointment_url: https://calendly.com -->
-    autolink: true
-    contact_links:
-    - icon: researchgate
-      icon_pack: ai
-      link: https://www.researchgate.net/profile/Clement-Laverdet
-      name: Mon profil researchgate
-    - icon: linkedin
-      icon_pack: fab
-      name: Mon profil Linkedin
-      link: "https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"
-    directions: France et Île-de-France
-    email: clementlvd@gmail.com
-    phone: 
-    title: Contacts
-  design:
-    columns: "2"
-  id: contact
+# - block: contact
+#   content:
+#     address:
+#       city: 
+#       country: France
+#       country_code: FR
+#       postcode: ""
+#       # region: Île-de-France
+#       street: 
+#     <!--appointment_url: https://calendly.com -->
+#     autolink: true
+#     contact_links:
+#     - icon: researchgate
+#       icon_pack: ai
+#       link: https://www.researchgate.net/profile/Clement-Laverdet
+#       name: Mon profil researchgate
+#     - icon: linkedin
+#       icon_pack: fab
+#       name: Mon profil Linkedin
+#       link: "https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"
+#     directions: France et Île-de-France
+#     email: clementlvd@gmail.com
+#     phone: 
+#     title: Contacts
+#   design:
+#     columns: "2"
+#   id: contact
 ---

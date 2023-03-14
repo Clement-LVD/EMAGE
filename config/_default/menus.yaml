@@ -6,23 +6,30 @@
 #  To link to a section on your homepage, start your URL with a hastag #. 
 # To link to a new webpage on your website, start your URL with a backslash /.
 
+
 main:
-  - name: "| <i class='fa fa-home'></i> ACCUEIL"
+  - name: " ACCUEIL"
+    pre: "| <i class='fa fa-home'></i>"
     url: '#home'
     weight: 10
-  - name: "| <i class='fa fa-magic' aria-hidden='true'></i>🌟️ SERVICES"
-    url: '#services'
-    weight: 15
-  - name: "| <i class='fa fa-microscope'></i> CAS D'ÉTUDES"
+    identifier: "highlight-menu"
+  - name: " CAS D'ÉTUDES"
+    pre: "|  <i class='fa fa-microscope'></i>"
     url: '#projects'
     weight: 20
-  - name:  "| <i class='fa fa-paper-plane'></i>  CONTACT"
-    url: '#contact'
-    weight: 30
-    # identifier: Contacts
-  - name:  "| <span class='gray-emoji'>🧙</span> L'ÉQUIPE"
+  - name:  "L'ÉQUIPE"
+    pre: "| <span class='gray-emoji'>🧙</span> "
     url: '#about'
+    weight: 30
+  - name: "️ RAPPORTS-TYPES"
+    pre: "| 🧾"
+    url: '/project/page_presentation_rapports'
     weight: 40
+  - name:  " CONTACT"
+    pre: "|  <i class='fa fa-paper-plane'></i> "
+    url: '/page_contacts/page_contact'
+    weight: 50
+    # identifier: Contacts
   # - name: Contacter E-MAGE
   #   parent: Contacts
   #   url: '#contact'

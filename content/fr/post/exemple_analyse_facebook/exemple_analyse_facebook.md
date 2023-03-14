@@ -4,7 +4,7 @@ date: "2023-01-24T00:00:00Z"
 external_link: ""
 image:
   filename: vu_densemble_visibilite_et_nbre_fans_facebook.png
-  # caption: 'This image was created with the assistance of ["DALL·E 2"](https://openai.com/)'
+  # caption: 'Lien entre le nombre de fans d'une page journalistique sur Facebook et la visibilité de ses publications'
   focal_point: Smart
 # links:
 # - icon: linkedin

@@ -41,6 +41,4 @@ status:
 superuser: yes
 bio:  
 ---
-
-
-{style="text-align: justify;"}
+ 

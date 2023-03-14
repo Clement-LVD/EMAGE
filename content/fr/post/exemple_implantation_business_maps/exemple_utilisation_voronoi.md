@@ -28,9 +28,9 @@ gallery_item:
   caption: Carte des restaurants parisiens (Data ODbL - CC-BY-SA 2.0)
 ---
 
-> <strong> ✨Dans cet article, nous allons identifier des zones d'implantations potentielles pour un service, en fonction de la densité des autres services du même type (point de vente, service ou service public). </strong>
+> <strong> ✨Dans cet article, nous allons voir comment calculer une zone d'implantation pour un service, en fonction de la densité de  la conccurence. </strong>
 
-Dans un milieu saturé par la concurrence, la densité des commerces est une données intéressante pour déterminer une zone d'implantation 🎯. La densité des concurrents est complémentaire d'autres données (e.g., prix au m² et revenus moyens, densité de population ou flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>).
+La densité des concurrents aide à déterminer une zone d'implantation, avec la prise en compte des services du même type (point de vente, service ou service public) 🎯. La densité des concurrents est complémentaire d'autres données (e.g., prix des locaux, densité de population et revenus moyens, flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>).
 
 Les figures ci-dessous présentent la densité des cliniques et de plusieurs enseignes parisiennes (vente de matériaux; supérettes et restaurants).
 
@@ -41,6 +41,6 @@ Les figures ci-dessous présentent la densité des cliniques et de plusieurs ens
 
 De même pour planifier le démarrage de l'activité de certains vendeurs itinérants, comme un camion de restaurateurs ou de coiffeurs ambulants. 
 
-- 🔮 Identifier les commerces comparables
+- <i class="fa-solid fa-hat-wizard"></i> 🔮 Lister les commerces comparables et identifier les zones les moins denses
 
-- <i class="fa-solid fa-hat-wizard"></i> Identifier les zones les moins denses
+-  <i class='fa fa-magic' aria-hidden='true'></i>🌟 Produire une liste des meilleurs emplacements et d'autres rendus (e.g., une carte dynamique)
