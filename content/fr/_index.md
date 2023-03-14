@@ -163,12 +163,12 @@ sections:
            
            <div><div> <i class="fa fa-users"></i>     EXPÉRIMENTATIONS</div></div>
            
-           <div><div> <i class="fa fa-search"></i>     MESURES DE LA PERTINENCE DES COMMUNICATIONS</div></div>
+           <div><div> <i class="fa fa-commenting"></i>     MESURES DE LA PERTINENCE DES COMMUNICATIONS</div></div>
            
             <div><div> <i class="fa fa-database"></i>     BASES DE DONNÉES</div></div></h3>
            
             
-           <h3><br> ET D'AUTRES MÉTHODES...</h3></div></div>  </div>
+           <h3><br> ET D'AUTRES MÉTHODES...</h3></div></div>  </div><hr>
 
 
  # <hr>
@@ -201,7 +201,7 @@ sections:
   design: 
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["10px", "0", "10px", "0"] 
+      padding: ["30px", "0", "10px", "0"] 
     background:
       gradient_end: black
       gradient_start: black
@@ -223,7 +223,7 @@ sections:
       gradient_start: white
       text_color_light: false
   content:
-      title: Contactez E-MAGE consulting 
+      title: <hr> Contactez E-MAGE consulting 
       text:    '<h1>  <div> 📧 {{< global_param "email" >}}</div>
       
       <br><i class="fa fa-paper-plane" ></i>   Formulaire de contact </h1>
