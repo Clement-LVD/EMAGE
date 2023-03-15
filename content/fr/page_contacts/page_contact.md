@@ -45,7 +45,7 @@ sections:
   <p>
     <button type="submit">Envoi</button>
   </p>
-  <br> Merci beaucoup </h3-little>
+  <br> Merci </h3-little>
 </form>
                   '
  

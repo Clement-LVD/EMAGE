@@ -21,7 +21,7 @@ sections:
   id: about
   content:
     title: Profil universitaire
-    subtitle: 
+    subtitle:  (page inachevée ++ tout est à faire)
     text: <img src="/svg/clem_himself.jpg" alt="Clément" class="avatar-square" id = "myself_picture"> <h1>**Clément L.**<br>
           <div class="waviy"><span style="--i:1"> Ph.</span><span style="--i:2">D.</span></div>   
            <a href="{{< ref "/" >}}" class="btn btn-cligno"> <span class='gray-emoji'>🧙</span> Voir la page pro E-MAGE consulting</a></h1>
@@ -161,7 +161,7 @@ sections:
           <span style="--i:4"><i class="fa fa-plus-circle" ></i></span>
           <span style="--i:5"><i class="fa fa-plus-square" ></i></span></div>     {{< spoiler text="<strong>ET D'AUTRES MÉTHODES...</strong>" >}}
           
-          <h3> <div id=flip> 
+          <h3>  
           <div><div> <i class="fa fa-check-square"></i>     QUESTIONNAIRES</div></div>
           <div><div> <i class="fa fa-comments"></i>     ENTRETIENS</div></div> 
            
@@ -174,7 +174,7 @@ sections:
            <div><div> <i class="fa fa-commenting"></i>     MESURES DE LA PERTINENCE DES COMMUNICATIONS</div></div>
            
             <div><div> <i class="fa fa-database"></i>     BASES DE DONNÉES</div></div></h3>
-          {{< /spoiler >}}   <hr>
+          {{< /spoiler >}}   <hr> 
 
 
 - block: features

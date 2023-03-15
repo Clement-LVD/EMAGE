@@ -3,18 +3,18 @@ date: 2023-03-13
 title: ENQUÊTES & ANALYSES
 subtitle:  BIENVENUE SUR LE SITE D'EMAGE DIAG, consulting & analyses
 type: landing
-# va voir =>
-# https://connorrothschild.github.io/v2/post/animate-hugo-academic/
+# *Manque une banière d'accueil et des logos pour cette page*  =>
+# si tu te sens un peu perdu, va voir : https://connorrothschild.github.io/v2/post/animate-hugo-academic/
 sections:
 
 # Your landing page sections - add as many different content blocks as you like
 - block: markdown
   id: home
   content:
-    title: xxx👷 👷  Site en construction 👷 👷 xxx<h1> BIENVENUE SUR LE SITE D'<strong>E-MAGE</strong> </h1>
+    title:  👷 👷  Site en construction 👷 👷 <br> <h1> BIENVENUE SUR LE SITE D'<strong>E-MAGE</strong> </h1>
     subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
       
-        <br> <a href="{{< ref "/page_contacts/page_contact" >}}" class="btn btn-cligno"><h3-little><i class="fa fa-paper-plane"></i> Contact</h3-little> </a>  <br>
+        <br> <a href="{{< ref "/page_contacts/page_contact" >}}" class="btn btn-cligno"><h3-little><i class="fa fa-paper-plane"></i> Contactez moi !</h3-little> </a>  <br>
         <br><a href="#services">
         ╭─<i class="fa fa-circle-down"></i>─╮</a>
   # text: 
@@ -86,6 +86,195 @@ sections:
             - Conception et organisation d'enquêtes<br> 
              (p. ex. mesure de l'efficacité d'une campagne)"
 
+- block: features_avec_tooltip_v_avancee
+  id: methodes
+  design:
+    spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["5px", "0", "25px", "0"]
+    background:
+      gradient_end: '#000000'
+      gradient_start: '#000000'
+      text_color_light: true 
+  content:
+    title:  <hr><hr> <h4> Méthodes </h4>
+    items:
+    - icon: "book_stylised.svg"
+      icon_pack: custom
+      icon_class: "inverted-image"
+      name: <a href="/category/analyse-de-textes/" title="Vers des explications plus détaillées"> Analyses de textes </a>
+      description: |-
+            <i class="fa fa-code" ></i> Méthodes programmées, supervisées & non-supervisées
+             <br><i class="fa fa-file" ></i> <i class="fa fa-book" ></i>  ''Petits'' et gros ensembles de textes
+            <br><i class="fa fa-newspaper" ></i> <i class="fa-brands fa-facebook fa-1x"></i> Discours journalistique ou politique
+            <br> <img src="/svg/book-with-marker.svg" width="17px" height="28px"  class="inverted-image"> <img src="/svg/bookshelf.svg" width="22px" height="28px"  class="inverted-image">   Analyses de littérature              
+            <br><i class="fa fa-users fa-1x"></i><i class="fa fa-commenting fa-1x"></i><img src="/svg/survey_text_writed.svg" width="32px" height="55px" > Langage naturel                      
+            <br> (e.g., réponses à des questionnaires ou entretiens, commentaires d'usagers, posts Facebook et tweets)<br>...
+      tooltip_titre: "Cliquez pour voir des exemples"
+    - icon: globe-bw.svg
+      icon_pack: custom  
+      name:  <a href="/category/cartes-et-analyses-geospatiales/" title="Vers des explications plus détaillées"> Cartes et analyses géospatiales</a> 
+      tooltip_titre: "Cliquez pour voir des exemples"
+      description: '
+      <i class="fa fa-leaf" aria-hidden="true" fa-1x></i> Leaflet.js 
+      <br> <i class="fa fa-database" aria-hidden="true" fa-1x></i>  OpenStreetMap Data (API)
+      <br> <i class="fa fa-map" aria-hidden="true" fa-1x></i>     Cartes topographiques'
+    - name:   <a href="/category/reseaux-de-relations/" title="Vers des explications plus détaillées"> Réseaux de relations</a>
+      icon: "network.png"
+      icon_pack: custom
+      icon_class: "inverted-image" 
+      tooltip_titre: "Cliquez pour voir des exemples"  
+      description: |-
+            <i class="fa fa-database fa-1x"></i> Réseaux de citations, mentions, partages
+            <br><i class="fa-brands fa-facebook fa-1x"></i> <i class="fa-brands fa-twitter"></i> Réseaux sociaux numériques 
+            <br><i class="ai ai-pubpeer ai-2x"></i> Réseaux de concepts (p. ex. coexistences de concepts)
+            <br><i class="ai ai-dataverse ai-1x"></i> Réseaux de communications, d'agents, d'organisations, etc.  
+    - name:   <a href="/category/enquetes/" title="Vers des explications plus détaillées"> Questionnaires</a>
+      icon: list-alt
+      icon_pack: fa
+      icon_class: 
+      tooltip_titre: "Cliquez pour voir des exemples"  
+      description: |-
+            <i class="fa fa-check-square fa-1x"></i> Enquêtes et sondages (site statique)
+            <br> <i class="fa fa-desktop"></i> Expériences en ligne (site dynamique)
+            <br><i class="fa fa-pen"></i> Approche qualitative = analyse de textes !
+            <br><i class="fa fa-pie-chart"></i> Approche quantitative et expérimentale   
+    - name:   <a href="/category/strategies-analyses-de-communications/" title="Vers des explications plus détaillées"> Analyses de communications</a>
+      icon: commenting
+      icon_pack: fa
+      icon_class: 
+      tooltip_titre: "Cliquez pour voir des exemples"  
+      description: |-
+            <i class="fa fa-info-circle" ></i> Conseils (formulations de messages)
+            <br> <i class="fa fa-compass"></i> Confrontations (com' effectives vs. théories)
+            <br><i class="fa fa-comments"></i> Récupération et analyses des messages
+            <br><i class="fa fa-newspaper"></i> Revue de presse et de littérature
+            <br><i class="fa fa-line-chart"></i> Analyse de l'influence sur Facebook
+            <br> 📚 Maîtrise théorique des : ↓
+             <br>  ✅ - communications persuasives <i class="fa fa-compress"></i>  
+             <br>  ✅ - communications de crise  <i class="fa fa-ambulance" ></i>
+             <br>  ✅ - influences de l'enfant sur le parent <i class="fa fa-child fa-1x"></i>
+             
+
+    - name:   <a href="/category/strategies-analyses-de-communications/" title="Vers des explications plus détaillées"> Bases de données</a>
+      icon: database
+      icon_pack: fa
+      icon_class: 
+      tooltip_titre: "Cliquez pour voir des exemples"  
+      description: |-
+           -  Expérience avec plusieurs API (<i class="fa-brands fa-facebook"></i> / <i class="fa-brands fa-twitter" ></i> / <i class="fa-brands fa-google" ></i> )
+           <br><i class="ai ai-dataverse ai-1x"></i>  SQL, SQLite, etc.
+            <br> (.*) Bonne maîtrise des RegEx
+     
+
+ 
+- block: markdown
+  id: autres-methodes
+  design:
+    spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["50px", "0px", "35px", "0"]
+    background:
+      gradient_end: black
+      gradient_start: black
+      text_color_light: true
+  content:
+    title: 
+    subtitle:
+    text:     <br>   
+        <div class="waviy">
+          <span style='--i:1'> <i class='fa fa-plus-square' ></i></span>
+          <span style="--i:2"><i class="fa fa-plus-circle"></i></span>
+          <span style="--i:3"><i class="fa fa-plus-square" ></i></i></span>
+          <span style="--i:4"><i class="fa fa-plus-circle" ></i></span>
+          <span style="--i:5"><i class="fa fa-plus-square" ></i></span></div>    
+          <br>  
+              <div class='wrapper'>
+                <div class='carousel'>
+                  <div class='carousel__item'>
+                    <div class='carousel__item-head'>
+                      <i class='fa fa-search inverted-image'></i>
+                    </div>
+                    <div class='carousel__item-body'>
+                      <p class='title'> Observations </p>
+                      <p> + *reporting* spécialisée </p>
+                    </div>
+                  </div>
+                  <div class='carousel__item'>
+                    <div class='carousel__item-head'>
+                      <i class='fa fa-comments inverted-image'></i> 
+                    </div>
+                    <div class='carousel__item-body'>
+                      <p class='title'>ENTRETIENS</p>
+                      <p> + traitements supervisés par lexiques</p>
+                    </div>
+                  </div>
+                  <div class='carousel__item'>
+                    <div class='carousel__item-head'>
+                       <i class='fa fa-gears inverted-image'></i> 
+                    </div>
+                    <div class='carousel__item-body'>
+                      <p class='title'>DONNÉES DE CAPTEURS HUMAINS</p>
+                      <p> + Capteurs domotiques (& bonnes connaissance en plomberie, électricité & électronique) </p>
+                    </div>
+                  </div>
+                  <div class='carousel__item'>
+                    <div class='carousel__item-head'>
+                      <i class='fa fa-database inverted-image'></i> 
+                    </div>
+                    <div class='carousel__item-body'>
+                      <p class='title'>BASES DE DONNÉES</p>
+                      <p>SQL, data.table, Rdata, etc.</p>
+                    </div>
+                  </div>
+                  <div class='carousel__item'>
+                    <div class='carousel__item-head'>
+                      <i class='fa fa-commenting inverted-image'></i> 
+                    </div>
+                    <div class='carousel__item-body'>
+                      <p class='title'> ANALYSES DE COMMUNICATIONS</p>
+                      <p> P. ex. pertinence de préventions ou de communications de crise</p>
+                    </div>
+                  </div>
+                  <div class='carousel__item'>
+                    <div class='carousel__item-head'>
+                      🎥
+                    </div>
+                    <div class='carousel__item-body'>
+                      <p class='title'>Analyses de photos et vidéos</p>
+                      <p> P. ex. reconnaissance automatisée des visages</p>
+                    </div>
+                  </div>
+                  <div class='carousel__item'>
+                    <div class='carousel__item-head'>
+                      <i class='fa fa-brain inverted-image'></i>
+                    </div>
+                    <div class='carousel__item-body'>
+                      <p class='title'> Théories de la communication</p>
+                      <p>Com' persuasive, com' de crise, etc.</p>
+                    </div>
+                  </div>
+                  <div class='carousel__item'>
+                    <div class='carousel__item-head'>
+                      <i class='fa fa-diagram-project inverted-image'></i>
+                    </div>
+                    <div class='carousel__item-body'>
+                      <p class='title'>Mesure d'influences</p>
+                      <p>Sur Facebook, par questionnaires interposés, etc.</p>
+                    </div>
+                  </div>
+                  <div class='carousel__item'>
+                    <div class='carousel__item-head'>
+                      <i class='ai ai-scirate ai-1x inverted-image'></i>
+                    </div>
+                    <div class='carousel__item-body'>
+                      <p class='title'> Programmation et analyses de données</p>
+                      <p> Méthodes de psycho-sociologie</p>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+ 
         
 - block: portfolio
   id: projects
@@ -198,95 +387,6 @@ sections:
       description: "Travaux de recherches sur :<br>- La communication préventive<br>- La communication de crise<br>-Les accidents de la route<br>- Les crises politiques, catastrophes naturelles, accidents majeurs et conflits"
      
 
-- block: features_avec_tooltip_v_avancee
-  id: methodes
-  design:
-    spacing:
-    # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["5px", "0", "0px", "0"]
-    background:
-      gradient_end: '#000000'
-      gradient_start: '#000000'
-      text_color_light: true 
-  content:
-    title:  <hr><hr> <h4> Méthodes </h4>
-    items:
-    - icon: "book_stylised.svg"
-      icon_pack: custom
-      icon_class: "inverted-image"
-      name: <a href="/category/analyse-de-textes/" title="Vers des explications plus détaillées"> Analyses de textes </a>
-      description: |-
-            <i class="fa fa-code" ></i> Méthodes programmées, supervisées & non-supervisées
-             <br><i class="fa fa-file" ></i> <i class="fa fa-book" ></i>  ''Petits'' et gros ensembles de textes
-            <br><i class="fa fa-newspaper" ></i> <i class="fa-brands fa-facebook fa-1x"></i> Discours journalistique ou politique
-            <br> <img src="/svg/book-with-marker.svg" width="17px" height="28px"  class="inverted-image"> <img src="/svg/bookshelf.svg" width="22px" height="28px"  class="inverted-image">   Analyses de littérature              
-            <br><i class="fa fa-users fa-1x"></i><i class="fa fa-commenting fa-1x"></i><img src="/svg/survey_text_writed.svg" width="32px" height="55px" > Langage naturel                      
-            <br> (e.g., réponses à des questionnaires ou entretiens, commentaires d'usagers, posts Facebook et tweets)<br>...
-      tooltip_titre: "Cliquez pour voir des exemples"
-    - icon: globe-bw.svg
-      icon_pack: custom  
-      name:  <a href="/category/cartes-et-analyses-geospatiales/" title="Vers des explications plus détaillées"> Cartes et analyses géospatiales</a> 
-      tooltip_titre: "Cliquez pour voir des exemples"
-      description: '
-      <i class="fa fa-leaf" aria-hidden="true" fa-1x></i> Leaflet.js 
-      <br> <i class="fa fa-database" aria-hidden="true" fa-1x></i>  OpenStreetMap Data (API)
-      <br> <i class="fa fa-map" aria-hidden="true" fa-1x></i>     Cartes topographiques'
-    - name:   <a href="/category/reseaux-de-relations/" title="Vers des explications plus détaillées"> Réseaux de relations</a>
-      icon: "network.png"
-      icon_pack: custom
-      icon_class: "inverted-image" 
-      tooltip_titre: "Cliquez pour voir des exemples"  
-      description: |-
-            <i class="fa fa-database fa-1x"></i> Réseaux de citations, mentions, partages
-            <br><i class="fa-brands fa-facebook fa-1x"></i> <i class="fa-brands fa-twitter"></i> Réseaux sociaux numériques 
-            <br><i class="ai ai-pubpeer ai-2x"></i> Réseaux de concepts (p. ex. coexistences de concepts)
-            <br><i class="ai ai-dataverse ai-1x"></i> Réseaux de communications, d'agents, d'organisations, etc.  
-     
-
- 
-- block: markdown
-  id: autres-methodes
-  design:
-    spacing:
-    # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["20px", "0px", "5px", "0"]
-    background:
-      gradient_end: black
-      gradient_start: black
-      text_color_light: true
-  content:
-    title: 
-    subtitle:
-    text:     <br> 
-        <div class="waviy">
-          <span style='--i:1'> <i class='fa fa-plus-square' ></i></span>
-          <span style="--i:2"><i class="fa fa-plus-circle"></i></span>
-          <span style="--i:3"><i class="fa fa-plus-square" ></i></i></span>
-          <span style="--i:4"><i class="fa fa-plus-circle" ></i></span>
-          <span style="--i:5"><i class="fa fa-plus-square" ></i></span></div>     {{< spoiler text="<strong>ET D'AUTRES MÉTHODES...</strong>" >}}
-          
-          <h3> <div id=flip> 
-          <div><div> <i class="fa fa-check-square"></i>     QUESTIONNAIRES</div></div>
-          <div><div> <i class="fa fa-comments"></i>     ENTRETIENS</div></div> 
-           
-           <div><div> <i class="fa fa-search"></i>     OBSERVATIONS</div></div>
-           
-           <div><div> <i class="fa fa-gears"></i>     DONNÉES DE CAPTEURS</div></div>
-           
-           <div><div> <i class="fa fa-users"></i>     EXPÉRIMENTATIONS</div></div>
-           
-           <div><div> <i class="fa fa-commenting"></i>     MESURES DE LA PERTINENCE DES COMMUNICATIONS</div></div>
-           
-            <div><div> <i class="fa fa-database"></i>     BASES DE DONNÉES</div></div></h3>
-          {{< /spoiler >}}   <hr> <center><h1> <i class="fa fa-arrow-down" ></i>  Thèmes du site <i class="fa fa-arrow-down" ></i>  </h1> </center>
-
-
- # 
-    # - name: Analyses supervisées (textes & meta-analysis)
-    #   tag: Analyse thématique supervisée
-    # - name: Analyses non-supervisées (textes & meta-analysis) 
-    #   tag: Analyse thématique non-supervisée
-
 
 - block: category_cloud
   content:
@@ -296,7 +396,7 @@ sections:
     columns: "1" 
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["1px", "0", "30px", "0"]
+      padding: ["15px", "0", "40px", "0"]
     background:
       gradient_end: "#202020"
       gradient_start: '#000000'
@@ -315,7 +415,7 @@ sections:
       gradient_angle: -180
       text_color_light: false     
   content:
-    title: <hr> Sous-thématiques ("tags") du site
+    title: <hr> <br> Sous-thématiques ("tags") du site <hr>
     subtitle: 
                 
           
