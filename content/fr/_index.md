@@ -11,7 +11,7 @@ sections:
 - block: markdown
   id: home
   content:
-    title:  👷 👷  Site en construction 👷 👷 <br> <h1> BIENVENUE SUR LE SITE D'<strong>E-MAGE</strong> </h1>
+    title:  👷 👷  Site en construction 👷 👷 <br> <h1> BIENVENUE SUR LE SITE D'<strong>*E*-MAGE</strong> </h1>
     subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
       
         <br> <a href="{{< ref "/page_contacts/page_contact" >}}" class="btn btn-cligno"><h3-little><i class="fa fa-paper-plane"></i> Contactez moi !</h3-little> </a>  <br>
@@ -156,7 +156,7 @@ sections:
              <br>  ✅ - influences de l'enfant sur le parent <i class="fa fa-child fa-1x"></i>
              
 
-    - name:   <a href="/category/strategies-analyses-de-communications/" title="Vers des explications plus détaillées"> Bases de données</a>
+    - name:   <a href="/home/" title="Vers des explications plus détaillées"> Bases de données</a>
       icon: database
       icon_pack: fa
       icon_class: 

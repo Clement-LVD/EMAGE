@@ -7,7 +7,7 @@ theme: "github.com/wowchemy/wowchemy-hugo-themes"
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: E-MAGE # Website name
+title: EMAGE.diag # Website name
 baseURL: 'https://emage.netlify.app/' # Website URL
 params:
   AuthorName: Clément LVD

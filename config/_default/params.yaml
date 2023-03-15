@@ -24,7 +24,7 @@ marketing:
   seo:
     site_type: "LocalBusiness"
     local_business_type: "ProfessionalService"
-    org_name: 'E-MAGE Diag'
+    org_name: 'EMAGE.Diag'
     description: 'Analyses de vos données, enquêtes et conseils en communication. Another French data-scientist website.'
   analytics:
     google_analytics: 'G-BE4TGDH8NC'
@@ -54,7 +54,7 @@ footer:
   block: minimal
   show_translations: true
   copyright:
-    notice: '© {year} Clément L. {license}'
+    notice: '© {year} Clément L.' # '{license}' tu à ce genre de shortcode si tu veux
     license:
       enable: true
       allow_derivatives: false

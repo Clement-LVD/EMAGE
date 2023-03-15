@@ -97,7 +97,7 @@ Il y a des shortcodes qui créent plein d'éléments que tu appelle en yaml => i
 le fichier custom.css est très important pour définir plein de styles
 tu a aussi des dossiers d'images trop chaotique ++ (3 au total + la possibilité d'avoir une image dans un sous-dossier)
 un shortcode tag_clouds
-tu essaye de modifier le shortcode features.html en créant un features_avec_tooltip
+tu essaye de modifier le shortcode features.html en créant un features_avec_tooltip et une version avancée (pour injecter autre chose que du svg)
 
 1) LE CONTENU SE TROUVE DANS LE DOSSIER "content" => c'est là qu'il y a tout ce qui deviendra des pages 
 (même s'il n'y a pas de lien pointant vers ces pages). Ce  contenu va littéralement devenir le site !

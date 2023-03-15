@@ -15,7 +15,7 @@
 fr:
  languageCode: fr
  contentDir: content/fr
- title: E-MAGE Diag 
+ title: EMAGE.Diag' 
  params:
    description: 'Another data-scientist website.'
    author: "Clément L."
