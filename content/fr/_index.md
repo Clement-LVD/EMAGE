@@ -7,7 +7,13 @@ type: landing
 # si tu te sens un peu perdu, va voir : https://connorrothschild.github.io/v2/post/animate-hugo-academic/
 sections:
 
-# Your landing page sections - add as many different content blocks as you like
+
+# <div><a href="/category/analyse-de-textes/" title="Vers des exemples"> Textes <i class="fa fa-file-text" fa-1x></i></a></div>
+#                       <div><a href="/category/enquetes/" title="Vers des exemples"> Enquêtes & questionnaires <i class="fa fa-check" fa-1x></i></a></div>
+#                       <div><a href="/category/cartes-et-analyses-geospatiales/" title="Vers des exemples"> Cartes <i class="fa fa-map" fa-1x></i></a></div>
+#                       <div><a href="/category/reseaux-de-relations/" title="Vers des exemples"> Réseaux <img src="/media/icons/network.png" width="15px" height="15" class="inverted-image"> </a></div>
+#                       <div><a href="/category/strategies-analyses-de-communications/" title="Vers des exemples"> Analyse des communications <i class="fa fa-commenting" fa-1x></i></a></div> 
+
 - block: markdown
   id: home
   content:
@@ -22,7 +28,7 @@ sections:
   design:
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["95px", "0", "0px", "0"]
+      padding: ["50px", "0", "0px", "0"]
     background:
       text_color_light: true 
     #   gradient_end: '#000000'
@@ -197,7 +203,7 @@ sections:
                     </div>
                     <div class='carousel__item-body'>
                       <p class='title'> Observations </p>
-                      <p> + *reporting* spécialisée </p>
+                      <p> + *reporting* spécialisé </p>
                     </div>
                   </div>
                   <div class='carousel__item'>
@@ -215,7 +221,7 @@ sections:
                     </div>
                     <div class='carousel__item-body'>
                       <p class='title'>DONNÉES DE CAPTEURS HUMAINS</p>
-                      <p> + Capteurs domotiques (& bonnes connaissance en plomberie, électricité & électronique) </p>
+                      <p> + Capteurs domotiques / électroniques </p>
                     </div>
                   </div>
                   <div class='carousel__item'>
@@ -317,7 +323,7 @@ sections:
   content:
     title: <hr> <strong> L'ÉQUIPE E-MAGE </strong>
     subtitle: 
-    text: <img src="svg/clem_himself.jpg" alt="Clément" class="avatar-square" id = "myself_picture"> <h1>**Clément L.**<br>
+    text: <img src="svg/clem_himself.jpg" alt="Clément" class="avatar-custom-crop" id = "myself_picture"> <h1>**Clément L.**<br>
           <div class="waviy"><span style="--i:1"> Ph.</span><span style="--i:2">D.</span></div>   
            <a href="{{< ref "/academic_resume/description_clement" >}}" class="btn btn-cligno"><i class="fa fa-graduation-cap"></i> Voir le profil universitaire</a></h1>
         <span> <a href="https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"><i class="fab fa-linkedin fa-2x"></i></a> </span>

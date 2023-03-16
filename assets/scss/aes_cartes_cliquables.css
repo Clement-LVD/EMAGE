@@ -1,0 +1,57 @@
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ SYSTEME DE CARTES qui servent de menus en pur css
+ RELATIVEMENT REACTIF ET MOBILE FRIENDLY 
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.container-cards {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  /*display: flex;*/
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 20px;
+}
+
+.card-classe {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 98%;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: -0.2rem -0.2rem 0.3rem white;
+  transition: 0.3s ease-out;
+  position: relative;
+  font-size: 0.9em;
+  color: white;
+  opacity: 0.7;
+  border-width: 2px 1.5px 0px 0px;
+  border-style: solid solid none none;
+  border-color: #080808;
+}
+
+.card-classe:not(:first-child) {
+  margin-right: -7px;
+  box-shadow: -0.3rem 0 0.5rem 0.1rem ivory;
+}
+
+.container-cards:hover .card-classe:not(:hover) {
+  transform: scale(0.9);
+  opacity: 0.4;
+  transition: 0.4s ease-out;
+}
+
+.card-classe:hover {
+  background-color: black;
+  z-index: 1;
+  font-size: 1.05em;
+  transition: 0.4s ease-out;
+  opacity: 1;
+  border-width: 5px 4px 0px 0.05px;
+  border-style: solid solid none solid;
+  border-radius: 15px;
+  transform: translateY(-15px) scale(1.2) rotate(-0.5deg); 
+  box-shadow: -0.25rem -0.3rem 0.3rem white;
+}

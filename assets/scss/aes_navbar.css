@@ -1,0 +1,114 @@
+
+/*xxxxxxxxxxxxxxxxxxxxxx
+CONFIGURER LA navbar 
+xxxxxxxxxxxxxxxxxxxxxx*/
+/* on peut ajouter ce genre de fioritures dans le code de .navbar */
+
+/* takes out the shadow */
+/*
+  card-simple {
+  background: #fff;
+
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,0);
+  border-radius: 3px;
+  margin-top: 20px;
+  padding: 15px 20px 25px 20px;
+}
+
+et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
+
+
+.card {
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #fff;
+
+  box-shadow: none;
+  transition: all 0.2s ease-out;
+}
+*//* ↑ this is the part that takes out the shadow */
+
+.navbar {
+  height: 2rem;
+  background: $sta-menu-primary;
+/* this is the part that takes out the shadow & the only edit */
+  box-shadow: none;  
+  font-size: 0.78em;
+     letter-spacing: 0.3px;
+  font-family: serif;
+  font-weight: 500 !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; /* on peut jouer avec cette valeur pour prioriser ce qui s'affiche dans le site  */
+  padding: 0 1rem;
+  
+
+/* ici on pourrait ajouter une image dans la zone du logo (va voir le brouillons.rmd) ! 
+(on surexpose donc : parce qu'on demande aussi a wowcherry d'afficher le nmoo du site dans cette zone ! */
+
+.navbar-brand {
+    text-align: left;
+    font-size: 2.3em;
+     letter-spacing: -2.5px;
+     word-spacing: -2px;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    -webkit-text-stroke: 0.6px white; /* ici on va appliquer un effet stroke au texte ! */
+    text-stroke: 2px black;
+    font-family: "Arial black", sans-serif;
+    position: relative; /* permet d'utiliser z-index */
+    z-index: 3; /* le texte est au premier plan */
+}
+
+  
+  /* icones font awesome black dans ce contexte */
+  
+.fa {
+    color: black;
+  }
+  
+  /* on écrase le bleu du thème de base !*/
+  
+.nav-link span {
+    color: black;
+  }
+  
+  /* ici tu ajoute "span" si tu veux toucher que le texte */
+.nav-link.active {
+     color: black;
+  animation: glowing-blue 2s ease-in-out infinite alternate;
+  border-radius: 0.5rem;
+border-style: groove;
+border-color: grey;
+  }  
+  
+  span { 
+    
+font-weight: bold;
+  }
+}
+
+.nav-link.active span {
+  
+  font-size: 1.1em;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+LES CLASSES CUSTOMS DU MENU - déclarées dans le menu.yaml 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* ici en faisant cela on définie une autre largeur du menu !
+
+.nav-item { 
+        color: white;
+  font-weight: bold;
+	 text-shadow: 0px 0.5px 0px black; 
+			
+  background: white;
+}  */
+ 
+ /* on peut aussi gérer une image dans la zone "brand" créé par wowchemy (va voir dans ton brouillon) */

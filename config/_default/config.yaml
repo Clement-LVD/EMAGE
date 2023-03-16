@@ -19,6 +19,8 @@ params:
   SidebarRecentLimit: 5
   Subtitle: Ph.D 
  
+ 
+ 
 # en gros à partir de la tu peux accéder aux paramètres d'une page avec le shortcode param et le short_code global_param (que tu a crée) accède aux paramètres globaux du site
 # {{< global_param "email" >}} ou bien {{< param "email" >}} pour les valeurs de la page
 
@@ -140,7 +142,17 @@ module:
     - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
     # - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-seo
     
-# tu a juste ajouté le seo 
+# tu a juste ajouté le seo à la mano dans un custom_code pour le page head ;)
+# mais il faudrait migrer : ce thème déclenche trop de saletés au chargement du site, c'est n'importe quoi..;
+# on peut aussi monter des modules
+# module:
+#   mounts:
+#     - source: blocks
+#       target: layouts/partials/blocks/
+#       includeFiles: '**.html'
+#     - source: blocks
+#       target: assets/scss/blocks/
+#       includeFiles: '**.scss'
 
 ############################
 ## ADVANCED

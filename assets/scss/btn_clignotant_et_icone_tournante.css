@@ -1,0 +1,79 @@
+
+/* XXXXXXXXXXxxxxxxxxxxxxxxxx
+ 1 / 2] LE BOUTON CLIGNOTANT 
+XXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxx*/
+
+
+/* ON crée un bouton clignotant */
+.btn-cligno {
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-text-stroke: 0.85px white; /* ici on va appliquer un effet stroke au texte ! */
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 25px;
+ animation: color-change 5s infinite;
+  user-select: none;
+ /* pour le passer en bouton shine il suffit de retirer l'antimation et d'ajouter =>
+ background: linear-gradient(to right, #202020 0, #F0F0F0 10%, #080808 20%);
+  animation: shine 5s infinite linear; */
+  
+  &:hover {
+			color: ivory;
+    font-weight: bold; 
+    -webkit-text-stroke: 1.4px black; /* ici on va appliquer un effet stroke au texte ! */
+  
+			/* font-size: 26px; text-stroke: 2px black;
+			*/
+			/*text-shadow: 0px 1px 0px white;*/ 
+			
+  transform: scale(1.2) rotate(-0.2deg);
+  
+  /* la on ajoute une autre animation pour la barrette qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
+  -webkit-animation: glowing-blue 1s ease-in-out infinite alternate;
+  -moz-animation:  glowing-blue 1s ease-in-out infinite alternate;
+  animation:  glowing-blue 1s ease-in-out infinite alternate; 
+		}
+  
+}
+
+/* LA fonction du changement de couleur (pour les bouton clignotants) ! */
+
+@keyframes color-change {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx 
+2 /2 ] une petite animation de texte toute mignone 
+pour faire tourner les lettres et les icônes
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.waviy {
+  
+}
+
+.waviy span {
+  float: left;
+  display: inline-block;
+  font-size: 40px;
+  /*color: #fff;
+  text-transform: uppercase;*/
+  animation: flippy 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flippy {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}

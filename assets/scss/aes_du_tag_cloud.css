@@ -1,0 +1,43 @@
+
+/* XXXXXXXXXX
+ LE TAG_CLOUD  
+XXXXXXXXXXXXX*/
+
+/* la suite est un featuring de chat-gpt en roue libre*/
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag-cloud a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.25rem 0.25rem;
+  border-radius: 0.5rem;
+  background-color: #eee;
+  color: #444;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.tag-cloud a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.tag-cloud a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}

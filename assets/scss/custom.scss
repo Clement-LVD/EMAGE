@@ -4,7 +4,47 @@ ALLER VOIR LE SUPER TUTO SUR : https://www.freecodecamp.org/news/your-first-hugo
 et la docu hugo : https://gohugo.io/templates/introduction/
 */
 
-
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ ON IMPORTE PLUSIEURS STYLES POUR aLLEGER Le custom
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+ 
+ @import "styles_featurettes_et_tooltips_box";
+ 
+ @import 'aes_du_portoflio';
+ 
+ @import "btn_clignotant_et_icone_tournante";
+ 
+ @import  "aes_du_tag_cloud";
+ 
+ @import  "aes_cartes_cliquables";
+ 
+ @import  "carousel_rotatif_texte_et_logo";
+ 
+ @import  "aes_navbar";
+ 
+ @import  "defilement_de_logos";
+ 
+ /* et une tentative de gallerie en plein écran sur la landing page 
+ 
+  @import "old_version_landing_page_gallery"; */
+ 
+ 
+ /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    LANDING IMAGE !!! 
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+ 
+ /* background-image: url("/banieres/chapeau_texte_baniere.png"); */
+ /*
+.bg-landing-image {
+  
+ background: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp'); 
+ background-size: 20vh;
+ height: 25vh;  
+}
+ */
+ 
+ 
+ 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 on justifie le texte des articles
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -20,10 +60,16 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 code {color: black}
 
 blockquote {color: black}
+ 
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+fonctions  customs utilitaires 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/  
 
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-des fonctions customs pour modifier l'affichage 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* on fait une classe disabled à ajouter en plus pour changer le curseur :() */
+.disabled { 
+  cursor: not-allowed;
+}
+
 
 
 .alignleft {
@@ -31,69 +77,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 }
 
 
-/* pour des marges...
-#bottom {
-  border: 1px solid blue;
-  margin-top: auto;
-} */
+/* XXXXXXXXXXXXXxxxxxxxxxxxxxxx
+Code pour afficher des FIGURES 
+XXXXXXXXXXXXXxxxxxxxxxxxxxxxxxx*/
 
-/* XXXXXXXXXX
-LES TOOLTIPS 
-XXXXXXXXXXXXX*/
-/*on va utiliser bootstrap pour les tooltips en javascript, mais on colle parfois des classe css pour faire des maxi tooltip  */
-.maxilarge-tooltip {
-  max-width: 200%;
-  font-size: 35px;
-  border: none;
-}
-
-
-
-.tooltip {
-  z-index: 99999;
-  color: white;
-  border: none;
-  /* background-color: black; */
-  background-color: rgba(0, 0, 0, 1); /* Noir avec une opacité de 1 parce qu'on va définir l'opacité juste après : */
-}
-
-
-.tooltip.show {
-  opacity: 0.97; /* Opacité à 1 pour le contenu du tooltip */
-}
-
-.tooltip .tooltip-inner { /* ça c'est la couleur de fon et l'opacité ! */
-  max-width: 400px;
-  z-index: 99999;
-  
-  /* la on ajoute une autre animation pour la barrette qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
-  
-  animation: glowing-blue 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glowing-blue {
-  from {
-    box-shadow: 0 0 2px grey, 0 0 4px #3f0000, 0 0 6px darkred, 0 0 8px #400c4b, 0 0 10px #340b40,  
-  }
-  to {
-    box-shadow: 0 0 3px  #400c4b,  0 0 6px #6c006c, 0 0 9px transparent, 0 0 12px  lightgrey,  0 0 15px cornsilk , 0 0 18px white;
-  }
-}
-
-.tooltip .arrow:before {
-  border-width: 10px; /*en mettant 0px ici ou none tu désactive la fleche  */
-  z-index: 99999;
-  /*border-bottom-color: rgba(0, 0, 0, 0.4); un miroir de la micro fleche */
-  border-top-color:  rgba(256, 256, 256, 0.1); 
-}
-
-  
-/*fin du code relatif au réglage des tooltips ! */
-
-
-/* XXXXXXXXXX
-LES FIGURES 
-XXXXXXXXXXXXX*/
 /* on crée une classe pour présenter les figures avec des legendes dans des box */
 figure {
   border-left: 1px solid #ccc;
@@ -117,7 +104,10 @@ img, svg {
   vertical-align: middle;
 }
 
-/* FONCTIONS DE MODIFICATIONS D'IMAGES */
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+FONCTIONS DE MODIFICATIONS D'IMAGES
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 /* on veut pouvoir inverser les images */
 .inverted-image {  
@@ -131,8 +121,18 @@ img, svg {
   filter: grayscale(100%);
 }
 
+/* pour meettre les images dans des cercles */
+
+.image-circled {
+  border-radius: 50%;
+  /*filter: grayscale(100%);*/
+  float: left;
+  margin-right: 20px;
+  width: 200px;
+}
+
 /* ici on paramètre une classe pour les photos d'avatar dans des fleches */
-.avatar-square { 
+.avatar-custom-crop { 
   margin-right: 0px;
   padding-right: 0px;
   float: left;
@@ -143,12 +143,21 @@ img, svg {
 /* XXXXXXXXXXXXXXXXXXXXX
  FEUILLES DE STYLES 
  XXXXXXXXXXXXXXXXXXXX*/
+ 
+/* je sais même plus où il est celui-là... */
+.portrait-title {font-size: 30px;
+  text-align: left;
+}
 
-/* Des icônes qui vont s'afficher en blanc !*/
+/* le block "markdown" produit la classe "col-12 col-lg-8" si on est en une seule colomne
+et la classe "col-12" si deux colonnes
+
+/* Des icônes font awesome qui vont s'afficher en blanc !*/
 .fas {color: white}
 .ai {color: white;
   background: black;
 }
+
 .fas {color: grey}
 
 /* Des styles de parties particulières, par exemple le about en fond blanc */
@@ -214,119 +223,8 @@ h3-little {
   text-align: left; font-size: 1em;
 }
 
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-PORTFOLIO ET CARTES CLIQUABLES
-(classe spécifique au custom code de portfolio)
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
- 
- /*card c'est une classe assez utilisée par Hugo Wowchemy, dans la mosaique de projects par exemple ! */
-
-/* mais on l'a transformé en card-clickable avec un custom shortcode ! */
-/* on veut ajouter un effet de la mort pour qu'une barre verticale descende et nuance l'image ! ! */
-
-.card-clickable {
-
-  text-align: justify; 
-  padding: 2%;
-  
-  --b: 0.6em;   /* the thickness of the line */
-  --c: white; /* the color */
-  
-  color: black; 
-  background: 
-    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
-  transition: .3s var(--_s,.1s) linear ; /* le temps que la barre met à descendre et remonter quand la souris est dessus et s'en va! */
-} 
-  
-   
-.card-clickable:hover {
-  background-color: #164382;
-  
-  /* effet quand la souris over ! */
-  --_p: 100%; /* jusqu'ou va la barre */
-  --_s: .2s;
-  
-  .card-clickable-text a {  
-  color: white;}
-  
-  /* ↑ ça c'est le petit résumé en dessous du titre, il devient blanc avec le hover ;) ! */
-  
-  /* ci-dessous le texte et notamment l'animation et le changement de couleur (de noir à blanc => il devient visible) */
- .card-clickable-text p {  
-  color: white;
-   left: 10px;
-  transition: .1s var(--_s,.75s) linear ; /* le temps que met le texte à devenir blanc wazzza */
-    transition-duration: .05s;
-    transition-delay: .4s;
- }
-}
- 
-/* sii besoin de modifier le texte de la carte (quand il est pas hover) mais qu'importe il est noir par défaut :) ! 
-.card-clickable-text a {  color: black;}*/
-
-
-/* les boutons du menu du portfolio */
-.btn.btn-primary.btn-lg {
-  
-  color: white;
-  font-weight: bold;
-  background-color: #100c08;
-  border-width: 6px; 
-  border: solid;
-  border-color: #232b2b; 
-  
-  
-  
-}
-
-/* xxxxxxxxxxxxxxxx
-autres style du portfolio 
- xxxxxxxxxxxxxxxxx*/
-/* le menu: 
-
-↓  la police du bouton pour le bouton sélectionné */ 
-
-.btn.btn-primary.btn-lg.active { color: white}
-
-
-
-/* XXXXXXXXXXxxxxxxxxxxxxxxxx
-LES BOUTONS CLIGNOTANTS
-XXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxx*/
-
-
-/* ON crée un bouton clignotant */
-.btn-cligno {
-  background-color: #000000;
-  color: #ffffff;
-  -webkit-text-stroke: 0.85px white; /* ici on va appliquer un effet stroke au texte ! */
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-size: 25px;
- animation: color-change 5s infinite;
-  user-select: none;
- /* pour le passer en bouton shine il suffit de retirer l'antimation et d'ajouter =>
- background: linear-gradient(to right, #202020 0, #F0F0F0 10%, #080808 20%);
-  animation: shine 5s infinite linear; */
-  
-  &:hover {
-			color: ivory;
-    font-weight: bold; 
-    -webkit-text-stroke: 1.4px black; /* ici on va appliquer un effet stroke au texte ! */
-   font-size: 26px;
-			/* text-stroke: 2px black;
-			*/
-			/*text-shadow: 0px 1px 0px white;*/ 
-			
-		}
-  
-}
-
+/* les boutons d'origine mais passons ne servent à rien du tout */
 
 /* le bouton alternatif est comme le bouton de base ! */
 .hero-cta-alt {
@@ -346,817 +244,13 @@ XXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxx*/
   background-color: #000000;
   border: none;
 }
-
-/*
-body {
-  animation: color-change 5s infinite;
- /* animation: animate-bg 1s infinite linear; 
-}
-*/
-
-/* LA fonction du changement de couleur (pour les bouton clignotants) ! */
-
-@keyframes color-change {
-  0% {
-    background-color: white;
-  }
-  50% {
-    background-color: black;
-  }
-  100% {
-    background-color: white;
-  }
-}
-
-
-/* ON VA FAIRE UN AUTRE BOUTON CLIGNO, le btn-shine :) */
-/* pour intégrer un bouton shine il faut ajouter par exemple
-<a href="https://usecheck.com/" class="btn-shine" >Get early access</a> */
-
-
-/* ON crée un bouton clignotant */
-.btn-shine2 {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-size: 26px;
- /*animation: color-change 5s infinite;*/
-  user-select: none;
-   /* pour le passer en bouton shine c'est simple, il suffit d'ajouter =>*/
- background: linear-gradient(to right, #202020 0, #F0F0F0 10%, #080808 20%);
-  animation: shine 5s infinite linear;
-  
-  &:hover {
-			color: ivory;
-    font-weight: bold;
-    display: inline-block;
-    -webkit-text-stroke: 1px black; /* ici on va appliquer un effet stroke au texte ! */
-    text-stroke: 2px black; 
-	/*	 font-size: 26px; 
-			text-shadow: 0px 1px 0px white;*/
-			
-				height: 130%;
-				width: 100%;
-			
-		}
-  
-  
-}
  
- /* seuls deux parametres sont utiles en gros >
- background: linear-gradient(to right, #202020 0, #F0F0F0 10%, #080808 20%);
-  animation: shine 5s infinite linear;  
-  et c'est tout */
-    
-@keyframes shine {
-  0% {
-    background-position: 0
-  }
-  60% {
-    background-position: 200px
-  }
-  100% {
-    background-position: 460px
-  }
 
-}
-
-
-/* c'est terminé pour le bouton shine */
-
+ 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-des animations encore
+des animations non-utilisées
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-
-
-.portrait-title {font-size: 30px;
-  text-align: left;
-}
-
-/* la classe col-12 col-sm-4 est utilisée par des bouts de shortcode qui crée des choses sur 3 colonnes, typiquement une liste de featurette (icones) et leurs titres ou leurs descriptions... */
-.col-12.col-sm-4 {
-  
-  
-  border-right: 0.5px solid #808080;
-  
-}
-
-.col-12.col-sm-4:hover,
-.col-12.col-sm-4:active {
-  letter-spacing: 1px;
-}
-
-.col-12.col-sm-4:after,
-.col-12.col-sm-4:before {
-  backface-visibility: hidden;
-  border: 1px solid rgba(#fff, 0);
-  bottom: 0px;
-  content: "";
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  transition: all 280ms ease-in-out;
-  width: 0;
-}
-
-.col-12.col-sm-4:hover:after,
-.col-12.col-sm-4:hover:before {
-  backface-visibility: hidden;
-  border-color: #fff;
-  transition: width 350ms ease-in-out;
-  width: 70%;
-  
-  /* la on ajoute une autre animation pour la barrette qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
-  -webkit-animation: glowing 1s ease-in-out infinite alternate;
-  -moz-animation: glowing 1s ease-in-out infinite alternate;
-  animation: glowing 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glowing {
-  from {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f0f, 0 0 30px purple, 0 0 40px #e60073, 0 0 50px #B22222, 0 0 60px darkred;
-  }
-  to {
-    box-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px darkred, 0 0 70px white;
-  }
-}
-
-.col-12.col-sm-4:hover:before {
-  bottom: auto;
-  top: 0;
-  width: 70%;
-}
-
-/* les featurette sont les logos accompagnés de textes (titre et description)*/
-
-.featurette-icon {
-  color: white;
-  fill: #000000;
-  font-size: 50px; /* taille en pixels */
-  /*border-right: 0.1px solid #808080;*/
-  /*border-left: 0.1px solid #808080;*/
-  padding-right: 10px;
-  margin-right: 6px;
-  margin-bottom: -10px;
-  
-  /*ci-dessous un code pour le faire bouger quand la souris passe dessus ! 
-  transform: perspective(1500px) rotateY(15deg);
-  border-style: outset;
-  border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  transition: transform 1s ease 0s;
-
-  &:hover {
-    transform: perspective(3000px) rotateY(5deg);
-  }*/
-}
-
-
-/* pour meettre les images dans des cercles */
-
-.image-circled {
-  border-radius: 50%;
-  /*filter: grayscale(100%);*/
-  float: left;
-  margin-right: 20px;
-  width: 200px;
-}
-
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx 
-une petite animation de texte toute mignone 
-pour faire tourner les lettres et les icônes
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
-
-.waviy {
-  
-}
-
-.waviy span {
-  float: left;
-  display: inline-block;
-  font-size: 40px;
-  /*color: #fff;
-  text-transform: uppercase;*/
-  animation: flippy 2s infinite;
-  animation-delay: calc(.2s * var(--i))
-}
-
-@keyframes flippy {
-  0%,80% {
-    transform: rotateY(360deg) 
-  }
-}
-/* ON PEUT FAIRE DU CODE CSS POUR ANIMER DES IMAGES SUR L'ACCEUIL */
-
-/*Ci ensuite une fonction key frames pour faire apparaître successivement des textes les uns-après-les-autres 
-(l'idée est de caler ce texte dynamique dans le champ "description" de widgets hugo pour voir) !! */
-/* Style pour animer des termes en les affichant un par un */
-
- 
-
-.animation-texte {
-  font-size: 26px;
-  font-weight: bold;
-  text-align: center;
-  -webkit-text-stroke: 0.07px black; /* ici on va appliquer un effet stroke au texte ! */
-  margin: 0;
-  white-space: nowrap;
-  word-wrap: break-word; 
-}
-
-.animation-texte span {
-  float: left;
-  display: inline-block;
-  opacity: 0;
-  animation: animTexte 8s infinite;
-}
-
-.animation-texte span:nth-child(1) {
-  animation-delay: 0s;
-  left: 0;
-}
-
-.animation-texte span:nth-child(2) {
-  animation-delay: 2s;
-  left: 5%;
-}
-
-.animation-texte span:nth-child(3) {
-  animation-delay: 4s;
-  left: 10%;
-}
-
-.animation-texte span:nth-child(4) {
-  animation-delay: 6s;
-  left: 15%;
-}
-
-.animation-texte span:nth-child(5) {
-  animation-delay: 7s;
-  left: 20%;
-}
-
-/*
-.animation-texte span:nth-child(6) {
-  animation-delay: 10s;
-  left: 25%;
-}
-
-.animation-texte span:nth-child(7) {
-  animation-delay: 12s;
-  left: 30%;
-}*/
- 
-
-@keyframes animTexte {
-  0% {
-    opacity: 0.001;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 1);
-  }
-  3% {
-    opacity: 1;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
-  }
-  5% {
-    opacity: 1;
-    text-shadow: none;
-  }
-  25% {
-    opacity: 1;
-    text-shadow: none;
-  }
-  30% {
-    opacity: 0;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-  }
-  100% {
-    opacity: 0;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 1);
-  }
-}
- 
- /* --------------------
- UNE AUTRE ANIMATION DE TEXTES 
- QUI CHANGENT L'UN APRES L'AUTRE 
- -----------------------*/
- 
-h-changetext {
-  color:transparent; // text shadow does all the work
-  position:absolute;
-  opacity:0;
-  margin-top: 0.05em;
-  margin-left:-.1em;
-  animation: cinematicInOut 15s infinite;
-}
-
-h-changetext:nth-child(2) {
-  animation-delay:3s;
-}
-h-changetext:nth-child(3) {
-  animation-delay:6s;
-}
-
-h-changetext:nth-child(4) {
-  animation-delay:9s;
-}
--changetext:nth-child(5) {
-  animation-delay:12s;
-}
-
-@keyframes cinematicInOut {
-  0% {
-    text-shadow:none;
-    opacity:0;
-    margin-left:0em;
-  }
-  25% {
-    text-shadow:0 0 0 white;
-    opacity:1;
-    margin-left:0;
-  }
-  50% {
-    text-shadow:none;
-    opacity:0;
-    margin-left:0;
-  }
-  74% {
-    text-shadow: 0 0 1em white;
-    opacity:1;
-    margin-left:0;
-  }
-  99% {
-    text-shadow: none;
-    opacity:0;
-    margin-left:0;
-  }
-  100% {
-    text-shadow: none;
-    opacity:0;
-    margin-left:0;
-  }
-}
-
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
- SYSTEME DE CARTES qui servent de menus en pur css
- RELATIVEMENT REACTIF ET MOBILE FRIENDLY 
- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-.container-cards {
-  position: relative;
-  width: 95%;
-  margin: 0 auto;
-  /*display: flex;*/
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-gap: 20px;
-}
-
-.card-classe {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 98%;
-  background-color: black;
-  border-radius: 10px;
-  box-shadow: -0.2rem 0 0.3rem white;
-  transition: 0.3s ease-out;
-  position: relative;
-  font-size: 0.9em;
-  color: white;
-  opacity: 0.7;
-  border-width: 2px 1.5px 0px 0px;
-  border-style: solid solid none none;
-  border-color: #080808;
-}
-
-.card-classe:not(:first-child) {
-  margin-right: -7px;
-  box-shadow: -0.3rem 0 0.5rem 0.1rem ivory;
-}
-
-.container-cards:hover .card-classe:not(:hover) {
-  transform: scale(0.9);
-  opacity: 0.4;
-  transition: 0.4s ease-out;
-}
-
-.card-classe:hover {
-  background-color: black;
-  z-index: 1;
-  font-size: 1.05em;
-  transition: 0.4s ease-out;
-  opacity: 1;
-  border-width: 5px 2.5px 0px 0.05px;
-  border-style: solid solid none solid;
-  border-radius: 15px;
-  transform: rotate3d(0, 1, 0, -18deg) translateY(-15px) scale(1.2);
-}
-
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-fonction utilitaire xxxxxxxxxxxxxxxxx*/  
-
-/* on fait une classe disabled à ajouter en plus */
-.disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
- animation de défilement de logos  (non utilisée actuellement)
- a transformer pour qu'elle prenne aussi du texte 
- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
- 
- /* Exemple de code fonctionnel pour faire défiler deux logos: 
- 
- <div class="slider">
-	<div class="slide-track">
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-		</div>
-	</div>
-</div> 
-*/
- /* en gros on crée trois classes et on va ensuite déclencher le défilement avec un code html du type : 
- 
- une classe globale ( une classe useless de slide-track avec le déclenchement de l'animation)
- des minis-classes pour intégrer une icône
- il faut jouer avec le temps de défilement en fonction du nombre de trucs que tu met dedans malheureusement */
- 
-@mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-}
-
-$animationSpeed: 40s;
-
-// Animation
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
-}
-
-
-// Styling
-.slider {
-	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: 960px;
-	
-	/* ci-dessous c'est un effet pour rendre le logo très blanc avant qu'il ne sorte */
-	&::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 100px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
-
-	&::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(250px * 14);
-	}
-	
-	.slide {
-		height: 100px;
-		width: 250px;
-	}
-}
- 
-/*xxxxxxxxxxxxxxxxxxxxxx
-CONFIGURER LA navbar 
-xxxxxxxxxxxxxxxxxxxxxx*/
-/* on peut ajouter ce genre de fioritures dans le code de .navbar */
-
-/* takes out the shadow */
-/*
-  card-simple {
-  background: #fff;
-
-  box-shadow: none;
-  border: 1px solid rgba(0,0,0,0);
-  border-radius: 3px;
-  margin-top: 20px;
-  padding: 15px 20px 25px 20px;
-}
-
-et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
-
-
-.card {
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  background: #fff;
-
-  box-shadow: none;
-  transition: all 0.2s ease-out;
-}
-*//* ↑ this is the part that takes out the shadow */
-
-.navbar {
-  height: 2rem;
-  background: $sta-menu-primary;
-/* this is the part that takes out the shadow & the only edit */
-  box-shadow: none;  
-  font-size: 0.78em;
-     letter-spacing: 0.3px;
-  font-family: serif;
-  font-weight: 500 !important;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030; /* on peut jouer avec cette valeur pour prioriser ce qui s'affiche dans le site  */
-  padding: 0 1rem;
-  
-
-/* ici on pourrait ajouter une image dans la zone du logo (va voir le brouillons.rmd) ! 
-(on surexpose donc : parce qu'on demande aussi a wowcherry d'afficher le nmoo du site dans cette zone ! */
-
-.navbar-brand {
-    text-align: left;
-    font-size: 2.3em;
-     letter-spacing: -2.5px;
-     word-spacing: -2px;
-    color: black;
-    font-weight: bold;
-    display: inline-block;
-    -webkit-text-stroke: 0.6px white; /* ici on va appliquer un effet stroke au texte ! */
-    text-stroke: 2px black;
-    font-family: "Arial black", sans-serif;
-    position: relative; /* permet d'utiliser z-index */
-    z-index: 3; /* le texte est au premier plan */
-}
-
-  
-  /* icones font awesome black dans ce contexte */
-  
-.fa {
-    color: black;
-  }
-  
-  /* on écrase le bleu du thème de base !*/
-  
-.nav-link span {
-    color: black;
-  }
-  
-  /* ici tu ajoute "span" si tu veux toucher que le texte */
-.nav-link.active {
-     color: black;
-  animation: glowing-blue 2s ease-in-out infinite alternate;
-  border-radius: 0.5rem;
-border-style: groove;
-border-color: grey;
-  }  
-  
-  span { 
-    
-font-weight: bold;
-  }
-}
-
-.nav-link.active span {
-  
-  font-size: 1.1em;
-}
-
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-LES CLASSES CUSTOMS DU MENU - déclarées dans le menu.yaml 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-/* ici en faisant cela on définie une autre largeur du menu !
-
-.nav-item { 
-        color: white;
-  font-weight: bold;
-	 text-shadow: 0px 0.5px 0px black; 
-			
-  background: white;
-}  */
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
- UN CAROUSEL rotatif (pour les compétences par exemple)
- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-
-$animation-timing: 27s;
-$carousel-items: 9;
-$animation-delay-fraction: $animation-timing / $carousel-items;
-$animation-steps-fraction: 100 / $carousel-items;
-$slide-change-timing: 3; // percentage of total animation cycle
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-/*
-body {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  height: 100vh;
-}
-*/
-.wrapper { 
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.carousel {
-  margin-left: 15%;
-  position: relative;
-  width: 70%;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.carousel__item {
-  display: flex;
-    align-items: center; /* flex-end; quand l'affichage est un petit écran on peut aussi mettre "center" */ 
-  position: absolute;
-  width: 100%;
-  padding: 0 12px;
-  opacity: 0;
-  filter: drop-shadow(0 2px 2px #555);
-  will-change: transform, opacity;
-  animation: carousel-animate-vertical $animation-timing linear infinite;
-  
-  @media only screen and (max-width: 991px) and (min-width: 769px){
- /* CSS that should be displayed if width is equal to or less than 991px and larger 
-  than 768px goes here */
-}
-
-@media only screen and (max-width: 991px){
- /* CSS that should be displayed if width is equal to or less than 991px goes here */
-  align-items: flex-end;
-}
-
-}
-
-@for $i from 1 through ($carousel-items - 1) { 
-  .carousel__item:nth-child(#{$i}) {
-    animation-delay: calc(#{$animation-delay-fraction} * #{$i - 2});
-  }
-}
-
-.carousel__item:last-child {
-  animation-delay: calc(-#{$animation-delay-fraction} * 2);
-}
-
-// example without negative delays
-// @for $i from 1 through ($carousel-items) { 
-//   .carousel__item:nth-child(#{$i}) {
-//     animation-delay: calc(#{$animation-delay-fraction} * #{$i});
-//   }
-// }
-
-/* ci-dessous c'est l'icône qui s'affiche dans le cercle */
-
-.carousel__item-head {
-  border-radius: 50%;
-  background-color: ivory;
-  width: 70px;
-  height: 70px;
-  padding: 14px;
-  position: relative;
-  margin-right: -35px; /* il faut mettre la moitiée de la width */
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  animation: glowing 2s ease-in-out infinite alternate; 
-}
-
-.carousel__item-body {
-  width: 100%;
-  text-align: justify;
-  background-color: black;
-  border-radius: 8px;
-  padding: 10px 26px 10px 60px; 
-  animation: glowing-blue 2s ease-in-out infinite alternate;
-}
-
-.title {
-  text-transform: uppercase;
-  text-align: center;
-  
-  /*font-size: 20px;*/
-  margin-top: 10px;
-}
-
-@keyframes carousel-animate-vertical {
-  0% {
-    transform: translateY(100%) scale(0.4);
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  #{$slide-change-timing}%,
-  #{$animation-steps-fraction}% {
-    transform: translateY(50%) scale(0.2);
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  #{$animation-steps-fraction + $slide-change-timing}%,
-  #{$animation-steps-fraction * 2}% {
-    transform: translateY(80%) scale(0.6);
-    opacity: 0.2;
-    visibility: visible;
-  }
-  
-  #{($animation-steps-fraction * 2) + $slide-change-timing}%,
-  #{$animation-steps-fraction * 3}% {
-    transform: translateY(-75%) scale(1);
-    opacity: 1;
-    visibility: visible;
-  }
-  #{($animation-steps-fraction * 3) + $slide-change-timing}% {
-    transform: translateY(-100%) translateX(-100%) scale(0.3);
-    opacity: 0.005;
-    visibility: visible;
-  }
-  100% {
-    transform: translateY(-100%) translateX(-100%) scale(0.1);
-    opacity: 0.005;
-    visibility: visible;
-  }
-}
-
-
-/* XXXXXXXXXX
- LE TAG_CLOUD  
-XXXXXXXXXXXXX*/
-
-/* la suite est un featuring de chat-gpt en roue libre*/
-.tag-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.tag-cloud a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.25rem 0.25rem;
-  border-radius: 0.5rem;
-  background-color: #eee;
-  color: #444;
-  transition: all 0.2s ease-in-out;
-  white-space: nowrap;
-}
-
-.tag-cloud a:hover {
-  background-color: #444;
-  color: #fff;
-}
-
-.tag-cloud a:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.2s ease-in-out;
-}
-/* fin de la modif du nuage de termes */
- 
- 
- /*des animations de la mort */  
+ /*des animations multiples à la manière d'un manga de pro */  
  
 /* y'a plus qu'à faire 
 <div class="clouds"></div>*/ 

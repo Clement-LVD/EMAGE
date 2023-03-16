@@ -1,0 +1,81 @@
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+PORTFOLIO ET CARTES CLIQUABLES
+(classe spécifique au custom code de portfolio)
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+ 
+ /*card c'est une classe assez utilisée par Hugo Wowchemy, dans la mosaique de projects par exemple ! */
+
+/* mais on l'a transformé en card-clickable avec un custom shortcode ! */
+/* on veut ajouter un effet de la mort pour qu'une barre verticale descende et nuance l'image ! ! */
+
+.card-clickable {
+
+  text-align: justify; 
+  padding: 2%;
+  
+  --b: 0.6em;   /* the thickness of the line */
+  --c: white; /* the color */
+  
+  color: black; 
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,.1s) linear ; /* le temps que la barre met à descendre et remonter quand la souris est dessus et s'en va! */
+} 
+  
+   
+.card-clickable:hover {
+  background-color: #164382;
+  
+  /* effet quand la souris over ! */
+  --_p: 100%; /* jusqu'ou va la barre */
+  --_s: .2s;
+  
+  .card-clickable-text a {  
+  color: white;}
+  
+  /* ↑ ça c'est le petit résumé en dessous du titre, il devient blanc avec le hover ;) ! */
+  
+  /* ci-dessous le texte et notamment l'animation et le changement de couleur (de noir à blanc => il devient visible) */
+ .card-clickable-text p {  
+  color: white;
+   left: 10px;
+  transition: .1s var(--_s,.75s) linear ; /* le temps que met le texte à devenir blanc wazzza */
+    transition-duration: .05s;
+    transition-delay: .4s;
+ }
+}
+ 
+/* sii besoin de modifier le texte de la carte (quand il est pas hover) mais qu'importe il est noir par défaut :) ! 
+.card-clickable-text a {  color: black;}*/
+
+
+/* les boutons du menu du portfolio */
+.btn.btn-primary.btn-lg {
+  
+  color: white;
+  font-weight: bold;
+  background-color: #100c08;
+  border-width: 6px; 
+  border: solid;
+  border-color: #232b2b; 
+  
+  
+  
+}
+
+/* xxxxxxxxxxxxxxxx
+autres style du portfolio 
+ xxxxxxxxxxxxxxxxx*/
+/* le menu: 
+
+↓  la police du bouton pour le bouton sélectionné */ 
+
+.btn.btn-primary.btn-lg.active { color: white}
+
+
+  

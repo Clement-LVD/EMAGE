@@ -1,0 +1,140 @@
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+LES FEATURETTES !important 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+/* la classe col-12 col-sm-4 est utilisée par des bouts de shortcode qui crée des choses sur 3 colonnes, typiquement une liste de featurette (icones) et leurs titres ou leurs descriptions... */
+.col-12.col-sm-4 {
+  
+  
+  border-right: 0.5px solid #808080;
+  
+}
+
+.col-12.col-sm-4:hover,
+.col-12.col-sm-4:active {
+  letter-spacing: 1px;
+}
+
+.col-12.col-sm-4:after,
+.col-12.col-sm-4:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.col-12.col-sm-4:hover:after,
+.col-12.col-sm-4:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+  
+  /* la on ajoute une autre animation pour la barrette qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
+  -webkit-animation: glowing 1s ease-in-out infinite alternate;
+  -moz-animation: glowing 1s ease-in-out infinite alternate;
+  animation: glowing 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowing {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #f0f, 0 0 30px purple, 0 0 40px #e60073, 0 0 50px #B22222, 0 0 60px darkred;
+  }
+  to {
+    box-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px darkred, 0 0 70px white;
+  }
+}
+
+.col-12.col-sm-4:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+/* les featurette sont les logos accompagnés de textes (titre et description)*/
+
+.featurette-icon {
+  color: white;
+  fill: #000000;
+  font-size: 50px; /* taille en pixels */
+  /*border-right: 0.1px solid #808080;*/
+  /*border-left: 0.1px solid #808080;*/
+  padding-right: 10px;
+  margin-right: 6px;
+  margin-bottom: -10px;
+  
+  /*ci-dessous un code pour le faire bouger quand la souris passe dessus ! 
+  transform: perspective(1500px) rotateY(15deg);
+  border-style: outset;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+
+  &:hover {
+    transform: perspective(3000px) rotateY(5deg);
+  }*/
+}
+
+
+
+/* XXXXXXXXXX
+LES TOOLTIPS 
+XXXXXXXXXXXXX*/
+/*on va utiliser bootstrap pour les tooltips en javascript, mais on colle parfois des classe css pour faire des maxi tooltip  */
+.maxilarge-tooltip {
+  max-width: 200%;
+  font-size: 35px;
+  border: none;
+}
+
+
+
+.tooltip {
+  z-index: 99999;
+  color: white;
+  border: none;
+  /* background-color: black; */
+  background-color: rgba(0, 0, 0, 1); /* Noir avec une opacité de 1 parce qu'on va définir l'opacité juste après : */
+}
+
+
+.tooltip.show {
+  opacity: 0.97; /* Opacité à 1 pour le contenu du tooltip */
+}
+
+.tooltip .tooltip-inner { /* ça c'est la couleur de fon et l'opacité ! */
+  max-width: 400px;
+  z-index: 99999;
+  
+  /* la on ajoute une autre animation pour la barrette qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
+  
+  animation: glowing-blue 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowing-blue {
+  from {
+    box-shadow: 0 0 2px grey, 0 0 4px #3f0000, 0 0 6px darkred, 0 0 8px #400c4b, 0 0 10px #340b40,  
+  }
+  to {
+    box-shadow: 0 0 3px  #400c4b,  0 0 6px #6c006c, 0 0 9px transparent, 0 0 12px  lightgrey,  0 0 15px cornsilk , 0 0 18px white;
+  }
+}
+
+.tooltip .arrow:before {
+  border-width: 10px; /*en mettant 0px ici ou none tu désactive la fleche  */
+  z-index: 99999;
+  /*border-bottom-color: rgba(0, 0, 0, 0.4); un miroir de la micro fleche */
+  border-top-color:  rgba(256, 256, 256, 0.1); 
+}
+
+  
+/*fin du code relatif au réglage des tooltips ! */
+
