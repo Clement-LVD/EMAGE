@@ -11,17 +11,16 @@ sections:
   design:
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["350px", "0", "10px", "0"]
+      padding: ["370px", "0", "10px", "0"]
   slider_id: "my-slider"
   slides:
-  - text:   <strong> <hh style="color:white"> Bienvenue sur le site EMAGE DIAG'  </hh> </strong>
+  - text:   <strong> <hh style="color:white"> CONSULTING, ENQUÊTES & ANALYSES </hh> </strong>
     # style_image: 'background-color: black; background-size: cover; width: 10px; height: 10px;'
-    # url_image: "/media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg"
     url_image: "logos/icon_bis.png"
     button_text:
-      - "Voir les rapports-types"
-      - "Voir les cas d'études"
-      - "CONTACTEZ-MOI"
+      - "  📃 Voir un rapport-type"
+      - "  🔬 Voir les cas d'études"
+      - '☎️ CONTACTEZ-MOI'
     button_link:
       - '/project/page_presentation_rapports' 
       - '#projects'
@@ -29,14 +28,14 @@ sections:
   - text:  <strong>  <hh style="color:white"> ANALYSES DE TEXTES</strong>  </hh> 
     url_image:  "/banieres/chapeau_texte_baniere.png"
     button_text:
-      - "Voir les cas d'études"
+      - "  🔬 Voir les cas d'études"
     button_link:
       - '/category/analyse-de-textes'
   - text: "<strong>CALCULS D'IMPLANTATION </strong>"
     url_image: "/media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg"
     button_text:
-      - "Voir le rapport-type"
-      - "Voir les cas d'études"
+      - "  📃 Voir un rapport-type"
+      - "  🔬 Voir les cas d'études"
     button_link:
       - '/project/page_presentation_rapports'
       - '/category/cartes-et-analyses-geospatiales/'
@@ -44,33 +43,30 @@ sections:
   - text: "<strong> ÉVOLUTION DE LA CONCURRENCE</strong>"
     url_image: "/media/albums/voroinoi_business_paris/B_enseignes_bricolage_et_materiaux.jpg"
     button_text:
-      - "Voir le rapport-type"
-      - "Voir les cas d'études"
+      - "  📃 Voir un rapport-type"
+      - "  🔬 Voir les cas d'études"
     button_link:
       - '/project/page_presentation_rapports'
       - '/category/cartes-et-analyses-geospatiales/'
     style_image: "width: 300px; height: 200px;" 
-  - text: "<strong> INFLUENCES DES COMMUNICATIONS ET VISIBILITÉ EN LIGNE</strong>"
+  - text: <hh style="color:white"><strong> INFLUENCES DES COMMUNICATIONS ET VISIBILITÉ EN LIGNE </strong> </hh>
     url_image: "/graphiques/vue_ensemble_visibilite_journalistes_facebook.png"
     button_text:
-      - "Voir le rapport-type"
-      - "Voir les cas d'études"
+      - "  📃 Voir un rapport-type"
+      - "  🔬 Voir les cas d'études"
     button_link:
       - '/project/page_presentation_rapports'
       - '/category/cartes-et-analyses-geospatiales/'
     style_image: "width: 300px; height: 200px;"   
-    
-# tu peux mettre une background-color: 'white'; ou que sais-je si le fond de l'image est transparent ! 
+     
+    # subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
 
 - block: markdown
   id: home
   content:
-    title:  👷 👷  Site en construction 👷 👷 <br> BIENVENUE SUR LE SITE D'<strong>*E*-MAGE</strong> 
-    subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
-      
-        <br> <a href="{{< ref "/page_contacts/page_contact" >}}" class="btn btn-cligno"><h3-little><i class="fa fa-paper-plane"></i> Contactez moi !</h3-little> </a>  <br>
-        <br><a href="#services">
-        ╭─<i class="fa fa-circle-down"></i>─╮</a>
+    title:   Bienvenue sur le site d'EMage.Diag <br> Consulting
+            <br> Enquêtes et analyses de données 
+        
     # text: |- 
     columns: '1'     
   design:

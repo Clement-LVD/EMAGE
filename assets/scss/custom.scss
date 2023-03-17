@@ -120,8 +120,8 @@ on va juste ajouter un effet de transition beaucoup plus simple */
 /* ci-dessous les boutons cliquables que tu peux ajouter (reprend en partie le css d'origine) */
 .slider .button { 
   color: black; /* couleur du texte */
-  padding: 5px 10px;
-  background: rgba(255,255,255,0.7);  
+  padding: 5.5px 20px;
+  background: #f8f8f8;  
   opacity: 1;
   font-size: 0.9rem;
   font-weight: bold;
@@ -129,10 +129,9 @@ on va juste ajouter un effet de transition beaucoup plus simple */
   margin: 10px;*/
  
   -webkit-transform: translateX(-500px);
-  transform: translateX(-500px); 
-  
-  box-shadow: 2.5px 1.5px 0.05px 1.9px white;
-  border-radius: 17%; 
+  transform: translateX(-500px);  
+  border-radius: 50%; 
+  box-shadow: 3.5px -1.5px 1.25px 1.9px rgba(255,255,255,0.5), -1.5em 0 1.5em rgba(255,255,255,0.8);  
   
   /* ET ICI LA PoSITION DES BOUTONS 
   qui sera définie pour chaque 'id' un peu plus bas dans ce custom.css !!*/ 
@@ -148,7 +147,7 @@ on va juste ajouter un effet de transition beaucoup plus simple */
 			*/
 			/*text-shadow: 0px 1px 0px white;*/ 
 			
-  transform: scale(1.2) rotate(-0.2deg);
+  transform: scale(0.9) rotate(-0.2deg);
   
   /* la on ajoute une autre animation pour la barrette qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
   -webkit-animation: glowing-blue 1s ease-in-out infinite alternate;
@@ -174,12 +173,11 @@ on va juste ajouter un effet de transition beaucoup plus simple */
   position: absolute; 
   font-weight: bold;
   font-size: 1.1rem;
+  padding: 10px 25px;
   bottom: 40%;
   right: 10%; 
-  /* bouton 3 = effet de glowing !*/
-  -webkit-animation: glowing-blue 1s ease-in-out infinite alternate;
-  -moz-animation:  glowing-blue 1s ease-in-out infinite alternate;
-  animation:  glowing-blue 1s ease-in-out infinite alternate; 
+  border-radius: 50%; 
+   
 }
 
 /*tu peux aussi effacer toutes les animations des boutons (déclenchées au changement de slides) et rajouter les tiennes, par exemple avec => */
