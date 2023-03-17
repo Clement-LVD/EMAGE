@@ -100,7 +100,7 @@ sections:
       gradient_angle: -180
       text_color_light: false     
   content:
-    title: <hr> Articles du site
+    title: <hr> Thèmes des articles du site
     subtitle:         
         
 

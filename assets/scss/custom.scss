@@ -24,26 +24,258 @@ et la docu hugo : https://gohugo.io/templates/introduction/
  
  @import  "defilement_de_logos";
  
- /* et une tentative de gallerie en plein écran sur la landing page 
- 
-  @import "old_version_landing_page_gallery"; */
- 
  
  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    LANDING IMAGE !!! 
+    LANDING SLidESHOW ! IMAGE / TEXTES ET BOUTONS / !!! 
  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+   @import "slideshow_texte_et_image";
+   
+ /* Ce code css slideshow_texte_et_image.css est associé à un shortcode qui te produit un slideshow banière - en pur css <3
+ ce shortcode est "diaporama-pleine-largeur.html"  (les formes des flèches sont hardcodées dans le shortcode
+: prévoir de remplacer cette zone par une variable indiquée en yaml pour indiquer l'icône)
  
- /* background-image: url("/banieres/chapeau_texte_baniere.png"); */
- /*
-.bg-landing-image {
-  
- background: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp'); 
- background-size: 20vh;
- height: 25vh;  
+! il reste quelques derniers réglages importants à caler sous forme de variables (donc modifier le shortcode et le yaml), 
+comme les couleurs de chaque diapositivees par exemple (hardcodées et définies dans le css) ! */
+
+
+/* MAIN Slider wrapper : ceci est l'objet principal, rattaché au corps de la page */
+.css-slider-wrapper {
+  display: block;
+  background: black;
+  overflow: hidden;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  /*top: 50;*/
+   bottom: 0;  
+     
+    /*height: 100%;*/
 }
- */
+
+/* 
+display: block;" : l'élément est affiché comme un bloc, avec un saut de ligne avant et après.
+"background: black;" : le fond de l'élément est en noir.
+"overflow: hidden;" : le contenu dépassant de l'élément est masqué.
+"position: absolute;" : l'élément est positionné de façon absolue par rapport à son premier parent positionné.
+"left: 0; right: 0; top: 0; bottom: 0;" : l'élément est étiré pour remplir tout l'espace disponible de son parent positionné (probablement le corps de la page).
+*/
+
+/* dans le méga objet "css-slider-wraper" l'objet global est "slider" et il y a des sous objets slide1, slide2, etc. */
+/* il y a déjà plein de réglages css définis dans le css dédié slideshow_texte_et_image.css, 
+on va juste ajouter un effet de transition beaucoup plus simple */
+
+.slider { 
+  max-width: 100%; 
+  
+  /*transform: scale(0.2);  si tu veux scaler les images ! */
+            transition: all 0.75s;
+     
+     /* le code cubic-bezier attend x1, y1, x2, y2 */            
+  transition-timing-function: cubic-bezier(0.01, 0.7, 1, 0.99);
+  
+  
+    -webkit-animation-name: slideOut;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 1s;   
+    animation-name: slideOut;
+    animation-iteration-count: once;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  
+  
+  
+        }
+
+/* animation pour la premiere slide au chargement de la page :  */
+
+@keyframes slideOut {
+    0% {   
+      opacity: 0.01;
+        margin-left: 100%;
+    }
+    100% { opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes slideOut {
+    0% {
+      opacity: 0.01;
+        left: 430px;
+    }
+    100% {
+       opacity: 1;
+        left: 0;
+    }
+}
+        
+        
+/* LES BOUTONS CLIQUABLES QUI S'AJOUTENT DANS CET OBJET "slider" !" */
+/* Styles globaux pour tous les boutons */
  
+
+/* ci-dessous les boutons cliquables que tu peux ajouter (reprend en partie le css d'origine) */
+.slider .button { 
+  color: black; /* couleur du texte */
+  padding: 5px 10px;
+  background: rgba(255,255,255,0.7);  
+  opacity: 1;
+  font-size: 0.9rem;
+  font-weight: bold;
+  /*line-height: 30px;
+  margin: 10px;*/
  
+  -webkit-transform: translateX(-500px);
+  transform: translateX(-500px); 
+  
+  box-shadow: 2.5px 1.5px 0.05px 1.9px white;
+  border-radius: 17%; 
+  
+  /* ET ICI LA PoSITION DES BOUTONS 
+  qui sera définie pour chaque 'id' un peu plus bas dans ce custom.css !!*/ 
+   position: absolute;
+  display: inline-block;
+     
+  &:hover {
+			background-color: black;
+			color: white;
+    font-weight: bold;  
+  
+			/* font-size: 26px; text-stroke: 2px black;
+			*/
+			/*text-shadow: 0px 1px 0px white;*/ 
+			
+  transform: scale(1.2) rotate(-0.2deg);
+  
+  /* la on ajoute une autre animation pour la barrette qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
+  -webkit-animation: glowing-blue 1s ease-in-out infinite alternate;
+  -moz-animation:  glowing-blue 1s ease-in-out infinite alternate;
+  animation:  glowing-blue 1s ease-in-out infinite alternate; 
+		}
+}
+
+/* ensuite on a crée des id "button1", "button2", etc; */
+
+#button1 {
+  
+   bottom: 10%;
+   left: 16%;  
+}
+
+#button2 { 
+  bottom: 25%;
+   left: 16%;  
+}
+
+#button3 {
+  position: absolute; 
+  font-weight: bold;
+  font-size: 1.1rem;
+  bottom: 40%;
+  right: 10%; 
+  /* bouton 3 = effet de glowing !*/
+  -webkit-animation: glowing-blue 1s ease-in-out infinite alternate;
+  -moz-animation:  glowing-blue 1s ease-in-out infinite alternate;
+  animation:  glowing-blue 1s ease-in-out infinite alternate; 
+}
+
+/*tu peux aussi effacer toutes les animations des boutons (déclenchées au changement de slides) et rajouter les tiennes, par exemple avec => */
+/*
+
+.slider a.button {   
+       transform: rotate3d(1, 1, 1, 15deg); 
+   } 
+   
+   */
+
+/* un petit exemple de ce que tu trouve dans le css slideshow_texte_et_image.css
+
+.slider h2, .slider .button {
+  -webkit-transition: opacity 750ms, -webkit-transform 750ms;
+  transition: transform 500ms, opacity 800ms;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}  */
+  /* --webkit est pour Safari */
+  
+ 
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  ← → Réglages flèches de défilement ← →
+  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.previous.control, .next.control { 
+border: none;
+width: 8%;
+position: absolute;
+top: 87%;
+transform: translateY(-20%);
+font-size: 2rem;  
+
+/* ici c'est l'icône de la flèche elle même */
+label {  
+color: darkred;
+font-size: 3rem;    
+  border-radius: 50%; 
+background: rgba(255,255,255, 0.4);  
+	 text-shadow: 1px 3px 0.2px black;
+    /* on ajoute des effets */ 
+			 
+	 
+	 &:hover {
+			color: black;
+			opacity: 1}
+}
+
+/* quand la personne clique dessus elle passe "active" un bref instant ce qui nous permet de caler un effet très bref */
+
+label:active {  
+color: white;
+font-size: 3.4rem;  
+    font-weight: bold;   
+                }
+  
+    }  /*fin des flèches de navigation "label" */
+
+/* °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+ ° LES POINTS INDICATIFS DE LA DIAPO EN COURS ° 
+_________________________________________________________*/
+
+/* ici c'est les points qui indiquent où on est dans le diapo, on va grossir et faire un effet clignotant pour celui qui est actif ! */
+/* ici il faudrait refndre tout ça pour alléger le css */
+
+/* Slider Pagger arrow event */
+.slide-radio1:checked ~ .next .numb2, 
+.slide-radio2:checked ~ .next .numb3, 
+.slide-radio3:checked ~ .next .numb4,
+.slide-radio4:checked ~ .next .numb5,  
+.slide-radio2:checked ~ .previous .numb1, 
+.slide-radio3:checked ~ .previous .numb2, 
+.slide-radio4:checked ~ .previous .numb3,
+.slide-radio5:checked ~ .previous .numb4 {
+  display: block;
+  z-index: 1
+}
+
+/* Slider Pagger event */
+.slide-radio1:checked ~ .slider-pagination .page1, 
+.slide-radio2:checked ~ .slider-pagination .page2, 
+.slide-radio3:checked ~ .slider-pagination .page3, 
+.slide-radio4:checked ~ .slider-pagination .page4,
+.slide-radio5:checked ~ .slider-pagination .page5 {
+  
+  transform: scale(1.5); 
+  background: white; 
+ animation: color-change 2.5s infinite;
+}
+  
+ /* pour le passer en bouton shine il suffit de retirer l'antimation et d'ajouter =>
+ background: linear-gradient(to right, #202020 0, #F0F0F0 10%, #080808 20%);
+  animation: shine 5s infinite linear; */
+    
+ /* n'oublie pas le dossier "banieres" p. ex. background-image: url("/banieres/chapeau_texte_baniere.png"); */
+ /*
  
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 on justifie le texte des articles
@@ -70,12 +302,51 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
   cursor: not-allowed;
 }
 
-
-
+ 
 .alignleft {
     text-align: left;
 }
 
+/*
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+animation toute mignonne
+afficher du texte en majuscule surexposé sur une image 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/ 
+.center-texte{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.center-texte h10{
+  color: rgba(255,0,0,0.1);
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-size: cover;
+  background-image: url(https://cdn-images-1.medium.com/max/2000/1*Jalb56N34pBIGCjQULtW3A.jpeg);
+  -webkit-background-clip: text;
+  animation: background-text-animation 15s linear infinite;
+}
+
+@keyframes background-text-animation {
+  0%{
+    background-position: left 0px top 50%;
+  }
+  50%{
+    background-position: left 1500px top 50%;
+  }
+  100%{
+    background-position: left 0px top 50%;
+  }
+}
+
+/* y(a plus qu'à caler un bref code hml avec "center-texte" et un titre en h10 dedans !)
+<div class="center-texte">
+              <h10>analyses de textes</h10>
+            </div> 
+*/
 
 /* XXXXXXXXXXXXXxxxxxxxxxxxxxxx
 Code pour afficher des FIGURES 
@@ -245,106 +516,5 @@ h3-little {
   border: none;
 }
  
-
- 
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-des animations non-utilisées
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
- /*des animations multiples à la manière d'un manga de pro */  
- 
-/* y'a plus qu'à faire 
-<div class="clouds"></div>*/ 
- 
-/*
-
-@keyframes para {
-	100% {
-		background-position: 
-			-0px 20%,
-			50px 50%,
-			100px 50%,
-			1000px 100%,
-			400px 0;
-		}
-	}
-	
-*/
-
- 
-/* on va crééer une autre animation de gros dur */
- 
- 
- 
-/* UN BROUILLON DE GROS DUR POUR FAIRE UNE ANIMATION WTF SUR LA PAGE ! */
-/*
-
-html {
-	height: 100%;
-	/* max-height: 600px; *//* 
-	width: 1000px;
-	background-color: hsla(200,40%,30%,.4);
-	background-image:		
-		url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
-		url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
-		url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
-		url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
-		url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
-	background-repeat: repeat-x;
-	background-position: 
-		0 20%,
-		0 100%,
-		0 50%,
-		0 100%,
-		0 0;
-	background-size: 
-		2500px,
-		800px,
-		500px 200px,
-		1000px,
-		400px 260px;
-	animation: 50s para infinite linear;
-	}
-	
-	
-	
-	ou encore dans le même style
-	  
-#about {	
-  background-color: hsla(200,40%,30%,.4);
-	background-image:	
-		/*url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), */
-		/* des sapins ↑ et ↓ *//*
-		url("https://pngimg.com/d/forest_PNG23.png"),
-		/*url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
-		/* la foret merdique*//*
-		url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'), 
-		/* les nuages ↑ *//*
-		url("/mountain.png"),
-		/* ↑ une super image de montagne *//*
-		url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png'),
-		/* ↑ encore des nuages *//*
-	  	url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Ararat.png");
-		/*url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png');
-		 ↑ une autre image de montagne *//*
-	background-repeat: repeat-x;
-	background-position: 
-	/* 	0 100%, */ /* on indique d'abord la vitesse de dééfilement si on veut les sapins au premier plan */
-	/*	0 130%,  la foret merdique au second plan !*/
-	/* 	0 0%, les nuages */
-	/*	0 90%,  une image de montagne */
-	/*	0 0%,  nuage bis */
-	/*	0 100%;  encore une image de montagne *//*
-	background-size:  
-		800px 300px,
-		500px 200px,
-		4000px 400px,
-		1800px 260px,
-		3500px 400px;
-	animation: 100s para infinite linear;
-	
-}
-
-
-*/
 
 

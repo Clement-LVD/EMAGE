@@ -1,0 +1,101 @@
+
+ 
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+UNE ANIMATION ASSEZ COMPLEXE DE PLUSIEURS IMAGES 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+ /* à la manière d'un manga de pro */  
+ 
+/* y'a plus qu'à faire 
+<div class="clouds"></div>*/ 
+ 
+/*
+
+@keyframes para {
+	100% {
+		background-position: 
+			-0px 20%,
+			50px 50%,
+			100px 50%,
+			1000px 100%,
+			400px 0;
+		}
+	}
+	
+*/
+
+ 
+/* on va crééer une autre animation de gros dur */
+ 
+ 
+ 
+/* UN BROUILLON DE GROS DUR POUR FAIRE UNE ANIMATION WTF SUR LA PAGE ! */
+/*
+
+html {
+	height: 100%;
+	/* max-height: 600px; *//* 
+	width: 1000px;
+	background-color: hsla(200,40%,30%,.4);
+	background-image:		
+		url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+		url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+		url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+	background-repeat: repeat-x;
+	background-position: 
+		0 20%,
+		0 100%,
+		0 50%,
+		0 100%,
+		0 0;
+	background-size: 
+		2500px,
+		800px,
+		500px 200px,
+		1000px,
+		400px 260px;
+	animation: 50s para infinite linear;
+	}
+	
+	
+	
+	ou encore dans le même style
+	  
+#about {	
+  background-color: hsla(200,40%,30%,.4);
+	background-image:	
+		/*url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), */
+		/* des sapins ↑ et ↓ *//*
+		url("https://pngimg.com/d/forest_PNG23.png"),
+		/*url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+		/* la foret merdique*//*
+		url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'), 
+		/* les nuages ↑ *//*
+		url("/mountain.png"),
+		/* ↑ une super image de montagne *//*
+		url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png'),
+		/* ↑ encore des nuages *//*
+	  	url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Ararat.png");
+		/*url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png');
+		 ↑ une autre image de montagne *//*
+	background-repeat: repeat-x;
+	background-position: 
+	/* 	0 100%, */ /* on indique d'abord la vitesse de dééfilement si on veut les sapins au premier plan */
+	/*	0 130%,  la foret merdique au second plan !*/
+	/* 	0 0%, les nuages */
+	/*	0 90%,  une image de montagne */
+	/*	0 0%,  nuage bis */
+	/*	0 100%;  encore une image de montagne *//*
+	background-size:  
+		800px 300px,
+		500px 200px,
+		4000px 400px,
+		1800px 260px,
+		3500px 400px;
+	animation: 100s para infinite linear;
+	
+}
+
+
+*/

@@ -22,13 +22,13 @@ XXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxx*/
   &:hover {
 			color: ivory;
     font-weight: bold; 
-    -webkit-text-stroke: 1.4px black; /* ici on va appliquer un effet stroke au texte ! */
+    -webkit-text-stroke: 1.3px black; /* ici on va appliquer un effet stroke au texte qui va en fait le rogner (comme c'est sur fond noir) ! */
   
 			/* font-size: 26px; text-stroke: 2px black;
 			*/
 			/*text-shadow: 0px 1px 0px white;*/ 
 			
-  transform: scale(1.2) rotate(-0.2deg);
+  transform: scale(1.1) rotate(-0.2deg);
   
   /* la on ajoute une autre animation pour la barrette qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
   -webkit-animation: glowing-blue 1s ease-in-out infinite alternate;

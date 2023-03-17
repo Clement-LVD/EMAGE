@@ -12,24 +12,3 @@ Voici un résumé des tags du site, ceux qui servent à recommander du contenu �
 <div class="table-responsive">
   {{< tags_table >}}  
 </div>
-
-<body>
-  <div class="container-cards">
-  <a href="/category/analyse-de-textes/" class="card-classe"> 
-       <strong> <center> <img src="/svg/bookshelf.svg" width="50px" height="28px"  class="inverted-image">
-       <br>   ANALYSES DE TEXTES </center> </strong>
-    </a> 
-  <a href="/category/reseaux-de-relations/" class="card-classe"> 
-       <strong> <center> <img src="/svg/bookshelf.svg" width="50px" height="28px"  class="inverted-image">
-       <br>  RÉSEAUX DE RELATIONS </center> </strong>
-    </a> 
-  <a href="/category/cartes-et-analyses-geospatiales/" class="card-classe"> 
-       <strong> <center> <img src="/svg/bookshelf.svg" width="50px" height="28px"  class="inverted-image">
-       <br> CARTES</center> </strong>
-    </a> 
-  <a href="/category/strategies-analyses-de-communications/" class="card-classe"> 
-       <strong> <center> <img src="/svg/bookshelf.svg" width="50px" height="28px"  class="inverted-image">
-       <br> ANALYSES DE COM' </center> </strong>
-    </a> 
-  </div>
-</body>

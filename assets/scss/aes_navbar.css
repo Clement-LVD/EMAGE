@@ -31,11 +31,11 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
 *//* ↑ this is the part that takes out the shadow */
 
 .navbar {
-  height: 2rem;
+  height: 2.13rem;
   background: $sta-menu-primary;
 /* this is the part that takes out the shadow & the only edit */
   box-shadow: none;  
-  font-size: 0.78em;
+  font-size: 0.712em;
      letter-spacing: 0.3px;
   font-family: serif;
   font-weight: 500 !important;
@@ -79,25 +79,29 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
   }
   
   /* ici tu ajoute "span" si tu veux toucher que le texte */
-.nav-link.active {
-     color: black;
+.nav-link.active { 
   animation: glowing-blue 2s ease-in-out infinite alternate;
   border-radius: 0.5rem;
 border-style: groove;
 border-color: grey;
-  }  
+background: black;  
+
+.fa {color: white};
+
+  span {
+  font-style: bold;
+   /*font-size: 1.1em; */
+color: white; 
+ 
+}
+  }  /* fin du réglage de active-nav-link*/
   
   span { 
     
 font-weight: bold;
   }
 }
-
-.nav-link.active span {
-  
-  font-size: 1.1em;
-}
-
+ 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 LES CLASSES CUSTOMS DU MENU - déclarées dans le menu.yaml 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/

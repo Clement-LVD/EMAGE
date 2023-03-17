@@ -1,0 +1,45 @@
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $sliderID := $block.slider_id }}
+
+<div class="css-slider-wrapper">
+  {{ range $i, $s := $block.slides }}
+    <input type="radio" name="{{ $sliderID }}" class="{{ printf "slide-radio%d" (add $i 1) }}" {{ if eq $i 0 }}checked{{ end }} id="{{ printf "%s_%d" $sliderID (add $i 1) }}">
+  {{ end }}
+
+  <div class="slider-pagination">
+    {{ range $i, $s := $block.slides }}
+      <label for="{{ printf "%s_%d" $sliderID (add $i 1) }}" class="{{ printf "page%d" (add $i 1) }}"></label>
+    {{ end }}
+  </div>
+  <div class="next control">
+    {{ range $i, $s := $block.slides }}
+      <label for="{{ printf "%s_%d" $sliderID (add $i 1) }}" class="{{ printf "numb%d" (add $i 1) }}"><i class="fa fa-chevron-circle-right"></i></label>
+    {{ end }}
+  </div>
+
+  <div class="previous control">
+    {{ range $i, $s := $block.slides }}
+      <label for="{{ printf "%s_%d" $sliderID (add $i 1) }}" class="{{ printf "numb%d" (add $i 1) }}"><i class="fa fa-chevron-circle-left"></i></label>
+    {{ end }}
+  </div>
+
+  {{ range $i, $s :=  $block.slides }}
+    <div class="{{ printf " slider slide%d" (add $i 1) }}">
+      <div>
+        {{ with $s.text }}
+          {{ . | safeHTML }}
+        {{ end }}
+        {{ with $s.url_image }}
+          <img src="{{ . }}" style="{{ $s.style_image }}" alt="{{ printf "%s_%d" $sliderID (add $i 1) }}">
+        {{ end }}
+        {{ with $s.button_text }}
+          {{ range $j, $btnText := . }}
+            <a href="{{ (index $s.button_link $j) }}" id= "{{ printf "button%d" (add $j 1) }}" class="button">{{ $btnText }}</a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</div>

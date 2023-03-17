@@ -3,32 +3,80 @@ date: 2023-03-13
 title: ENQUÊTES & ANALYSES
 subtitle:  BIENVENUE SUR LE SITE D'EMAGE DIAG, consulting & analyses
 type: landing
-# *Manque une banière d'accueil et des logos pour cette page*  =>
+# *Il reste à finir la banière d'accueil et ajouter des logos pour cette page*  =>
 # si tu te sens un peu perdu, va voir : https://connorrothschild.github.io/v2/post/animate-hugo-academic/
 sections:
-
-
-# <div><a href="/category/analyse-de-textes/" title="Vers des exemples"> Textes <i class="fa fa-file-text" fa-1x></i></a></div>
-#                       <div><a href="/category/enquetes/" title="Vers des exemples"> Enquêtes & questionnaires <i class="fa fa-check" fa-1x></i></a></div>
-#                       <div><a href="/category/cartes-et-analyses-geospatiales/" title="Vers des exemples"> Cartes <i class="fa fa-map" fa-1x></i></a></div>
-#                       <div><a href="/category/reseaux-de-relations/" title="Vers des exemples"> Réseaux <img src="/media/icons/network.png" width="15px" height="15" class="inverted-image"> </a></div>
-#                       <div><a href="/category/strategies-analyses-de-communications/" title="Vers des exemples"> Analyse des communications <i class="fa fa-commenting" fa-1x></i></a></div> 
+  
+- block: diaporama-pleine-largeur    
+  design:
+    spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["350px", "0", "10px", "0"]
+  slider_id: "my-slider"
+  slides:
+  - text:   <strong> <hh style="color:white"> Bienvenue sur le site EMAGE DIAG'  </hh> </strong>
+    # style_image: 'background-color: black; background-size: cover; width: 10px; height: 10px;'
+    # url_image: "/media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg"
+    url_image: "logos/icon_bis.png"
+    button_text:
+      - "Voir les rapports-types"
+      - "Voir les cas d'études"
+      - "CONTACTEZ-MOI"
+    button_link:
+      - '/project/page_presentation_rapports' 
+      - '#projects'
+      - '/page_contacts/page_contact'
+  - text:  <strong>  <hh style="color:white"> ANALYSES DE TEXTES</strong>  </hh> 
+    url_image:  "/banieres/chapeau_texte_baniere.png"
+    button_text:
+      - "Voir les cas d'études"
+    button_link:
+      - '/category/analyse-de-textes'
+  - text: "<strong>CALCULS D'IMPLANTATION </strong>"
+    url_image: "/media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg"
+    button_text:
+      - "Voir le rapport-type"
+      - "Voir les cas d'études"
+    button_link:
+      - '/project/page_presentation_rapports'
+      - '/category/cartes-et-analyses-geospatiales/'
+    style_image: "width: 300px; height: 200px;"  
+  - text: "<strong> ÉVOLUTION DE LA CONCURRENCE</strong>"
+    url_image: "/media/albums/voroinoi_business_paris/B_enseignes_bricolage_et_materiaux.jpg"
+    button_text:
+      - "Voir le rapport-type"
+      - "Voir les cas d'études"
+    button_link:
+      - '/project/page_presentation_rapports'
+      - '/category/cartes-et-analyses-geospatiales/'
+    style_image: "width: 300px; height: 200px;" 
+  - text: "<strong> INFLUENCES DES COMMUNICATIONS ET VISIBILITÉ EN LIGNE</strong>"
+    url_image: "/graphiques/vue_ensemble_visibilite_journalistes_facebook.png"
+    button_text:
+      - "Voir le rapport-type"
+      - "Voir les cas d'études"
+    button_link:
+      - '/project/page_presentation_rapports'
+      - '/category/cartes-et-analyses-geospatiales/'
+    style_image: "width: 300px; height: 200px;"   
+    
+# tu peux mettre une background-color: 'white'; ou que sais-je si le fond de l'image est transparent ! 
 
 - block: markdown
   id: home
   content:
-    title:  👷 👷  Site en construction 👷 👷 <br> <h1> BIENVENUE SUR LE SITE D'<strong>*E*-MAGE</strong> </h1>
+    title:  👷 👷  Site en construction 👷 👷 <br> BIENVENUE SUR LE SITE D'<strong>*E*-MAGE</strong> 
     subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
       
         <br> <a href="{{< ref "/page_contacts/page_contact" >}}" class="btn btn-cligno"><h3-little><i class="fa fa-paper-plane"></i> Contactez moi !</h3-little> </a>  <br>
         <br><a href="#services">
         ╭─<i class="fa fa-circle-down"></i>─╮</a>
-  # text: 
+    # text: |- 
     columns: '1'     
   design:
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["50px", "0", "0px", "0"]
+      padding: ["10px", "0", "0px", "0"]
     background:
       text_color_light: true 
     #   gradient_end: '#000000'
@@ -321,9 +369,10 @@ sections:
 - block: markdown
   id: about
   content:
-    title: <hr> <strong> L'ÉQUIPE E-MAGE </strong>
+    title: <hr>
     subtitle: 
-    text: <img src="svg/clem_himself.jpg" alt="Clément" class="avatar-custom-crop" id = "myself_picture"> <h1>**Clément L.**<br>
+    text: <img src="svg/clem_himself.jpg" alt="Clément" class="avatar-custom-crop" id = "myself_picture"> <h1> <strong> L'ÉQUIPE E-MAGE </strong>
+          <br><br>**Clément L.**<br> 
           <div class="waviy"><span style="--i:1"> Ph.</span><span style="--i:2">D.</span></div>   
            <a href="{{< ref "/academic_resume/description_clement" >}}" class="btn btn-cligno"><i class="fa fa-graduation-cap"></i> Voir le profil universitaire</a></h1>
         <span> <a href="https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"><i class="fab fa-linkedin fa-2x"></i></a> </span>
