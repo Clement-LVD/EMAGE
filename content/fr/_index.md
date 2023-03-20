@@ -37,7 +37,7 @@ sections:
       - "  🔬 Voir les cas d'études"
     button_link:
       - '/category/cartes-et-analyses-geospatiales/'
-  - text: "<strong>CALCULS D'IMPLANTATION </strong>"
+  - text: <strong> <hh style="color:white"> CALCULS D'IMPLANTATION </hh> </strong>
     url_image: "/media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg"
     button_text:
       - "  📃 Voir un rapport-type"
@@ -48,7 +48,7 @@ sections:
       - '/project/page_presentation_rapports'
       - '/category/cartes-et-analyses-geospatiales/'
       - '/tags/cartes/' 
-  - text: "<strong> ZONES D'INFLUENCES DES CONCURRENTS</strong>"
+  - text:  <strong>  <hh style="color:white"> ZONES D'INFLUENCES DES CONCURRENTS </hh> </strong> 
     url_image: "/media/albums/voroinoi_business_paris/B_enseignes_bricolage_et_materiaux.jpg"
     img_width: "50%" 
     button_text:
