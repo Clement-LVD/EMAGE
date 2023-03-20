@@ -84,14 +84,10 @@ comme on est censé la crée avec "markdown_pleine_page" il sort une classe "dia
   -webkit-align-items: center;
   align-items: center;
   justify-content: center;
-  align-content: center; 
-  -webkit-transition: -webkit-transform 700ms;
-  transition: -webkit-transform 700ms, transform 700ms;
-  -webkit-transform: scale(1);
-  transform: scale(1); 
+  align-content: center;  
 }
 
-/* each slide backgound color xxx ici c'est hardcodé omg !  */
+/* each slide backgound color xxx ici c'est hardcodé omg !
 .slide1 {
   background: black;
   left: 0;
@@ -112,6 +108,12 @@ comme on est censé la crée avec "markdown_pleine_page" il sort une classe "dia
   background:#696969;
   left: 400%;
 }
+
+
+.slide6 {
+  background:#696969;
+  left: 500%;
+}  */
 
 .slider > div {
   text-align: center;
@@ -202,7 +204,7 @@ comme on est censé la crée avec "markdown_pleine_page" il sort une classe "dia
   
 }
 
-/* Slider Pagger arrow event */
+/* Slider Pagger arrow event
 .slide-radio1:checked ~ .next .numb2, 
 .slide-radio2:checked ~ .next .numb3, 
 .slide-radio3:checked ~ .next .numb4, 
@@ -211,16 +213,18 @@ comme on est censé la crée avec "markdown_pleine_page" il sort une classe "dia
 .slide-radio4:checked ~ .previous .numb3 {
   display: block;
   z-index: 1
-}
-/* Slider Pagger event (ce code est un peu modifié dans le custom.css */
+} */
+
+/* Slider Pagger event (ce code est un peu modifié dans le custom.css
 .slide-radio1:checked ~ .slider-pagination .page1, 
 .slide-radio2:checked ~ .slider-pagination .page2, 
 .slide-radio3:checked ~ .slider-pagination .page3, 
 .slide-radio4:checked ~ .slider-pagination .page4 {
   background: rgba(255,255,255,1)
-}
+} 
+*/
 
-/* Slider slide effect */
+/* Slider slide effect
 .slide-radio1:checked ~ .slider {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
@@ -258,7 +262,8 @@ comme on est censé la crée avec "markdown_pleine_page" il sort une classe "dia
   transform: translateX(0);
   opacity: 1
 }
-
+ */
+ 
 @media only screen and (max-width: 767px) {
 .slider h2 {
   font-size: 20px;

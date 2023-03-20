@@ -30,6 +30,36 @@ sections:
       - '/project/page_presentation_rapports' 
       - '#projects'
       - '/page_contacts/page_contact'
+  - text:  <strong>  <hh style="color:white"> CARTES ET ANALYSES GÉOSPATIALES</strong>  </hh> 
+    url_image:  "/logos/emage-rotating-earth-optimized.gif"
+    img_width: "112px"
+    img_height: "169px"
+    button_text:
+      - "  🔬 Voir les cas d'études"
+    button_link:
+      - '/category/cartes-et-analyses-geospatiales/'
+  - text: "<strong>CALCULS D'IMPLANTATION </strong>"
+    url_image: "/media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg"
+    button_text:
+      - "  📃 Voir un rapport-type"
+      - "  🔬 Voir les cas d'études"
+      - "🌍 CARTES"
+    img_width: "80%" 
+    button_link:
+      - '/project/page_presentation_rapports'
+      - '/category/cartes-et-analyses-geospatiales/'
+      - '/tags/cartes/' 
+  - text: "<strong> ZONES D'INFLUENCES DES CONCURRENTS</strong>"
+    url_image: "/media/albums/voroinoi_business_paris/B_enseignes_bricolage_et_materiaux.jpg"
+    img_width: "60%" 
+    button_text:
+      - "  📃 Voir un rapport-type"
+      - "  🔬 Voir les cas d'études"
+      - '🌎 CARTES'
+    button_link:
+      - '/project/page_presentation_rapports'
+      - '/category/cartes-et-analyses-geospatiales/'
+      - '/tags/cartes/'
   - text:  <strong>  <hh style="color:white"> ANALYSES DE TEXTES</strong>  </hh> 
     url_image:  "/logos/logo_emage_textes_miniformat.gif"
     img_width: "112px"
@@ -38,25 +68,6 @@ sections:
       - "  🔬 Voir les cas d'études"
     button_link:
       - '/category/analyse-de-textes'
-  - text: "<strong>CALCULS D'IMPLANTATION </strong>"
-    url_image: "/media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg"
-    button_text:
-      - "  📃 Voir un rapport-type"
-      - "  🔬 Voir les cas d'études"
-    img_width: "80%" 
-    button_link:
-      - '/project/page_presentation_rapports'
-      - '/category/cartes-et-analyses-geospatiales/'
-    style_image: "width: 300px; height: 200px;"  
-  - text: "<strong> ÉVOLUTION DE LA CONCURRENCE</strong>"
-    url_image: "/media/albums/voroinoi_business_paris/B_enseignes_bricolage_et_materiaux.jpg"
-    button_text:
-      - "  📃 Voir un rapport-type"
-      - "  🔬 Voir les cas d'études"
-    button_link:
-      - '/project/page_presentation_rapports'
-      - '/category/cartes-et-analyses-geospatiales/'
-    style_image: "width: 300px; height: 200px;" 
   - text: <hh style="color:white"><strong> INFLUENCES DES COMMUNICATIONS ET VISIBILITÉ EN LIGNE </strong> </hh>
     url_image: "/graphiques/vue_ensemble_visibilite_journalistes_facebook.png"
     button_text:
@@ -65,7 +76,7 @@ sections:
     button_link:
       - '/project/page_presentation_rapports'
       - '/category/cartes-et-analyses-geospatiales/'
-    style_image: "width: 300px; height: 200px;"   
+    img_width: "45%" 
      
     # subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
  
@@ -104,7 +115,7 @@ sections:
     - icon: handshake-angle
       icon_pack: fa 
       name: Conseils
-      description: "- Conseils & bilans en communication"
+      description: "- Conseils théoriques pour améliorer l'efficacité de préventions <br> - Mesures d'influences en ligne <br> - Identification des stratégies éditoriales et des types de commentaires"
       # tooltip_titre: '<a href="theses.hal.science/tel-03457426">Voir ma thèse sur la communication de crise et le maintien de réputation</a>'
     - icon: scirate
       icon_pack: ai
@@ -156,9 +167,10 @@ sections:
       name:  <a href="/category/cartes-et-analyses-geospatiales/" title="Vers des explications plus détaillées"> Cartes et analyses géospatiales</a> 
       tooltip_titre: "Cliquez pour voir des exemples"
       description: '
-      <i class="fa fa-leaf" aria-hidden="true" fa-1x></i> Leaflet.js 
-      <br> <i class="fa fa-database" aria-hidden="true" fa-1x></i>  OpenStreetMap Data (API)
-      <br> <i class="fa fa-map" aria-hidden="true" fa-1x></i>     Cartes topographiques'
+      <i class="fa fa-leaf"  fa-1x></i> Leaflet.js 
+      <br> <i class="fa fa-database" fa-1x></i>  OpenStreetMap Data (API)
+      <br> <i class="fa fa-map"  fa-1x></i>     Cartes topographiques
+      <br> <i class="fa fa-sitemap" ></i>                 Géomarketing'
     - name:   <a href="/category/reseaux-de-relations/" title="Vers des explications plus détaillées"> Réseaux de relations</a>
       icon: "network.png"
       icon_pack: custom

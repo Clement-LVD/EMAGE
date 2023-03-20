@@ -73,28 +73,31 @@ on va juste ajouter un effet de transition beaucoup plus simple */
      /* le code cubic-bezier attend x1, y1, x2, y2 */            
   transition-timing-function: cubic-bezier(0.01, 0.7, 1, 0.99);
   
+  -webkit-animation-timing-function:  cubic-bezier(0.01, 0.7, 1, 0.99);
+    /*-webkit-animation-timing-function: ease-out;*/
+    /* animation-timing-function: ease-out;*/
   
+    animation-name: slideOut;
+    animation-iteration-count: once; 
+    animation-duration: 1.5s; 
+
     -webkit-animation-name: slideOut;
     -webkit-animation-iteration-count: once;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 1s;   
-    animation-name: slideOut;
-    animation-iteration-count: once;
-    animation-timing-function: ease-out;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 1.5s;    
+    
+    
     animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; 
+   
   
-  
-  
+ 
         }
-
 /* animation pour la premiere slide au chargement de la page :  */
 
 @keyframes slideOut {
     0% {   
       opacity: 0.01;
-        margin-left: 100%;
+        margin-left: 250%;
     }
     100% { opacity: 1;
         margin-left: 0;
@@ -104,14 +107,14 @@ on va juste ajouter un effet de transition beaucoup plus simple */
 @-webkit-keyframes slideOut {
     0% {
       opacity: 0.01;
-        left: 430px;
+        left: 250%;
     }
     100% {
        opacity: 1;
         left: 0;
     }
 }
-        
+ 
         
 /* LES BOUTONS CLIQUABLES QUI S'AJOUTENT DANS CET OBJET "slider" !" */
 /* Styles globaux pour tous les boutons */
@@ -149,7 +152,7 @@ on va juste ajouter un effet de transition beaucoup plus simple */
 			
   transform: scale(0.9) rotate(-0.2deg);
   
-  /* la on ajoute une autre animation pour la barrette qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
+  /* la on ajoute une autre animation pour le bouton qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
   -webkit-animation: glowing-blue 1s ease-in-out infinite alternate;
   -moz-animation:  glowing-blue 1s ease-in-out infinite alternate;
   animation:  glowing-blue 1s ease-in-out infinite alternate; 
@@ -217,9 +220,9 @@ color: darkred;
 font-size: 3rem;    
   border-radius: 50%; 
 background: rgba(255,255,255, 0.4);  
-	 text-shadow: 1px 3px 0.2px black;
-    /* on ajoute des effets */ 
+	 text-shadow: 1px 3px 0.2px black; 
 			 
+ animation: flippy 8s infinite;
 	 
 	 &:hover {
 			color: black;
@@ -235,23 +238,56 @@ font-size: 3.4rem;
                 }
   
     }  /*fin des flèches de navigation "label" */
+ 
 
 /* °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
- ° LES POINTS INDICATIFS DE LA DIAPO EN COURS ° 
+ ° LES CHOSES A MODIFIER POUR AJOUTER UNE DIAPO ° 
 _________________________________________________________*/
 
-/* ici c'est les points qui indiquent où on est dans le diapo, on va grossir et faire un effet clignotant pour celui qui est actif ! */
-/* ici il faudrait refndre tout ça pour alléger le css */
+/* il y a plein de valeurs à modifier pour ajouter une diapo, comme c'est du full css ce slideshow */
+
+/* each slide backgound color xxx ici c'est hardcodé omg !  */
+.slide1 {
+  background: black;
+  left: 0;
+}
+.slide2 {
+  background: #696969 ;
+  left: 100%;
+}
+.slide3 {
+  background:  #696969;
+  left: 200%;
+}
+.slide4 {
+  background:  #696969;
+  left: 300%;
+}
+.slide5 {
+  background: black;
+  left: 400%;
+}
+
+
+.slide6 {
+  background: black;
+  left: 500%;
+}
+
+/* ici il faudrait refondre tout ça pour alléger le css */
 
 /* Slider Pagger arrow event */
 .slide-radio1:checked ~ .next .numb2, 
 .slide-radio2:checked ~ .next .numb3, 
 .slide-radio3:checked ~ .next .numb4,
-.slide-radio4:checked ~ .next .numb5,  
+.slide-radio4:checked ~ .next .numb5,
+.slide-radio5:checked ~ .next .numb6,  
+
 .slide-radio2:checked ~ .previous .numb1, 
 .slide-radio3:checked ~ .previous .numb2, 
 .slide-radio4:checked ~ .previous .numb3,
-.slide-radio5:checked ~ .previous .numb4 {
+.slide-radio5:checked ~ .previous .numb4,
+.slide-radio6:checked ~ .previous .numb5 {
   display: block;
   z-index: 1
 }
@@ -261,19 +297,62 @@ _________________________________________________________*/
 .slide-radio2:checked ~ .slider-pagination .page2, 
 .slide-radio3:checked ~ .slider-pagination .page3, 
 .slide-radio4:checked ~ .slider-pagination .page4,
-.slide-radio5:checked ~ .slider-pagination .page5 {
+.slide-radio5:checked ~ .slider-pagination .page5,
+.slide-radio6:checked ~ .slider-pagination .page6 {
   
   transform: scale(1.5); 
   background: white; 
  animation: color-change 2.5s infinite;
 }
-  
- /* pour le passer en bouton shine il suffit de retirer l'antimation et d'ajouter =>
- background: linear-gradient(to right, #202020 0, #F0F0F0 10%, #080808 20%);
-  animation: shine 5s infinite linear; */
     
- /* n'oublie pas le dossier "banieres" p. ex. background-image: url("/banieres/chapeau_texte_baniere.png"); */
- /*
+ 
+
+/* Slider slide effect */
+.slide-radio1:checked ~ .slider {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.slide-radio2:checked ~ .slider {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.slide-radio3:checked ~ .slider {
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+.slide-radio4:checked ~ .slider {
+  -webkit-transform: translateX(-300%);
+  transform: translateX(-300%);
+}
+
+
+.slide-radio5:checked ~ .slider {
+  -webkit-transform: translateX(-400%);
+  transform: translateX(-400%);
+}
+
+.slide-radio6:checked ~ .slider {
+  -webkit-transform: translateX(-500%);
+  transform: translateX(-500%);
+}
+
+.slide-radio1:checked ~ .slide1 h2,  
+.slide-radio2:checked ~ .slide2 h2,  
+.slide-radio3:checked ~ .slide3 h2,  
+.slide-radio4:checked ~ .slide4 h2,  
+.slide-radio5:checked ~ .slide5 h2,  
+.slide-radio6:checked ~ .slide6 h2,   
+.slide-radio1:checked ~ .slide1 .button,  
+.slide-radio2:checked ~ .slide2 .button,  
+.slide-radio3:checked ~ .slide3 .button,  
+.slide-radio4:checked ~ .slide4 .button,
+.slide-radio5:checked ~ .slide5 .button,
+.slide-radio6:checked ~ .slide6 .button {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1
+}
+ 
  
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 on justifie le texte des articles
