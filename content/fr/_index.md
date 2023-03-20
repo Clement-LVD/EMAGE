@@ -17,7 +17,6 @@ sections:
   slider_id: "my-slider"
   slides:
   - text:   <strong> <hh style="color:white">CONSULTING, ANALYSES & ENQUÊTES </hh> </strong>
-    # style_image: 'background-color: black; background-size: cover; width: 10px; height: 10px;'
     url_image: "logos/logo_emage_texte_cartes_reseaux.gif" 
     # url_image: "logos/logo_emage.png"
     # img_width: "406px"
