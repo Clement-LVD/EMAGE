@@ -3,12 +3,9 @@ date: 2023-03-13
 title: ANALYSES & ENQUÊTES
 subtitle:  BIENVENUE SUR LE SITE D'EMAGE DIAG, consulting & analyses
 type: landing
-# *Il reste à finir la banière d'accueil et ajouter des logos pour cette page*  =>
 # si tu te sens un peu perdu, va voir : https://connorrothschild.github.io/v2/post/animate-hugo-academic/
 sections:
 
-#  {{{< imgresize url="/logos/logo_emage.png" width="500" height="300" >}}
-  
 - block: diaporama-pleine-largeur    
   design:
     spacing:
@@ -22,7 +19,7 @@ sections:
     # img_width: "406px"
     # img_height: "590px"
     button_text:
-      - "  📃 Voir un rapport-type"
+      - "  📃 Voir les types de bilans"
       - "  🔬 Voir les cas d'études"
       - '☎️ CONTACTEZ-MOI'
     button_link:
