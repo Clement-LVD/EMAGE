@@ -97,19 +97,19 @@ comme on est censé la crée avec "markdown_pleine_page" il sort une classe "dia
   left: 0;
 }
 .slide2 {
-  background:  #B8B8B8;
-  left: 100%
+  background: black;
+  left: 100%;
 }
 .slide3 {
-  background: #A9A9A9;
-  left: 200%
+  background: #B8B8B8;
+  left: 200%;
 }
 .slide4 {
-  background:#696969;
+  background: #A9A9A9;
   left: 300%;
 }
 .slide5 {
-  background: black;
+  background:#696969;
   left: 400%;
 }
 

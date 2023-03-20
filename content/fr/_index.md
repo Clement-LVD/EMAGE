@@ -1,11 +1,13 @@
 ---
 date: 2023-03-13
-title: ENQUÊTES & ANALYSES
+title: ANALYSES & ENQUÊTES
 subtitle:  BIENVENUE SUR LE SITE D'EMAGE DIAG, consulting & analyses
 type: landing
 # *Il reste à finir la banière d'accueil et ajouter des logos pour cette page*  =>
 # si tu te sens un peu perdu, va voir : https://connorrothschild.github.io/v2/post/animate-hugo-academic/
 sections:
+
+#  {{{< imgresize url="/logos/logo_emage.png" width="500" height="300" >}}
   
 - block: diaporama-pleine-largeur    
   design:
@@ -14,9 +16,12 @@ sections:
       padding: ["370px", "0", "10px", "0"]
   slider_id: "my-slider"
   slides:
-  - text:   <strong> <hh style="color:white"> CONSULTING, ENQUÊTES & ANALYSES </hh> </strong>
+  - text:   <strong> <hh style="color:white">CONSULTING, ANALYSES & ENQUÊTES </hh> </strong>
     # style_image: 'background-color: black; background-size: cover; width: 10px; height: 10px;'
-    url_image: "logos/icon_bis.png"
+    url_image: "logos/logo_emage_texte_cartes_reseaux.gif" 
+    # url_image: "logos/logo_emage.png"
+    # img_width: "406px"
+    # img_height: "590px"
     button_text:
       - "  📃 Voir un rapport-type"
       - "  🔬 Voir les cas d'études"
@@ -26,7 +31,9 @@ sections:
       - '#projects'
       - '/page_contacts/page_contact'
   - text:  <strong>  <hh style="color:white"> ANALYSES DE TEXTES</strong>  </hh> 
-    url_image:  "/banieres/chapeau_texte_baniere.png"
+    url_image:  "/logos/logo_emage_textes_miniformat.gif"
+    img_width: "112px"
+    img_height: "169px"
     button_text:
       - "  🔬 Voir les cas d'études"
     button_link:
@@ -36,6 +43,7 @@ sections:
     button_text:
       - "  📃 Voir un rapport-type"
       - "  🔬 Voir les cas d'études"
+    img_width: "80%" 
     button_link:
       - '/project/page_presentation_rapports'
       - '/category/cartes-et-analyses-geospatiales/'
@@ -60,25 +68,7 @@ sections:
     style_image: "width: 300px; height: 200px;"   
      
     # subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
-
-- block: markdown
-  id: home
-  content:
-    title:   Bienvenue sur le site d'EMage.Diag <br> Consulting
-            <br> Enquêtes et analyses de données 
-        
-    # text: |- 
-    columns: '1'     
-  design:
-    spacing:
-    # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["10px", "0", "0px", "0"]
-    background:
-      text_color_light: true 
-    #   gradient_end: '#000000'
-    #   gradient_start: black
-      # The gradient angle from 0-360 degrees
-      # gradient_angle: 10
+ 
 
 
 - block: features_avec_tooltip 
@@ -86,13 +76,13 @@ sections:
   design:
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["5px", "0", "0px", "0"]
+      padding: ["45px", "0", "0px", "0"]
     background:
       gradient_end: '#000000'
       gradient_start: '#000000'
       text_color_light: true
   content:
-    title:  
+    title: <h4> Nos services </h4>
     items:
     # ICI TU A TRAFFIQUé cette fonction pour réagir à certaines variables et les envoyer en tooltipbox
     - icon: layer-group

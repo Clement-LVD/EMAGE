@@ -32,7 +32,7 @@
           {{ . | safeHTML }}
         {{ end }}
         {{ with $s.url_image }}
-          <img src="{{ . }}" style="{{ $s.style_image }}" alt="{{ printf "%s_%d" $sliderID (add $i 1) }}">
+          <img src="{{ . }}" style="{{ $s.style_image }}" width="{{ $s.img_width }}" height="{{ $s.img_height }}" alt="{{ printf "%s_%d" $sliderID (add $i 1) }}">
         {{ end }}
         {{ with $s.button_text }}
           {{ range $j, $btnText := . }}
