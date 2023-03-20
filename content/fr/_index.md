@@ -75,7 +75,7 @@ sections:
       - "  🔬 Voir les cas d'études"
     button_link:
       - '/project/page_presentation_rapports'
-      - '/category/cartes-et-analyses-geospatiales/'
+      - '/category/strategies-analyses-de-communications/'
     img_width: "45%" 
      
     # subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
