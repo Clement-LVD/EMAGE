@@ -51,7 +51,7 @@ sections:
       - '/tags/cartes/' 
   - text: "<strong> ZONES D'INFLUENCES DES CONCURRENTS</strong>"
     url_image: "/media/albums/voroinoi_business_paris/B_enseignes_bricolage_et_materiaux.jpg"
-    img_width: "60%" 
+    img_width: "50%" 
     button_text:
       - "  📃 Voir un rapport-type"
       - "  🔬 Voir les cas d'études"
