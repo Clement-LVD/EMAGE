@@ -274,6 +274,12 @@ _________________________________________________________*/
   left: 500%;
 }
 
+
+.slide7 {
+  background: black;
+  left: 600%;
+}
+
 /* ici il faudrait refondre tout ça pour alléger le css */
 
 /* Slider Pagger arrow event */
@@ -281,13 +287,15 @@ _________________________________________________________*/
 .slide-radio2:checked ~ .next .numb3, 
 .slide-radio3:checked ~ .next .numb4,
 .slide-radio4:checked ~ .next .numb5,
-.slide-radio5:checked ~ .next .numb6,  
+.slide-radio5:checked ~ .next .numb6,
+.slide-radio6:checked ~ .next .numb7,  
 
 .slide-radio2:checked ~ .previous .numb1, 
 .slide-radio3:checked ~ .previous .numb2, 
 .slide-radio4:checked ~ .previous .numb3,
 .slide-radio5:checked ~ .previous .numb4,
-.slide-radio6:checked ~ .previous .numb5 {
+.slide-radio6:checked ~ .previous .numb5,
+.slide-radio7:checked ~ .previous .numb6  {
   display: block;
   z-index: 1
 }
@@ -298,7 +306,8 @@ _________________________________________________________*/
 .slide-radio3:checked ~ .slider-pagination .page3, 
 .slide-radio4:checked ~ .slider-pagination .page4,
 .slide-radio5:checked ~ .slider-pagination .page5,
-.slide-radio6:checked ~ .slider-pagination .page6 {
+.slide-radio6:checked ~ .slider-pagination .page6,
+.slide-radio7:checked ~ .slider-pagination .page7 {
   
   transform: scale(1.5); 
   background: white; 
@@ -336,18 +345,25 @@ _________________________________________________________*/
   transform: translateX(-500%);
 }
 
+.slide-radio7:checked ~ .slider {
+  -webkit-transform: translateX(-600%);
+  transform: translateX(-600%);
+}
+
 .slide-radio1:checked ~ .slide1 h2,  
 .slide-radio2:checked ~ .slide2 h2,  
 .slide-radio3:checked ~ .slide3 h2,  
 .slide-radio4:checked ~ .slide4 h2,  
 .slide-radio5:checked ~ .slide5 h2,  
 .slide-radio6:checked ~ .slide6 h2,   
+.slide-radio7:checked ~ .slide7 h2,  
 .slide-radio1:checked ~ .slide1 .button,  
 .slide-radio2:checked ~ .slide2 .button,  
 .slide-radio3:checked ~ .slide3 .button,  
 .slide-radio4:checked ~ .slide4 .button,
 .slide-radio5:checked ~ .slide5 .button,
-.slide-radio6:checked ~ .slide6 .button {
+.slide-radio6:checked ~ .slide6 .button,
+.slide-radio7:checked ~ .slide7 .button {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1

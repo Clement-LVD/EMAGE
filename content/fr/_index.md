@@ -77,6 +77,17 @@ sections:
       - '/project/page_presentation_rapports'
       - '/category/strategies-analyses-de-communications/'
     img_width: "45%" 
+  - text: <hh style="color:white"><strong> TEXT-MINING SUPERVISÉ </strong> </hh>
+    url_image: "/logos/emage_texte_mining_supervise.gif"
+    img_width: "224px"
+    img_height: "338px"
+    button_text:
+      - "  📃 Voir un rapport-type"
+      - "  🔬 Voir des cas d'études"
+    button_link:
+      - '/project/page_presentation_rapports'
+      - '/tag/analyse-thematique-supervisee/'
+    img_width: "45%" 
      
     # subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
  
