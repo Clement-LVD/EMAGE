@@ -57,7 +57,7 @@ comme on est censé la crée avec "markdown_pleine_page" il sort une classe "dia
 /* Slider wrapper*/
 .css-slider-wrapper {
   display: block;
-  background: black;
+  /*background: black;*/
   overflow: hidden;
   position: absolute;
   left: 0;
@@ -65,6 +65,8 @@ comme on est censé la crée avec "markdown_pleine_page" il sort une classe "dia
   top: 0;
   bottom: 0;
 }
+
+
 /* Slider */
 .slider {
   width: 100%;
@@ -118,19 +120,22 @@ comme on est censé la crée avec "markdown_pleine_page" il sort une classe "dia
 .slider > div {
   text-align: center;
 }
+
 /* Slider inner slide effect */
 .slider h2 {
   color: rgba(0,0,0,0.6);
   font-weight: 900;
   /* text-transform: uppercase;*/
   font-size: 45px;
-  line-height: 120%;
+  line-height: 10%;
   opacity: 0;
   -webkit-transform: translateX(500px);
   transform: translateX(500px);
 }
 
-/* ci-dessous les boutons cliquables que tu peux ajouter : il y en a aussi dans le custom.css des réglages des boutons */
+/* ci-dessous les boutons cliquables que tu peux ajouter : ils sont définis dans le custom.css les boutons */
+
+/*
 .slider .button { 
   color: #FFF;
   padding: 5px 30px;
@@ -139,12 +144,13 @@ comme on est censé la crée avec "markdown_pleine_page" il sort une classe "dia
   text-decoration: none;
   opacity: 0.7;
   font-size: 0.9rem;
-  /*line-height: 30px;*/
   display: inline-block;
    -webkit-transform: translateX(-500px);
   transform: translateX(-500px); 
-}
+}*/
 
+  /*line-height: 30px; tu pourrais aussi ajouter une option "line-height" pour le slider button*/
+ 
  
 .slider h2, .slider .button {
   -webkit-transition: opacity 750ms, -webkit-transform 750ms;

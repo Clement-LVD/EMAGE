@@ -22,7 +22,8 @@ et la docu hugo : https://gohugo.io/templates/introduction/
  
  @import  "aes_navbar";
  
- @import  "defilement_de_logos";
+ /* ce css ci-dessous provoque un conflit avec le slideshow et sa classe malnommé "slider"  */
+ /* @import  "defilement_de_logos";*/
  
  
  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -38,21 +39,17 @@ et la docu hugo : https://gohugo.io/templates/introduction/
 comme les couleurs de chaque diapositivees par exemple (hardcodées et définies dans le css) ! */
 
 
-/* MAIN Slider wrapper : ceci est l'objet principal, rattaché au corps de la page */
-.css-slider-wrapper {
-  display: block;
-  background: black;
-  overflow: hidden;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  /*top: 50;*/
-   bottom: 0;  
-     
-    /*height: 100%;*/
-}
+/* MAIN Slider wrapper : css-slider-wrapper est l'objet principal, rattaché au corps de la page */
 
-/* 
+/* on ajoute un background permanent, et on va jouer ensuite sur la transparence des fonds */
+
+.css-slider-wrapper { /*background: black;*/
+
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/2560px-BlackMarble20161km.jpg");
+  
+  
+}
+/* voici les options globales de l'objet principal "css-slider-wrapper"
 display: block;" : l'élément est affiché comme un bloc, avec un saut de ligne avant et après.
 "background: black;" : le fond de l'élément est en noir.
 "overflow: hidden;" : le contenu dépassant de l'élément est masqué.
@@ -61,10 +58,14 @@ display: block;" : l'élément est affiché comme un bloc, avec un saut de ligne
 */
 
 /* dans le méga objet "css-slider-wraper" l'objet global est "slider" et il y a des sous objets slide1, slide2, etc. */
+ 
+
 /* il y a déjà plein de réglages css définis dans le css dédié slideshow_texte_et_image.css, 
 on va juste ajouter un effet de transition beaucoup plus simple */
 
+/* cette classe est déjà définie dans le css slideshow_texte_et_image.css on la complète juste*/
 .slider { 
+	overflow:hidden;
   max-width: 100%; 
   
   /*transform: scale(0.2);  si tu veux scaler les images ! */
@@ -115,7 +116,34 @@ on va juste ajouter un effet de transition beaucoup plus simple */
     }
 }
  
-        
+/* ON CONTINUE A REGLER LE SLIDER AVEC DES ZONES SUREXPOSEES DESSUS */
+
+@mixin red-gradient {
+	background: linear-gradient(to right,  rgba(255,0, 0, 0.5) 0%, rgba(0,0,0, 0.5) 100%);
+}
+
+.slider {
+	&::before,
+	&::after {
+		@include red-gradient;
+		content: "";
+		height: 14%;
+		position: absolute;
+		width: 10%; 
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;  
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+}
+
 /* LES BOUTONS CLIQUABLES QUI S'AJOUTENT DANS CET OBJET "slider" !" */
 /* Styles globaux pour tous les boutons */
  
@@ -176,10 +204,12 @@ on va juste ajouter un effet de transition beaucoup plus simple */
   position: absolute; 
   font-weight: bold;
   font-size: 1.1rem;
-  padding: 10px 25px;
-  bottom: 40%;
-  right: 10%; 
+  padding: 10px 20px;
+  bottom: 50%;
+  right: 3%; 
   border-radius: 50%; 
+  text-shadow: 0.75px 0.75px 0 #04040E , 1.5px 1.5px 0 grey,
+    2.25px 2.25px darkgrey ;
    
 }
 
@@ -248,42 +278,46 @@ _________________________________________________________*/
 
 /* each slide backgound color xxx ici c'est hardcodé omg !  */
 .slide1 {
-  background: black;
+  background: rgba(0,0,0,0.99 );
   left: 0;
 }
+
 .slide2 {
-  /*background: #696969 ;*/
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/2560px-BlackMarble20161km.jpg");
+  background: rgba(0,0,0,0.95 );
+  
+   
+  
   left: 100%;
 }
+
 .slide3 {
-  
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/2560px-BlackMarble20161km.jpg");
+  background: rgba(0,0,0,0.85 ); 
   /*background:  #04040E;*/
   left: 200%;
 }
 
 .slide4 {
   
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/2560px-BlackMarble20161km.jpg");
+  background: rgba(0,0,0,0.85); 
   /*background:   #04040E;*/
   left: 300%;
    
 }
 .slide5 {
-  background: black;
+  
+  background: rgba(0,0,0, 0.98); 
   left: 400%;
 }
 
 
 .slide6 {
-  background: black;
+  background: rgba(0,0,0,0.98); 
   left: 500%;
 }
 
 
 .slide7 {
-  background: black;
+  background: rgba(0,0,0, 0.99); 
   left: 600%;
 }
 
@@ -407,46 +441,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     text-align: left;
 }
 
-/*
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-animation toute mignonne
-afficher du texte en majuscule surexposé sur une image 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/ 
-.center-texte{
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.center-texte h10{
-  color: rgba(255,0,0,0.1);
-  font-size: 100px;
-  text-transform: uppercase;
-  font-weight: 700;
-  background-size: cover;
-  background-image: url(https://cdn-images-1.medium.com/max/2000/1*Jalb56N34pBIGCjQULtW3A.jpeg);
-  -webkit-background-clip: text;
-  animation: background-text-animation 15s linear infinite;
-}
-
-@keyframes background-text-animation {
-  0%{
-    background-position: left 0px top 50%;
-  }
-  50%{
-    background-position: left 1500px top 50%;
-  }
-  100%{
-    background-position: left 0px top 50%;
-  }
-}
-
-/* y(a plus qu'à caler un bref code hml avec "center-texte" et un titre en h10 dedans !)
-<div class="center-texte">
-              <h10>analyses de textes</h10>
-            </div> 
-*/
 
 /* XXXXXXXXXXXXXxxxxxxxxxxxxxxx
 Code pour afficher des FIGURES 

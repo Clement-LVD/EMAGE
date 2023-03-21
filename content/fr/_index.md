@@ -10,10 +10,10 @@ sections:
   design:
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["370px", "0", "10px", "0"]
+      padding: ["390px", "0", "5px", "0"] 
   slider_id: "my-slider"
   slides:
-  - text:   <strong> <hh style="color:white">CONSULTING, ANALYSES & ENQUÊTES </hh> </strong>
+  - text:   <strong> <hh style="color:white">CONSULTING, ANALYSES & ENQUÊTES <br> Révélez vos données <br> Affiner vos campagnes </hh></strong>
     url_image: "logos/logo_emage_texte_cartes_reseaux.gif" 
     # url_image: "logos/logo_emage.png"
     # img_width: "406px"
@@ -28,8 +28,7 @@ sections:
       - '/page_contacts/page_contact'
   - text:  <strong>  <hh style="color:white"> CARTES ET ANALYSES GÉOSPATIALES</strong>  </hh> 
     url_image:  "/logos/emage-rotating-earth-optimized.gif"
-    img_width: "112px"
-    img_height: "169px"
+    img_width: "160px"
     button_text:
       - "  🔬 Voir les cas d'études"
     button_link:
@@ -58,8 +57,7 @@ sections:
       - '/tags/cartes/'
   - text:  <strong>  <hh style="color:white"> ANALYSES DE TEXTES</strong>  </hh> 
     url_image:  "/logos/logo_emage_textes_miniformat.gif"
-    img_width: "112px"
-    img_height: "169px"
+    img_width: "120px"
     button_text:
       - "  🔬 Voir les cas d'études"
     button_link:
