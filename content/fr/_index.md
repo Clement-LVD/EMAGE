@@ -10,7 +10,7 @@ sections:
   design:
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["391px", "0", "5px", "0"] 
+      padding: ["410px", "0", "5px", "0"] 
   slider_id: "my-slider"
   slides:
   - text:   <strong> <hh style="color:white">CONSULTING, ANALYSES & ENQUÊTES <br> Révélez vos données <br> Affinez vos campagnes </hh></strong>
@@ -92,7 +92,7 @@ sections:
   design:
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["45px", "0", "0px", "0"]
+      padding: ["20px", "0", "0px", "0"]
     background:
       gradient_end: '#000000'
       gradient_start: '#000000'
@@ -119,27 +119,27 @@ sections:
     - icon: handshake-angle
       icon_pack: fa 
       name: Conseils
-      description: "- Conseils théoriques pour améliorer l'efficacité de préventions <br> - Mesures d'influences en ligne <br> - Identification des stratégies éditoriales et des types de commentaires"
+      description: "<b>- Calculs d'implantation et géomarketing<br>- Conseils théoriques pour améliorer l'efficacité de préventions <br> - Mesures d'influences en ligne <br> - Identification des stratégies éditoriales et des types de commentaires  <br>  ... </b>"
       # tooltip_titre: '<a href="theses.hal.science/tel-03457426">Voir ma thèse sur la communication de crise et le maintien de réputation</a>'
     - icon: scirate
       icon_pack: ai
       name: Enquêtes et recherches 
       # tooltip_titre: ↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>→ 
-      description: "       - Psychosociologue   <i class='fa fa-user-secret fa-1x'></i> <br> - Docteur en psychologie <i class='fa fa-graduation-cap'></i>"
+      description: "Reprise ou conception d'enquêtes : <br>✅<b>Programmation <br>&<br>✅ Méthodes de sciences sociales <br>       - Psychosociologue   <i class='fa fa-user-secret fa-1x'></i> <br> - Docteur en psychologie <i class='fa fa-graduation-cap'></i> </b>"
     - icon: envelopes-bulk
       icon_pack: fa
       name: Bilans
-      description: "Analyses et rapports programmés : <br>
+      description: "<b> Analyses et rapports programmés : <br>
              <i class='fa fa-check-square'></i> Vérifiables              <i class='fa fa-file' ></i>🔍→💾<br>
              <i class='fa fa-check-square'></i> Actualisables           💾⃕◌⃕◌⃕<i class='fa fa-refresh'></i> <br>
-             <i class='fa fa-check-square'></i> Réutilisables        🌰⃕🌰⃕🌰⃕<i class='fa fa-server'></i>"
+             <i class='fa fa-check-square'></i> Réutilisables        🌰⃕🌰⃕🌰⃕<i class='fa fa-server'></i> </b>"
     - icon: signs-post
       icon_pack: fa
       name:   Aide à la décision
-      description: "
-            - Rapports et analyses <br>
-            - Conception et organisation d'enquêtes<br> 
-             (p. ex. mesure de l'efficacité d'une campagne)"
+      description: "<b>
+            - Conception et organisation d'enquêtes </b> <br> 
+             (p. ex. mesure de l'efficacité d'une campagne) <br> <b>
+            - Rapports et analyses </b> <br> (p. ex. calculs d'implantation / géomarketing, <br> bilan de l'influence sur Facebook)"
 
 - block: features_avec_tooltip_v_avancee
   id: methodes
