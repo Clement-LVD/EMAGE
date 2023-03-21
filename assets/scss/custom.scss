@@ -162,7 +162,9 @@ on va juste ajouter un effet de transition beaucoup plus simple */
   -webkit-transform: translateX(-500px);
   transform: translateX(-500px);  
   border-radius: 50%; 
-  box-shadow: 3.5px -1.5px 1.25px 1.9px rgba(255,255,255,0.5), -1.5em 0 1.5em rgba(255,255,255,0.8);  
+  box-shadow:  1.5px -0.75px 1px 1px rgba(0,0,0,0.5),
+  3.5px -2.8px 0.1px 0.15px rgba(255,255,255,0.5), 
+  0.3em -0.01em 1.5em rgba(255,255,255,0.4);  /* ici c'est un mini effet de halo */
   
   /* ET ICI LA PoSITION DES BOUTONS 
   qui sera définie pour chaque 'id' un peu plus bas dans ce custom.css !!*/ 
@@ -192,19 +194,19 @@ on va juste ajouter un effet de transition beaucoup plus simple */
 #button1 {
   
    bottom: 10%;
-   left: 16%;  
+   left: 12%;  
 }
 
 #button2 { 
   bottom: 25%;
-   left: 16%;  
+   left: 15%;  
 }
 
 #button3 {
   position: absolute; 
   font-weight: bold;
   font-size: 1.1rem;
-  padding: 10px 20px;
+  padding: 6px 20px;
   bottom: 50%;
   right: 3%; 
   border-radius: 50%; 

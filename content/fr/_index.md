@@ -10,10 +10,10 @@ sections:
   design:
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["390px", "0", "5px", "0"] 
+      padding: ["391px", "0", "5px", "0"] 
   slider_id: "my-slider"
   slides:
-  - text:   <strong> <hh style="color:white">CONSULTING, ANALYSES & ENQUÊTES <br> Révélez vos données <br> Affiner vos campagnes </hh></strong>
+  - text:   <strong> <hh style="color:white">CONSULTING, ANALYSES & ENQUÊTES <br> Révélez vos données <br> Affinez vos campagnes </hh></strong>
     url_image: "logos/logo_emage_texte_cartes_reseaux.gif" 
     # url_image: "logos/logo_emage.png"
     # img_width: "406px"
@@ -100,7 +100,6 @@ sections:
   content:
     title: <h4> Nos services </h4>
     items:
-    # ICI TU A TRAFFIQUé cette fonction pour réagir à certaines variables et les envoyer en tooltipbox
     - icon: layer-group
       icon_pack: fa
       name: Analyses de données
