@@ -21,7 +21,7 @@ sections:
     button_text:
       - "  📃 Voir les types de bilans"
       - "  🔬 Voir les cas d'études"
-      - '☎️ CONTACTEZ-MOI'
+      - '☎️ CONTACTS'
     button_link:
       - '/project/page_presentation_rapports' 
       - '#projects'
