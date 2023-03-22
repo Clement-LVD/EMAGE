@@ -150,21 +150,31 @@ on va juste ajouter un effet de transition beaucoup plus simple */
 
 /* ci-dessous les boutons cliquables que tu peux ajouter (reprend en partie le css d'origine) */
 .slider .button { 
-  color: black; /* couleur du texte */
-  padding: 5.5px 20px;
-  background: #f8f8f8;  
+  
+  color: black; /* couleur et ombre du texte */
+  text-shadow: 0.75px -1.1px 0 rgba(0,0,0,0.3) ;  
   opacity: 1;
   font-size: 0.9rem;
-  font-weight: bold;
+  font-weight: bold; 
+  
+  
+  padding: 5.5px 20px;
+  padding-bottom: 8px;
+  background: #f8f8f8; 
   /*line-height: 30px;
   margin: 10px;*/
  
-  -webkit-transform: translateX(-500px);
-  transform: translateX(-500px);  
-  border-radius: 50%; 
-  box-shadow:  1.5px -0.75px 1px 1px rgba(0,0,0,0.5),
-  3.5px -2.8px 0.1px 0.15px rgba(255,255,255,0.5), 
-  0.3em -0.01em 1.5em rgba(255,255,255,0.4);  /* ici c'est un mini effet de halo */
+  -webkit-transform: translateX(-600px) rotate(-10deg);
+  transform: translateX(-600px) rotate(-10deg);  
+  border-radius: 15%; 
+  
+  box-shadow: inset 0cm -0.15cm 0.6cm rgba(0,0,0, 0.8), /* une ombre (sur le contour) à l'intérieur */
+              
+              inset -1.25px -2px 1px 1.75px rgba(0,0,0,0.8), /* border intérieure basse  => c'est elle qui fait l'effet 3d*/
+  
+   -0.15px 0.75px 1px 0.25px rgba(255,255,255,0.8), /* border haute floue pour renforcer l'effet 3D */       
+  
+  -0.13em 0.1em 1.2em rgba(255,255,255,0.4);  /* ici c'est un mini effet de halo */
   
   /* ET ICI LA PoSITION DES BOUTONS 
   qui sera définie pour chaque 'id' un peu plus bas dans ce custom.css !!*/ 
@@ -180,12 +190,15 @@ on va juste ajouter un effet de transition beaucoup plus simple */
 			*/
 			/*text-shadow: 0px 1px 0px white;*/ 
 			
-  transform: scale(0.9) rotate(-0.2deg);
+  font-size: 0.89rem;
   
   /* la on ajoute une autre animation pour le bouton qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
   -webkit-animation: glowing-blue 1s ease-in-out infinite alternate;
   -moz-animation:  glowing-blue 1s ease-in-out infinite alternate;
   animation:  glowing-blue 1s ease-in-out infinite alternate; 
+   
+   /* on fait un effet 3d quand le bouton est cliqué (dans ce contexte où le fond est devenu noir) */
+  text-shadow: 0.75px 0.75px 0 #04040E , 1.5px 1.5px 0 grey ;
 		}
 }
 
@@ -204,14 +217,16 @@ on va juste ajouter un effet de transition beaucoup plus simple */
 
 #button3 {
   position: absolute; 
+  border-radius: 50%;  
+    
   font-weight: bold;
-  font-size: 1.1rem;
-  padding: 6px 20px;
+  font-size: 1rem;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom: 9.5px;
   bottom: 50%;
-  right: 3%; 
-  border-radius: 50%; 
-  text-shadow: 0.75px 0.75px 0 #04040E , 1.5px 1.5px 0 grey,
-    2.25px 2.25px darkgrey ;
+  right: 3%;  
    
 }
 
