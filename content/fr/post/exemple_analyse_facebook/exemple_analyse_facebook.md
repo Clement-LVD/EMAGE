@@ -20,6 +20,7 @@ tags:
 - Lexiques
 - Cartes
 - Communication
+- Influence des messages
 categories: 
 - Analyse de textes
 - Stratégies & analyses de communications

@@ -19,12 +19,12 @@ sections:
     # img_width: "406px"
     # img_height: "590px"
     button_text:
-      - "  📃 Voir les types de bilans"
-      - "  🔬 Voir les cas d'études"
+      - "  📃 Optimisez votre implantation"
+      - "  🔬 Mesurez l'influence de vos messages"
       - '☎️ CONTACTS'
     button_link:
-      - '/project/page_presentation_rapports' 
-      - '#projects'
+      - '/tag/calculs-dimplantation/' 
+      - '/tag/influence-des-messages'
       - '/page_contacts/page_contact'
   - text:  <strong>  <hh style="color:white"> CARTES ET ANALYSES GÉOSPATIALES</strong>  </hh> 
     url_image:  "/logos/emage-rotating-earth-optimized.gif"

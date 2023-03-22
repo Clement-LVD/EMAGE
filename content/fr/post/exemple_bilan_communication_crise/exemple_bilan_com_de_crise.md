@@ -10,6 +10,7 @@ tags:
 - Cartes
 - Communication
 - Communication de crise
+- Influence des messages
 categories: 
 - Stratégies & analyses de communications
 title: Bilan de l'efficacité de communications de crise
