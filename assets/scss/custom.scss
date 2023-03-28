@@ -293,14 +293,15 @@ _________________________________________________________*/
 
 /* il y a plein de valeurs à modifier pour ajouter une diapo, comme c'est du full css ce slideshow */
 
-/* each slide backgound color xxx ici c'est hardcodé omg !  */
+/* le backgound color de chaque slide est hardcodé en css
+==> cet objet est super important pour le bon déroulement du diapositive (l'alignement à 0, 100%, 200%, etc.) !  */
 .slide1 {
-  background: rgba(0,0,0,0.99 );
+  background: rgba(0,0,0, 0.93);
   left: 0;
 }
 
 .slide2 {
-  background: rgba(0,0,0,0.95 );
+  background: rgba(0,0,0,0.85);
   
    
   
@@ -308,7 +309,7 @@ _________________________________________________________*/
 }
 
 .slide3 {
-  background: rgba(0,0,0,0.85 ); 
+  background: rgba(0,0,0, 0.85); 
   /*background:  #04040E;*/
   left: 200%;
 }
@@ -320,22 +321,28 @@ _________________________________________________________*/
   left: 300%;
    
 }
+
 .slide5 {
   
-  background: rgba(0,0,0, 0.98); 
+  background: rgba(0,0,0, 0.97); 
   left: 400%;
 }
 
 
 .slide6 {
-  background: rgba(0,0,0,0.98); 
+  background: rgba(0,0,0,0.85); 
   left: 500%;
 }
 
 
 .slide7 {
-  background: rgba(0,0,0, 0.99); 
+  background: rgba(0,0,0, 0.92); 
   left: 600%;
+}
+
+.slide8 {
+  background: rgba(0,0,0, 0.9); 
+  left: 700%;
 }
 
 /* ici il faudrait refondre tout ça pour alléger le css */
@@ -346,14 +353,16 @@ _________________________________________________________*/
 .slide-radio3:checked ~ .next .numb4,
 .slide-radio4:checked ~ .next .numb5,
 .slide-radio5:checked ~ .next .numb6,
-.slide-radio6:checked ~ .next .numb7,  
+.slide-radio6:checked ~ .next .numb7,
+.slide-radio7:checked ~ .next .numb8,  
 
 .slide-radio2:checked ~ .previous .numb1, 
 .slide-radio3:checked ~ .previous .numb2, 
 .slide-radio4:checked ~ .previous .numb3,
 .slide-radio5:checked ~ .previous .numb4,
 .slide-radio6:checked ~ .previous .numb5,
-.slide-radio7:checked ~ .previous .numb6  {
+.slide-radio7:checked ~ .previous .numb6,
+.slide-radio8:checked ~ .previous .numb7  {
   display: block;
   z-index: 1
 }
@@ -365,7 +374,8 @@ _________________________________________________________*/
 .slide-radio4:checked ~ .slider-pagination .page4,
 .slide-radio5:checked ~ .slider-pagination .page5,
 .slide-radio6:checked ~ .slider-pagination .page6,
-.slide-radio7:checked ~ .slider-pagination .page7 {
+.slide-radio7:checked ~ .slider-pagination .page7,
+.slide-radio8:checked ~ .slider-pagination .page8 {
   
   transform: scale(1.5); 
   background: white; 
@@ -408,6 +418,11 @@ _________________________________________________________*/
   transform: translateX(-600%);
 }
 
+.slide-radio8:checked ~ .slider {
+  -webkit-transform: translateX(-700%);
+  transform: translateX(-700%);
+}
+
 .slide-radio1:checked ~ .slide1 h2,  
 .slide-radio2:checked ~ .slide2 h2,  
 .slide-radio3:checked ~ .slide3 h2,  
@@ -415,13 +430,16 @@ _________________________________________________________*/
 .slide-radio5:checked ~ .slide5 h2,  
 .slide-radio6:checked ~ .slide6 h2,   
 .slide-radio7:checked ~ .slide7 h2,  
+.slide-radio8:checked ~ .slide8 h2,
+
 .slide-radio1:checked ~ .slide1 .button,  
 .slide-radio2:checked ~ .slide2 .button,  
 .slide-radio3:checked ~ .slide3 .button,  
 .slide-radio4:checked ~ .slide4 .button,
 .slide-radio5:checked ~ .slide5 .button,
 .slide-radio6:checked ~ .slide6 .button,
-.slide-radio7:checked ~ .slide7 .button {
+.slide-radio7:checked ~ .slide7 .button,
+.slide-radio8:checked ~ .slide8 .button {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1
@@ -520,6 +538,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
   float: left;
   
   clip-path: polygon(14% 8%, 75% 8%, 50% 50%, 75% 95%, 14% 97%, 0% 50%);
+}
+
+.float-left { 
+  margin-right: 0px;
+  padding-right: 15px;
+  float: left; 
 }
 
 /* XXXXXXXXXXXXXXXXXXXXX

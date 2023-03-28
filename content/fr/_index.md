@@ -55,13 +55,22 @@ sections:
       - '/project/page_presentation_rapports'
       - '/category/cartes-et-analyses-geospatiales/'
       - '/tags/cartes/'
-  - text:  <strong>  <hh style="color:white"> ANALYSES DE TEXTES</strong>  </hh> 
-    url_image:  "/logos/logo_emage_textes_miniformat.gif"
-    img_width: "120px"
+  - text:  <strong>  <hh style="color:white"> ANALYSES DE TEXTES <br> (SUPERVISÉES OU NON)</strong>  </hh> 
+    url_image:  "/logos/emage_texte_mining_supervise.gif"
+    # img_width: "120px"
+    img_width: "45%"
     button_text:
       - "  🔬 Voir les cas d'études"
     button_link:
       - '/category/analyse-de-textes'
+  - text: <hh style="color:white"><strong> ANALYSES D'ENQUÊTES ET DE COMMUNICATIONS </strong> </hh>
+    url_image: "/logos/animation_logo_voronoi_optimise.gif" 
+    button_text:
+      - "  📃 Voir un rapport-type"
+      - "  🔬 Voir des cas d'études"
+    button_link:
+      - '/project/page_presentation_rapports'
+      - '/tag/enquetes/' 
   - text: <hh style="color:white"><strong> INFLUENCES DES COMMUNICATIONS ET VISIBILITÉ EN LIGNE </strong> </hh>
     url_image: "/graphiques/vue_ensemble_visibilite_journalistes_facebook.png"
     button_text:
@@ -71,19 +80,7 @@ sections:
       - '/project/page_presentation_rapports'
       - '/category/strategies-analyses-de-communications/'
     img_width: "45%" 
-  - text: <hh style="color:white"><strong> TEXT-MINING SUPERVISÉ </strong> </hh>
-    url_image: "/logos/emage_texte_mining_supervise.gif"
-    img_width: "224px"
-    img_height: "338px"
-    button_text:
-      - "  📃 Voir un rapport-type"
-      - "  🔬 Voir des cas d'études"
-    button_link:
-      - '/project/page_presentation_rapports'
-      - '/tag/analyse-thematique-supervisee/'
-    img_width: "45%" 
-     
-    # subtitle:   <h2> <strong> CONSULTING, ENQUÊTES & ANALYSES </strong> </h2>
+  - text: <hh style="color:white"><strong> ET BIEN D'AUTRES MÉTHODES </strong> </hh> 
  
 
 
