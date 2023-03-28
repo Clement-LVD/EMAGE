@@ -213,7 +213,7 @@ sections:
       title: CEO & data analyst
     - company: Gustave Eiffel University
       company_logo: logo_UGE
-      company_url: ""
+      company_url: "https://www.univ-gustave-eiffel.fr/"
       date_end: "2021-10-01"
       date_start: "2023-02-01"
       description: |2-
@@ -223,22 +223,13 @@ sections:
           * Participation à des conférences et des articles en sécurité routière, à la rédaction e rapports au ministère de l'Intérieur, etc.
       location: Versailles, France
       title: Chargé d'un projet de recherche (Post-doctorat)
-    title: Experience
+    title: CV
   design:
     columns: "2"
 - block: diplomes
   content:
     date_format: Jan 2006
     items:
-    - certificate_url: www.theses.fr/2021NIME0002
-      date_end: ""
-      date_start: "2021-05-25"
-      description: "Relations publiques et exploitation des réseaux sociaux numériques en gestion des crises : quels rôles de Facebook pour les gestionnaires français et comment exploiter ce canal de façon pertinente ?"
-      organization: ED583 (IMT Alès & UNÎMES)
-      organization_url: https://ed583.unimes.fr/
-      orga_logo: "logo_ED_2022"
-      title: Docteur en psychologie
-      url: ""
     - certificate_url: https://courses.edx.org/certificates/07dd917be3654e058599574b3a1fa40e
       date_end: ""
       date_start: "2021-10-10"
@@ -248,12 +239,21 @@ sections:
       organization_url: https://learn.stanford.edu/
       title: Relational Databases and SQL
       url: https://www.edx.org/course/databases-5-sql
+    - certificate_url: www.theses.fr/2021NIME0002
+      date_end: ""
+      date_start: "2021-05-25"
+      description: "Relations publiques et exploitation des réseaux sociaux numériques en gestion des crises : quels rôles de Facebook pour les gestionnaires français et comment exploiter ce canal de façon pertinente ?"
+      organization: ED583 (IMT Alès & UNÎMES)
+      organization_url: https://ed583.unimes.fr/
+      orga_logo: "logo ED 2022"
+      title: Docteur en psychologie
+      url: ""
     - certificate_url: 
       date_end: "2020-12-21"
       date_start: "2020-07-01"
       description: ""
       organization: Univ. Paris Cité (ex-Paris 5)
-      orga_logo: "Logo_univ_Paris5"
+      orga_logo: "Logo univ Paris5"
       organization_url: https://u-paris.fr/societes-humanites/
       title: Titre de psycho-sociologue / Master 2
       url: ""
