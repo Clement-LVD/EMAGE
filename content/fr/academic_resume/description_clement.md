@@ -24,11 +24,14 @@ sections:
     subtitle:
     text: <h1><img src="/svg/clem_himself.jpg" width= "320px" alt="" class="float-left" id = "myself_picture">  Clément L. <br>
           <div class="waviy"><span style="--i:1"> Ph.</span><span style="--i:2">D.</span></div>   
-           <a href="{{< ref "/" >}}" class="btn btn-cligno"> <span class='gray-emoji'>🧙</span> Voir la page pro E-MAGE consulting</a></h1> <br>
-        <span> <a href="https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"><i class="fab fa-linkedin fa-2x"></i></a> </span>
+           <a href="{{< ref "/" >}}" class="btn btn-cligno"> <span class='gray-emoji'>🧙</span> Voir la page pro E-MAGE consulting</a></h1> <br> 
+        ༼<span> <a href="https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"><i class="fab fa-linkedin fa-2x"></i></a> </span>
         <span> <a href="https://www.researchgate.net/profile/Clement-Laverdet/"> <i class="ai inverted-image ai-researchgate ai-2x"></i></a> </span> 
-        <span> <a href="mailto:clementlvd@gmail.com"> <i class="fa fa-paper-plane fa-2x"></i></a> </span>   clementlvd@gmail.com
-        <span> <a href="/cv_clement/cv_LVD_2023.pdf"> <i class="ai ai-cv ai-2x"></i></a> </span> 
+        <span> <a href="mailto:clementlvd@gmail.com"> <i class="fa fa-paper-plane fa-2x"></i></a> </span>  
+        <span> <a href="/cv_clement/cv_LVD_2023.pdf"> <i class="ai ai-cv ai-2x"></i></a>༽</span> 
+       <br>  {{< spoiler text="Cliquez pour voir mon adresse mail" >}}
+        clementlvd@gmail.com
+        {{< /spoiler >}}
   design:
     columns: '1'  
     spacing:
@@ -70,7 +73,7 @@ sections:
       <br><i class="fa fa-user-md" aria-hidden="true"></i>  Déontologie'
     - icon: graduation-cap
       icon_pack: fa
-      name: Ph.D. en Ψ
+      name: Ph.D. ❪Ψ❫
       tooltip_titre: "Thèse ：Bilans de l'influence sur Facebook et des rôles des communications et de Facebook pendant les crises <br> <a href='theses.hal.science/tel-03457426'> Voir cette thèse en ligne </a>"  
       description: "Travaux de recherches sur :<br>- La communication préventive<br>- La communication de crise<br>-Les accidents de la route<br>- Les crises politiques, catastrophes naturelles, accidents majeurs et conflits"
     - icon: layer-group
@@ -81,6 +84,18 @@ sections:
                       <div><a href="/category/cartes-et-analyses-geospatiales/" title="Vers des exemples"> Cartes <i class="fa fa-map" fa-1x></i></a></div>
                       <div><a href="/category/reseaux-de-relations/" title="Vers des exemples"> Réseaux <img src="/media/icons/network.png" width="15px" height="15" class="inverted-image"> </a></div>
                       <div><a href="/category/strategies-analyses-de-communications/" title="Vers des exemples"> Analyse des communications <i class="fa fa-commenting" fa-1x></i></a></div> '
+    - icon: scirate
+      icon_pack: ai
+      name: ENQUÊTES ET RECHERCHES
+      # tooltip_titre: ↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>→ 
+      description: "Reprise ou conception d'enquêtes : <br>✅<b>Programmation <br>&<br>✅ Méthodes de sciences sociales <br>       + Psychosociologue   <i class='fa fa-user-secret fa-1x'></i> <br> + Docteur en psychologie <i class='fa fa-graduation-cap'></i> </b>"
+    - icon: envelopes-bulk
+      icon_pack: fa
+      name: PRÉSENTATION DES RÉSULTATS
+      description: "<b> Analyses et rapports programmés : <br>
+             <i class='fa fa-check-square'></i> Vérifiables              <i class='fa fa-file' ></i>🔍→💾<br>
+             <i class='fa fa-check-square'></i> Actualisables           💾⃕◌⃕◌⃕<i class='fa fa-refresh'></i> <br>
+             <i class='fa fa-check-square'></i> Réutilisables        🌰⃕🌰⃕🌰⃕<i class='fa fa-server'></i> </b>"
       
 - block: experience
   design:
@@ -100,10 +115,10 @@ sections:
       date_start: "2023-03-01"
       description: |2-
 
-          * Gérer la société, estimer les besoins des clients
           * Conception d'enquêtes et de recherches
           * Analyses de données (e.g., text-mining, *insights* Facebook)
           * Rédaction de bilans et de rapports à partir des données
+          * Conseils en communications
     - company: Université Gustave Eiffel
       location: Versailles, France
       title: Chargé d'un projet de recherche (Post-doctorat)

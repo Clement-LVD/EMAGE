@@ -415,7 +415,7 @@ sections:
       <br><i class="fa fa-user-md" aria-hidden="true"></i>  Déontologie'
     - icon: graduation-cap
       icon_pack: fa
-      name: Ph.D. en Ψ
+      name: Ph.D. ❪Ψ❫
       tooltip_titre: "Thèse ：Bilans de l'influence sur Facebook et des rôles des communications et de Facebook pendant les crises <br> <a href='theses.hal.science/tel-03457426'> Voir cette thèse en ligne </a>"  
       description: "Travaux de recherches sur :<br>- La communication préventive<br>- La communication de crise<br>-Les accidents de la route<br>- Les crises politiques, catastrophes naturelles, accidents majeurs et conflits"
      
