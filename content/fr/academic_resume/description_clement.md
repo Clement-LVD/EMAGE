@@ -28,7 +28,7 @@ sections:
         <span> <a href="https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"><i class="fab fa-linkedin fa-2x"></i></a> </span>
         <span> <a href="https://www.researchgate.net/profile/Clement-Laverdet/"> <i class="ai inverted-image ai-researchgate ai-2x"></i></a> </span> 
         <span> <a href="mailto:clementlvd@gmail.com"> <i class="fa fa-paper-plane fa-2x"></i></a> </span>   clementlvd@gmail.com
-        <span> <a href="cv_clement/cv.pdf"> <i class="ai ai-cv ai-2x"></i></a> </span> 
+        <span> <a href="/cv_clement/cv.pdf"> <i class="ai ai-cv ai-2x"></i></a> </span> 
   design:
     columns: '1'  
     spacing:
@@ -129,7 +129,7 @@ sections:
     - company: Mairie d'Igny
       location: Igny, France
       title: Chargé de recherches (Stage de recherche)
-      company_logo: logo_igny
+      company_logo: Logo_igny
       company_url: "https://www.igny.fr/"
       date_end: "2015-07-01"
       date_start: "2015-01-01" 
@@ -141,7 +141,7 @@ sections:
     - company: Direction des ressources humaines de l'Armée de terre (DRHAT)
       location: Vincennes, France
       title: Chargé d'études statistiques (CDD)
-      company_logo: logo_drhat
+      company_logo: Logo_drhat
       company_url: "https://rh-terre.defense.gouv.fr/la-drhat/organisation"
       date_start: "2014-03-01"
       date_end: "2014-07-30" 
