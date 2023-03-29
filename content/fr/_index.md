@@ -89,7 +89,7 @@ sections:
   design:
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["20px", "0", "0px", "0"]
+      padding: ["21px", "0", "0px", "0"]
     background:
       gradient_end: '#000000'
       gradient_start: '#000000'
