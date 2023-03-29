@@ -106,6 +106,8 @@ sections:
     date_format: Jan 2006
     items:
     - company:  **E-Mage**
+      location: France
+      title: CEO & data analyst
         <!-- et le logo il faut aller le chercher dans "asset/media/icons/brands" (wtf)
         et il ne prends que du svg -->
       company_logo: wizard_hat
@@ -118,9 +120,9 @@ sections:
           * Conception d'enquêtes et de recherches
           * Analyses de données (e.g., text-mining, *insights* Facebook)
           * Rédaction de bilans et de rapports à partir des données
-      location: France
-      title: CEO & data analyst
     - company: Université Gustave Eiffel
+      location: Versailles, France
+      title: Chargé d'un projet de recherche (Post-doctorat)
       company_logo: logo_UGE
       company_url: "https://www.univ-gustave-eiffel.fr/"
       date_start: "2021-10-01"
@@ -129,10 +131,11 @@ sections:
 
           * Recherches sur l'accidentalité routière
           * Text-mining, analyses géoégraphiques et d'enquêtes
-          * Participation à des conférences et des articles en sécurité routière, à la rédaction e rapports au ministère de l'Intérieur, etc.
-      location: Versailles, France
-      title: Chargé d'un projet de recherche (Post-doctorat)
+          * Participation à des conférences en sécurité routière
+          * Rédaction d'articles scientifiques et de rapports a l'intention du ministère de l'Intérieur
     - company: Université de Nîmes
+      location: Nîmes, France
+      title: Chargé d'enseignement et chercheur doctorant (Contrat doctoral)
       company_logo: logo_unimes
       company_url: "https://www.unimes.fr"
       date_end: "2021-05-01"
@@ -142,46 +145,69 @@ sections:
           * Recherches sur la communication de crise et les rôles des réseaux sociaux numériques pendant les crises
           * Analyses de stratégies de communcations de crise et bilan des rôles du discours journalistique (300 sources sur les 10 dernières années)
           * Conception d'enseignements, d'ateliers et de conférences
-      location: Nîmes, France
-      title: Chargé d'enseignement et chercheur doctorant (Contrat doctoral)
+    - company: Mairie d'Igny
+      location: Igny, France
+      title: Chargé de recherches (Stage de recherche)
+      company_logo: logo_igny
+      company_url: "https://www.igny.fr/"
+      date_end: "2015-07-01"
+      date_start: "2015-01-01" 
+      description: |2-
+
+          * Conception de recherches autour de l'influence intergénérationnelle (enseignants en primaire → enfants → parents)
+          * Bilan de l'efficacité d'un programme municipal de préventions en milieu scolaire
+          * Réalisation de notes de services sur divers thèmes (e.g., conséquences psychologiques de l'extinction de l'éclairage public)
+    - company: Direction des ressources humaines de l'Armée de terre (DRHAT)
+      location: Vincennes, France
+      title: Chargé d'études statistiques (CDD)
+      company_logo: logo_drhat
+      company_url: "https://rh-terre.defense.gouv.fr/la-drhat/organisation"
+      date_start: "2014-03-01"
+      date_end: "2014-07-30" 
+      description: |2-
+
+          * Évaluation de la qualité des tests de recrutements
+          * Recherches autour de la performance des soldats, de la rupture de contrat, etc.
+          * Rapports à la "cellule psychologie" et présentations à la cours des comptes
     title: CV
   design:
     columns: "2"
-- block: diplomes
-  subtitle: lequel
-  title:  gg
-  design:
-    columns: "2"
-  content:
-    date_format: Jan 2006
-    items:
-    - certificate_url: https://courses.edx.org/certificates/07dd917be3654e058599574b3a1fa40e
-      date_end: ""
-      date_start: "2021-10-10"
-      description: "Certificat en ligne délivré par Stanford Online"
-      organization: Stanford Online
-      orga_logo: "stanford_online"
-      organization_url: https://learn.stanford.edu/
-      title: Relational Databases and SQL
-      url: https://www.edx.org/course/databases-5-sql
-    - certificate_url: https://www.theses.fr/2021NIME0002
-      date_end: ""
-      date_start: "2021-05-25"
-      description: "Relations publiques et exploitation des réseaux sociaux numériques en gestion des crises : quels rôles de Facebook pour les gestionnaires français et comment exploiter ce canal de façon pertinente ?"
-      organization: ED583 (IMT Alès & UNÎMES)
-      organization_url: https://ed583.unimes.fr/
-      orga_logo: "logo ED 2022"
-      title: Docteur en psychologie
-      url: ""
-    - certificate_url: 
-      date_end: "2015-12-21"
-      date_start: "2013-07-01"
-      description: ""
-      organization: Univ. Paris Cité (ex-Paris 5)
-      orga_logo: "Logo univ Paris5"
-      organization_url: https://u-paris.fr/societes-humanites/
-      title: Titre de psycho-sociologue / Master 2
-      url: ""
+    
+# - block: diplomes
+#   subtitle: lequel
+#   title:  gg
+#   design:
+#     columns: "2"
+#   content:
+#     date_format: Jan 2006
+#     items:
+#     - certificate_url: https://courses.edx.org/certificates/07dd917be3654e058599574b3a1fa40e
+#       date_end: ""
+#       date_start: "2021-10-10"
+#       description: "Certificat en ligne délivré par Stanford Online"
+#       organization: Stanford Online
+#       orga_logo: "stanford_online"
+#       organization_url: https://learn.stanford.edu/
+#       title: Relational Databases and SQL
+#       url: https://www.edx.org/course/databases-5-sql
+#     - certificate_url: https://www.theses.fr/2021NIME0002
+#       date_end: ""
+#       date_start: "2021-05-25"
+#       description: "Relations publiques et exploitation des réseaux sociaux numériques en gestion des crises : quels rôles de Facebook pour les gestionnaires français et comment exploiter ce canal de façon pertinente ?"
+#       organization: ED583 (IMT Alès & UNÎMES)
+#       organization_url: https://ed583.unimes.fr/
+#       orga_logo: "logo ED 2022"
+#       title: Docteur en psychologie
+#       url: ""
+#     - certificate_url: 
+#       date_end: "2015-12-21"
+#       date_start: "2013-07-01"
+#       description: ""
+#       organization: Univ. Paris Cité (ex-Paris 5)
+#       orga_logo: "Logo univ Paris5"
+#       organization_url: https://u-paris.fr/societes-humanites/
+#       title: Titre de psycho-sociologue / Master 2
+#       url: ""
 # - block: collection
 #   content:
 #     count: 2
