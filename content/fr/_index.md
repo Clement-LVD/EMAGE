@@ -214,7 +214,7 @@ sections:
       icon_class: 
       tooltip_titre: "Cliquez pour voir des exemples"  
       description: |-
-           -  Expérience avec plusieurs API (<i class="fa-brands fa-facebook"></i> / <i class="fa-brands fa-twitter" ></i> / <i class="fa-brands fa-google" ></i> )
+           -  API <i class="fa-brands fa-facebook"></i> / <i class="fa-brands fa-twitter" ></i> / <i class="fa-brands fa-google" ></i> / etc.
            <br><i class="ai ai-dataverse ai-1x"></i>  SQL, SQLite, etc.
             <br> (.*) RegEx
      
