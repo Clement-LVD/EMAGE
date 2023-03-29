@@ -114,6 +114,42 @@ sections:
           * Text-mining, analyses géoégraphiques et d'enquêtes
           * Participation à des conférences en sécurité routière
           * Rédaction d'articles scientifiques et de rapports a l'intention du ministère de l'Intérieur
+    - company: Université de Nîmes
+      location: Nîmes, France
+      title: Chargé d'enseignement et chercheur doctorant (Contrat doctoral)
+      company_logo: logo_unimes
+      company_url: "https://www.unimes.fr"
+      date_end: "2021-05-01"
+      date_start: "2016-12-15"
+      description: |2-
+
+          * Recherches sur la communication de crise et les rôles des réseaux sociaux numériques pendant les crises
+          * Analyses de stratégies de communcations de crise et bilan des rôles du discours journalistique (300 sources sur les 10 dernières années)
+          * Conception d'enseignements, d'ateliers et de conférences
+    - company: Mairie d'Igny
+      location: Igny, France
+      title: Chargé de recherches (Stage de recherche)
+      company_logo: Logo_igny
+      company_url: "https://www.igny.fr/"
+      date_end: "2015-07-01"
+      date_start: "2015-01-01" 
+      description: |2-
+
+          * Conception de recherches autour de l'influence intergénérationnelle (enseignants en primaire → enfants → parents)
+          * Bilan de l'efficacité d'un programme municipal de préventions en milieu scolaire
+          * Réalisation de notes de services sur divers thèmes (e.g., conséquences psychologiques de l'extinction de l'éclairage public)
+    - company: Direction des ressources humaines de l'Armée de terre (DRHAT)
+      location: Vincennes, France
+      title: Chargé d'études statistiques (CDD)
+      company_logo: Logo_drhat
+      company_url: "https://rh-terre.defense.gouv.fr/la-drhat/organisation"
+      date_start: "2014-03-01"
+      date_end: "2014-07-30" 
+      description: |2-
+
+          * Évaluation de la qualité des tests de recrutements
+          * Recherches autour de la performance des soldats, de la rupture de contrat, etc.
+          * Rapports à la "cellule psychologie" et présentations à la cours des comptes
     title: CV
   design:
     columns: "2"
