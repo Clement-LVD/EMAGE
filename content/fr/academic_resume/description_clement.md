@@ -28,7 +28,7 @@ sections:
         <span> <a href="https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"><i class="fab fa-linkedin fa-2x"></i></a> </span>
         <span> <a href="https://www.researchgate.net/profile/Clement-Laverdet/"> <i class="ai inverted-image ai-researchgate ai-2x"></i></a> </span> 
         <span> <a href="mailto:clementlvd@gmail.com"> <i class="fa fa-paper-plane fa-2x"></i></a> </span>   clementlvd@gmail.com
-        <span> <a href="/cv_clement/cv.pdf"> <i class="ai ai-cv ai-2x"></i></a> </span> 
+        <span> <a href="/cv_clement/cv_LVD_2023.pdf"> <i class="ai ai-cv ai-2x"></i></a> </span> 
   design:
     columns: '1'  
     spacing:
