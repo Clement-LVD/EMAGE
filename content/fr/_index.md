@@ -57,7 +57,6 @@ sections:
       - '/tags/cartes/'
   - text:  <strong>  <hh style="color:white"> ANALYSES DE TEXTES <br> (SUPERVISÉES OU NON)</strong>  </hh> 
     url_image:  "/logos/emage_texte_mining_supervise.gif"
-    # img_width: "120px"
     img_width: "45%"
     button_text:
       - "  🔬 Voir les cas d'études"
@@ -217,7 +216,7 @@ sections:
       description: |-
            -  Expérience avec plusieurs API (<i class="fa-brands fa-facebook"></i> / <i class="fa-brands fa-twitter" ></i> / <i class="fa-brands fa-google" ></i> )
            <br><i class="ai ai-dataverse ai-1x"></i>  SQL, SQLite, etc.
-            <br> (.*) Bonne maîtrise des RegEx
+            <br> (.*) RegEx
      
 
  
@@ -375,7 +374,7 @@ sections:
           <div class="waviy"><span style="--i:1"> Ph.</span><span style="--i:2">D.</span></div>   
            <a href="{{< ref "/academic_resume/description_clement" >}}" class="btn btn-cligno"><i class="fa fa-graduation-cap"></i> Voir le profil universitaire</a></h1>
         <span> <a href="https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"><i class="fab fa-linkedin fa-2x"></i></a> </span>
-        <span> <a href="/cv_clement/cv.pdf"> <i class="ai ai-cv ai-2x"></i></a> </span>
+        <span> <a href="cv_clement/cv.pdf"> <i class="ai ai-cv ai-2x"></i></a> </span>
   design:
     columns: '1'  
     spacing:
