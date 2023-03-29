@@ -21,7 +21,7 @@ sections:
   id: about
   content:
     title: Profil universitaire
-    subtitle:  (page inachevée ++ tout est à faire)
+    subtitle:
     text: <h1><img src="/svg/clem_himself.jpg" width= "320px" alt="" class="float-left" id = "myself_picture">  Clément L. <br>
           <div class="waviy"><span style="--i:1"> Ph.</span><span style="--i:2">D.</span></div>   
            <a href="{{< ref "/" >}}" class="btn btn-cligno"> <span class='gray-emoji'>🧙</span> Voir la page pro E-MAGE consulting</a></h1> <br>
@@ -83,8 +83,11 @@ sections:
                       <div><a href="/category/strategies-analyses-de-communications/" title="Vers des exemples"> Analyse des communications <i class="fa fa-commenting" fa-1x></i></a></div> '
       
 - block: experience
+  design:
+    columns: "2"
   content:
     date_format: Jan 2006
+    title: Parcours professionnel
     items:
     - company:  **E-Mage**
       location: France
@@ -124,7 +127,7 @@ sections:
       description: |2-
 
           * Recherches sur la communication de crise et les rôles des réseaux sociaux numériques pendant les crises
-          * Analyses de stratégies de communcations de crise et bilan des rôles du discours journalistique (300 sources sur les 10 dernières années)
+          * Analyses de stratégies de communications de crise et bilan des rôles du discours journalistique (300 sources sur les 10 dernières années)
           * Conception d'enseignements, d'ateliers et de conférences
     - company: Mairie d'Igny
       location: Igny, France
@@ -150,7 +153,16 @@ sections:
           * Évaluation de la qualité des tests de recrutements
           * Recherches autour de la performance des soldats, de la rupture de contrat, etc.
           * Rapports à la "cellule psychologie" et présentations à la cours des comptes
-    title: CV
-  design:
-    columns: "2"
+    - company: (2 associés principaux)
+      location: Île-de-France
+      title: Artisan associé
+      company_logo: 
+      company_url:
+      date_start: "2008-07-11"
+      date_end: "2016-11-30" 
+      description: |2-
+
+          * Planification et conduite de travaux de rénovations
+          * Bati intérieur : électricité, plomberie, isolation, domotiques, saunas, tapisseries (tissu massif, papier peint, etc.), rénovations de murs (éventuellement traditionnelles), implantation d'escaliers, mises aux normes, etc.
+          * Bâti extérieur : terrasses, allées, maçonneries, portails à gâchette électronique, luminaires classiques et connectés, etc.
 ---
