@@ -28,26 +28,7 @@ sections:
         <span> <a href="https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"><i class="fab fa-linkedin fa-2x"></i></a> </span>
         <span> <a href="https://www.researchgate.net/profile/Clement-Laverdet/"> <i class="ai inverted-image ai-researchgate ai-2x"></i></a> </span> 
         <span> <a href="mailto:clementlvd@gmail.com"> <i class="fa fa-paper-plane fa-2x"></i></a> </span>   clementlvd@gmail.com
-    
-  contact_links:
-    - icon: "graduation-cap"
-      icon_pack: fas
-      link: 'academic_resume/description_clement/'
-    - icon: linkedin
-      icon_pack: fab
-      label: Profil Linkedin
-      link: "https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"
-    - icon: cv
-      icon_pack: ai
-      link: uploads/resume.pdf
-    - icon: researchgate
-      icon_pack: ai
-      link: https://www.researchgate.net/profile/Clement-Laverdet
-      name: Mon profil researchgate
-    - icon: linkedin
-      icon_pack: fab
-      name: Mon profil Linkedin
-      link: "https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"
+        <span> <a href="/cv_clement/cv.pdf"> <i class="ai ai-cv ai-2x"></i></a> </span>
   design:
     columns: '1'  
     spacing:
