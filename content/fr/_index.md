@@ -197,12 +197,11 @@ sections:
       icon_class: 
       tooltip_titre: "Cliquez pour voir des exemples"  
       description: |-
-            <i class="fa fa-info-circle" ></i> Conseils (formulations de messages)
             <br> <i class="fa fa-compass"></i> Confrontations (com' effectives vs. théories)
             <br><i class="fa fa-comments"></i> Récupération et analyses des messages
             <br><i class="fa fa-newspaper"></i> Revue de presse et de littérature
             <br><i class="fa fa-line-chart"></i> Analyse de l'influence sur Facebook
-            <br> 📚 Maîtrise théorique des : ↓
+            <br> <i class="fa fa-info-circle" ></i> Conseils au niveau des formulations de messages 📚 : ↓
              <br>  ✅ - communications persuasives <i class="fa fa-compress"></i>  
              <br>  ✅ - communications de crise  <i class="fa fa-ambulance" ></i>
              <br>  ✅ - influences de l'enfant sur le parent <i class="fa fa-child fa-1x"></i>
