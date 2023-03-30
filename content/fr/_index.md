@@ -6,7 +6,8 @@ type: landing
 # si tu te sens un peu perdu, va voir : https://connorrothschild.github.io/v2/post/animate-hugo-academic/
 sections:
 
-- block: diaporama-pleine-largeur    
+- block: diaporama-pleine-largeur 
+  id: home
   design:
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.

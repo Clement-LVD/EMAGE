@@ -8,24 +8,24 @@
 
 
 main:
-  - name: " ACCUEIL"
-    pre: "| <i class='fa fa-home'></i>"
+  - name: "   ACCUEIL"
+    pre: "| <i class='fa fa-home'></i>"
     url: '#home'
     weight: 10
     identifier: "highlight-menu"
-  - name: " CAS D'ÉTUDES"
-    pre: "|  <i class='fa fa-microscope'></i>"
+  - name: "   CAS D'ÉTUDES"
+    pre: "|  <i class='fa fa-microscope'></i>"
     url: '#projects'
     weight: 20
-  - name:  "L'ÉQUIPE"
-    pre: "| <span class='gray-emoji'>🧙</span> "
+  - name:  "  L'ÉQUIPE"
+    pre: "|  <span class='gray-emoji'>🧙</span> "
     url: '#about'
     weight: 30
-  - name: "️ RAPPORTS-TYPES"
-    pre: "| 🧾"
+  - name: "  RAPPORTS-TYPES"
+    pre: "|  🧾"
     url: '/project/page_presentation_rapports'
     weight: 40
-  - name:  " CONTACT"
+  - name:  "  CONTACT"
     pre: "|  <i class='fa fa-paper-plane'></i> "
     url: '/page_contacts/page_contact'
     weight: 50

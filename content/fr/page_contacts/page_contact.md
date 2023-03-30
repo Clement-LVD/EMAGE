@@ -22,7 +22,9 @@ sections:
       gradient_angle: -180
   content:
       title: <hr> <br> Contactez E-MAGE consulting 
-      text:    '<h1 style="color: navy; font-size: 40px;">  <div> 📧 {{< global_param "email" >}} </div> </h1> 
+      text:    '<h1 style="color: navy; font-size: 40px;">  <div> <br>  {{< spoiler text=" 📧 Cliquez pour voir mon adresse mail" >}}
+       {{< global_param "email" >}}
+        {{< /spoiler >}} </div> </h1> 
       
       <h1> <i class="fa fa-paper-plane" ></i>   Formulaire de contact </h1>
       
