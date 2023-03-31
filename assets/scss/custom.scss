@@ -295,7 +295,7 @@ _________________________________________________________*/
 /* le backgound color de chaque slide est hardcodé en css
 ==> cet objet est super important pour le bon déroulement du diapositive (l'alignement à 0, 100%, 200%, etc.) !  */
 .slide1 {
-  background: rgba(0,0,0, 0.93);
+  background: rgba(0,0,0, 0.9);
   left: 0;
 }
 
@@ -323,24 +323,24 @@ _________________________________________________________*/
 
 .slide5 {
   
-  background: rgba(0,0,0, 0.97); 
+  background: rgba(0,0,0, 0.85); 
   left: 400%;
 }
 
 
 .slide6 {
-  background: rgba(0,0,0,0.85); 
+  background: rgba(0,0,0,0.97); 
   left: 500%;
 }
 
 
 .slide7 {
-  background: rgba(0,0,0, 0.92); 
+  background: rgba(0,0,0, 0.70); 
   left: 600%;
 }
 
 .slide8 {
-  background: rgba(0,0,0, 0.9); 
+  background: rgba(0,0,0, 0.8); 
   left: 700%;
 }
 

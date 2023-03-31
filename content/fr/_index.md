@@ -34,28 +34,35 @@ sections:
       - "  🔬 Voir les cas d'études"
     button_link:
       - '/category/cartes-et-analyses-geospatiales/'
-  - text: <strong> <hh style="color:white"> CALCULS D'IMPLANTATION </hh> </strong>
-    url_image: "/media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg"
+  - text: <strong> <hh style="color:white"> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION </hh> </strong>
+    url_image: "media/albums/voroinoi_business_paris/B_enseignes_bricolage_et_materiaux.jpg"
     button_text:
-      - "  📃 Voir un rapport-type"
+      # - "  📃 Voir un rapport-type"
       - "  🔬 Voir les cas d'études"
-      - "🌍 CARTES"
-    img_width: "80%" 
+      # - "🌍 CARTES"
+    # img_width: "60%" 
     button_link:
-      - '/project/page_presentation_rapports'
+      # - '/project/page_presentation_rapports'
       - '/category/cartes-et-analyses-geospatiales/'
-      - '/tags/cartes/' 
-  - text:  <strong>  <hh style="color:white"> ZONES D'INFLUENCES DES CONCURRENTS </hh> </strong> 
-    url_image: "/media/albums/voroinoi_business_paris/B_enseignes_bricolage_et_materiaux.jpg"
-    img_width: "50%" 
+      # - '/tags/cartes/' 
+  - text:  <strong>  <hh style="color:white"> MESUREZ VOTRE VISIBILITÉ EN LIGNE ET CELLE DE VOS CONCURRENTS</hh> </strong> 
+    url_image: "/graphiques/vue_ensemble_visibilite_journalistes_facebook.png"
+    img_width: "40%" 
     button_text:
-      - "  📃 Voir un rapport-type"
+      # - "  📃 Visibilité des concurrents"
       - "  🔬 Voir les cas d'études"
-      - '🌎 CARTES'
+      # - 'Votre visibilité'
     button_link:
-      - '/project/page_presentation_rapports'
-      - '/category/cartes-et-analyses-geospatiales/'
-      - '/tags/cartes/'
+      # - '/project/page_presentation_rapports'
+      - '/category/strategies-analyses-de-communications/'
+      # - '/tags/cartes/'
+  - text: <hh style="color:white"><strong> ÉVALUEZ LA PERTINENCE DE VOS MESSAGES </strong> </hh>
+    url_image: "/graphiques/influence_arguments_presidentiels_affaire_benalla.png"
+    button_text:
+      - "  🔬 Voir les cas d'études"
+    button_link:
+      - '/category/strategies-analyses-de-communications/'
+    img_width: "45%" 
   - text:  <strong>  <hh style="color:white"> ANALYSES DE TEXTES <br> (SUPERVISÉES OU NON)</strong>  </hh> 
     url_image:  "/logos/emage_texte_mining_supervise.gif"
     img_width: "45%"
@@ -66,20 +73,11 @@ sections:
   - text: <hh style="color:white"><strong> ANALYSES D'ENQUÊTES ET DE COMMUNICATIONS </strong> </hh>
     url_image: "/logos/animation_logo_voronoi_optimise.gif" 
     button_text:
-      - "  📃 Voir un rapport-type"
+      # - "  📃 Voir un rapport-type"
       - "  🔬 Voir des cas d'études"
     button_link:
-      - '/project/page_presentation_rapports'
+      # - '/project/page_presentation_rapports'
       - '/tag/enquetes/' 
-  - text: <hh style="color:white"><strong> INFLUENCES DES COMMUNICATIONS ET VISIBILITÉ EN LIGNE </strong> </hh>
-    url_image: "/graphiques/vue_ensemble_visibilite_journalistes_facebook.png"
-    button_text:
-      - "  📃 Voir un rapport-type"
-      - "  🔬 Voir les cas d'études"
-    button_link:
-      - '/project/page_presentation_rapports'
-      - '/category/strategies-analyses-de-communications/'
-    img_width: "45%" 
   - text: <hh style="color:white"><strong> ET BIEN D'AUTRES MÉTHODES </strong> </hh> 
  
 
