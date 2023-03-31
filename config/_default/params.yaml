@@ -25,9 +25,9 @@ marketing:
     site_type: "LocalBusiness"
     local_business_type: "ProfessionalService"
     org_name: 'EMAGE.Diag'
-    description: 'Analyses de vos données, enquêtes et conseils en communication. Another French data-scientist website.'
+    description: 'Analyse de données, text-mining, enquêtes et conseils en communication.'
   analytics:
-    google_analytics: 'G-BE4TGDH8NC'
+    # google_analytics: 'G-BE4TGDH8NC'
     google_optimize: true
   verification:
     google: ''
