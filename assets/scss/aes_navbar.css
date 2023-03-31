@@ -65,6 +65,32 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
     z-index: 3; /* le texte est au premier plan */
 }
 
+
+.navbar-brand::before {
+  content: ""; /* pour l'image de fond */
+  position: absolute;
+  bottom: -3%;
+  left: -35%;
+  width: 50%;
+  height: 100%;
+  transform: scale(0.85);
+  background-image: url("/icon_voronoi.png");
+  
+  filter:  saturate(60%) drop-shadow(1px 20px 20px rgba(255, 255, 255, 0.7));
+  /* les paramètres drop-shadow ici c'est un léger décalage horizontal de 1px (pas tout à fait centré), la longueur de la traînée verticale (20px) et un genre d'effet de flou */
+  
+
+  background-size: contain;
+  background-repeat: no-repeat; /* à utiliser avec "contain" pour éviter que l'image ne se répète */
+
+    /*font-family: "Serif";*/
+  /*border: 3px solid null; *//* pas de couleurs spécifiée on s'en sert juste pour cropper l'image! */
+ /* border-radius: 30px;*/
+  opacity: 0.9; /* opacité de l'image de fond */
+  z-index: 1; /* l'image est en arrière plan */
+}
+
+
   
   /* icones font awesome black dans ce contexte */
   
