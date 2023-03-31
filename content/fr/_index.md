@@ -14,14 +14,14 @@ sections:
       padding: ["410px", "0", "5px", "0"] 
   slider_id: "my-slider"
   slides:
-  - text:   <strong> <hh style="color:white">CONSULTING, ANALYSES & ENQUÊTES <br> Révélez vos données <br> Affinez vos campagnes </hh></strong>
+  - text:   <strong> <hh style="color:white">CONSULTING, ANALYSES & ENQUÊTES <br> Révélez vos données </hh></strong>
     url_image: "logos/logo_emage_texte_cartes_reseaux.gif" 
     # url_image: "logos/logo_emage.png"
     # img_width: "406px"
     # img_height: "590px"
     button_text:
       - "  📃 Optimisez votre implantation"
-      - "  🔬 Mesurez l'influence de vos messages"
+      - "🔬 Affinez vos messages"
       - '☎️ CONTACTS'
     button_link:
       - '/tag/calculs-dimplantation/' 
