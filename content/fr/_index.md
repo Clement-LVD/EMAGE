@@ -15,10 +15,9 @@ sections:
   slider_id: "my-slider"
   slides:
   - text:   <strong> <hh style="color:white">CONSULTING, ANALYSES & ENQUÊTES <br> Révélez vos données </hh></strong>
-    url_image: "logos/logo_emage_texte_cartes_reseaux.gif" 
-    # url_image: "logos/logo_emage.png"
-    # img_width: "406px"
-    # img_height: "590px"
+    url_image: "logos/logo_emage_texte_cartes_reseaux.gif"
+    img_width: "32%"
+    # img_height: "120px"
     button_text:
       - "  📃 Optimisez votre implantation"
       - "🔬 Affinez vos messages"
@@ -29,7 +28,7 @@ sections:
       - '/page_contacts/page_contact'
   - text:  <strong>  <hh style="color:white"> CARTES ET ANALYSES GÉOSPATIALES</strong>  </hh> 
     url_image:  "/logos/emage-rotating-earth-optimized.gif"
-    img_width: "160px"
+    img_width: "130px"
     button_text:
       - "  🔬 Voir les cas d'études"
     button_link:
@@ -40,14 +39,14 @@ sections:
       # - "  📃 Voir un rapport-type"
       - "  🔬 Voir les cas d'études"
       # - "🌍 CARTES"
-    # img_width: "60%" 
+    # img_width: "40%"
     button_link:
       # - '/project/page_presentation_rapports'
       - '/category/cartes-et-analyses-geospatiales/'
       # - '/tags/cartes/' 
   - text:  <strong>  <hh style="color:white"> MESUREZ VOTRE VISIBILITÉ EN LIGNE ET CELLE DE VOS CONCURRENTS</hh> </strong> 
     url_image: "/graphiques/vue_ensemble_visibilite_journalistes_facebook.png"
-    img_width: "40%" 
+    # img_width: "40%" 
     button_text:
       # - "  📃 Visibilité des concurrents"
       - "  🔬 Voir les cas d'études"
