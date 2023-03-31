@@ -11,6 +11,7 @@ tags:
 - Text-analysis
 - Analyse thématique supervisée
 - Lexiques
+- Influence des messages
 categories: 
 - Enquêtes
 title: Enquêtes par questionnaires
