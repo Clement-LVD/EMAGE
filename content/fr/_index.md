@@ -13,13 +13,19 @@ sections:
     subtitle: 
     text:  |- 
         <div class="gallery-container">
-            <a href= '/page_contacts/page_contact/' title= "Vers la page de contacts">  
             <div class="gallery-item">  
+            <a href= '/page_contacts/page_contact/' title= "Vers la page de contacts">  
             <div class="item-text">
-             <h3-little> <strong>   E-MAGE Diagnostics, Analyses & Conseils   </strong> </h3-little>
+             <h3-little> <strong>  <i class="fa fa-paper-plane"> </i> CONTACTEZ E-MAGE   </strong> </h3-little>
             </div></a>
           </div>
-            <a href= '#methodes'>  
+          <div class="gallery-item"> 
+            <a href= '/categories/' title= "Voir les principales thématiques du site">  
+            <div class="item-text">
+              <strong>   Diagnostics, Analyses & Conseils   </strong>
+            </div></a>
+          </div>
+            <a href= '#methodes' title= "Voir les principales méthodes">  
             <div class="gallery-item" style= "border-style: solid;">
             <div class="item-image">
              <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="width: 120px; height: 120px;">
@@ -31,6 +37,15 @@ sections:
           </div>
           
           <div class="gallery-item">
+            <a href= '/tag/communication/' title= "Voir des exemples"> 
+                 <div class="item-image"> 
+             </div>
+            <div class="item-text">
+              <h3-little> <strong>   OPTIMISEZ VOS MESSAGES   </strong> </h3-little>
+              </div> </a>
+          </div>
+          
+          <div class="gallery-item">
             <a href= '/post/exemple_implantation_business_maps/exemple_utilisation_voronoi/'> 
             <div class="item-image">
               <img src='media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg' style="width: 250px; height: 60px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" ></div>
@@ -39,15 +54,6 @@ sections:
               <p>  & calculs de zones d'influences des concurrents </p>
             </div> </a> </div>
             
-          <div class="gallery-item">
-            <a href= '/tag/communication/'> 
-                 <div class="item-image"> 
-             </div>
-            <div class="item-text">
-              <h3-little> <strong>   OPTIMISEZ VOS MESSAGES   </strong> </h3-little>
-               <p> Comparaisons de messages & bilan d'influences </p>
-              </div> </a>
-          </div>
           <div class="gallery-item">
           <a href= "/category/strategies-analyses-de-communications/">
                  <div class="item-image">

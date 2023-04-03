@@ -24,23 +24,7 @@ et la docu hugo : https://gohugo.io/templates/introduction/
  
  /* ce css ci-dessous provoque un conflit avec le slideshow et sa classe malnommé "slider"  */
  /* @import  "defilement_de_logos";*/
-
-.diapo-pleine-page  {
-  display: block;
-  /*background: black;*/
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 2%;
-  bottom: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/2560px-BlackMarble20161km.jpg");
  
-} 
-
 .home-section { 
   /*background: black;*/  
   left: 0;
