@@ -21,36 +21,10 @@ sections:
       gradient_start: white
       gradient_angle: -180
   content:
-      title: <hr> <br> Contactez E-MAGE consulting 
-      text:    '<h1 style="color: navy; font-size: 40px;">  <div> <br>  {{< spoiler text=" 📧 Cliquez pour voir mon adresse mail" >}}
+      title: <br> Contactez E-MAGE consulting 
+      text:    '<h1 style="color: navy; font-size: 40px;">  <div>  {{< spoiler text=" 📧 Cliquez pour voir mon adresse mail" >}}
        {{< global_param "email" >}}
-        {{< /spoiler >}} </div> </h1> 
-      
-      <h1> <i class="fa fa-paper-plane" ></i>   Formulaire de contact </h1>
-      
-                 
-                 <h3-little> <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Votre prénom et nom : <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Votre email : <input type="email" name="email" /></label>
-  </p> 
-    <label>  <div> Vos besoins (vous pouvez indiquer plusieurs réponses<br> en maintenant "ctrl") : </div> <select name="role[]" multiple>
-      <option value="analyse">   Analyse de données   </option>
-      <option value="conseil">   Conseils</option>
-      <option value="autre">   Autre</option>
-    </select> </label> 
-  <p>
-    <label>Message : <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Envoi</button>
-  </p>
-  <br> Merci </h3-little>
-</form>
-                  '
- 
+        {{< /spoiler >}} </div> </h1> '
 --- 
   
            

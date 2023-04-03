@@ -24,427 +24,89 @@ et la docu hugo : https://gohugo.io/templates/introduction/
  
  /* ce css ci-dessous provoque un conflit avec le slideshow et sa classe malnommé "slider"  */
  /* @import  "defilement_de_logos";*/
- 
- 
- /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    LANDING SLidESHOW ! IMAGE / TEXTES ET BOUTONS / !!! 
- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-   @import "slideshow_texte_et_image";
-   
- /* Ce code css slideshow_texte_et_image.css est associé à un shortcode qui te produit un slideshow banière - en pur css <3
- ce shortcode est "diaporama-pleine-largeur.html"  (les formes des flèches sont hardcodées dans le shortcode
-: prévoir de remplacer cette zone par une variable indiquée en yaml pour indiquer l'icône)
- 
-! il reste quelques derniers réglages importants à caler sous forme de variables (donc modifier le shortcode et le yaml), 
-comme les couleurs de chaque diapositivees par exemple (hardcodées et définies dans le css) ! */
 
-
-/* MAIN Slider wrapper : css-slider-wrapper est l'objet principal, rattaché au corps de la page */
-
-/* on ajoute un background permanent, et on va jouer ensuite sur la transparence des fonds */
-
-.css-slider-wrapper { /*background: black;*/
-
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/2560px-BlackMarble20161km.jpg");
-  
-  
-}
-/* voici les options globales de l'objet principal "css-slider-wrapper"
-display: block;" : l'élément est affiché comme un bloc, avec un saut de ligne avant et après.
-"background: black;" : le fond de l'élément est en noir.
-"overflow: hidden;" : le contenu dépassant de l'élément est masqué.
-"position: absolute;" : l'élément est positionné de façon absolue par rapport à son premier parent positionné.
-"left: 0; right: 0; top: 0; bottom: 0;" : l'élément est étiré pour remplir tout l'espace disponible de son parent positionné (probablement le corps de la page).
-*/
-
-/* dans le méga objet "css-slider-wraper" l'objet global est "slider" et il y a des sous objets slide1, slide2, etc. */
- 
-
-/* il y a déjà plein de réglages css définis dans le css dédié slideshow_texte_et_image.css, 
-on va juste ajouter un effet de transition beaucoup plus simple */
-
-/* cette classe est déjà définie dans le css slideshow_texte_et_image.css on la complète juste*/
-.slider { 
-	overflow:hidden;
-  max-width: 100%; 
-  
-  /*transform: scale(0.2);  si tu veux scaler les images ! */
-            transition: all 0.75s;
-     
-     /* le code cubic-bezier attend x1, y1, x2, y2 */            
-  transition-timing-function: cubic-bezier(0.01, 0.7, 1, 0.99);
-  
-  -webkit-animation-timing-function:  cubic-bezier(0.01, 0.7, 1, 0.99);
-    /*-webkit-animation-timing-function: ease-out;*/
-    /* animation-timing-function: ease-out;*/
-  
-    animation-name: slideOut;
-    animation-iteration-count: once; 
-    animation-duration: 1.5s; 
-
-    -webkit-animation-name: slideOut;
-    -webkit-animation-iteration-count: once;
-    -webkit-animation-duration: 1.5s;    
-    
-    
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards; 
-   
-  
- 
-        }
-/* animation pour la premiere slide au chargement de la page :  */
-
-@keyframes slideOut {
-    0% {   
-      opacity: 0.01;
-        margin-left: 250%;
-    }
-    100% { opacity: 1;
-        margin-left: 0;
-    }
-}
-
-@-webkit-keyframes slideOut {
-    0% {
-      opacity: 0.01;
-        left: 250%;
-    }
-    100% {
-       opacity: 1;
-        left: 0;
-    }
-}
- 
-/* ON CONTINUE A REGLER LE SLIDER AVEC DES ZONES SUREXPOSEES DESSUS */
-
-@mixin red-gradient {
-	background: linear-gradient(to right,  rgba(255,0, 0, 0.5) 0%, rgba(0,0,0, 0.5) 100%);
-}
-
-.slider {
-	&::before,
-	&::after {
-		@include red-gradient;
-		content: "";
-		height: 14%;
-		position: absolute;
-		width: 10%; 
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;  
-	}
-
-	&::before {
-		left: 0;
-		top: 0;
-	}
-}
-
-/* LES BOUTONS CLIQUABLES QUI S'AJOUTENT DANS CET OBJET "slider" !" */
-/* Styles globaux pour tous les boutons */
- 
-
-/* ci-dessous les boutons cliquables que tu peux ajouter (reprend en partie le css d'origine) */
-.slider .button { 
-  
-  color: black; /* couleur du texte des boutons */;
-  text-shadow: 0.75px -1.1px 0 rgba(255,255,255,0.65) ;  
-  opacity: 1;
-  font-size: 0.85rem;
-  font-weight: bold; 
-  
-  
-  padding: 5.5px 20px;
-  padding-bottom: 8px;
-  background: #f8f8f8; 
-  /*line-height: 30px;
-  margin: 10px;*/
- 
-  -webkit-transform: translateX(-600px) rotate(-10deg);
-  transform: translateX(-600px) rotate(-10deg);  
-  border-radius: 15%; 
-  
-  box-shadow: inset 0cm -0.15cm 0.6cm rgba(0,0,0, 0.8), /* une ombre (sur le contour) à l'intérieur */
-              
-              inset -0.5px -2.3px 1px 2.85px rgba(0,0,0,0.8), /* border intérieure basse  => c'est elle qui fait l'effet 3d*/
-  
-   -0.25px 1.5px 2.1px 0.75px rgba(255,255,255,0.8), /* contour blanc pour assurer la lisibilité de l'effet 3D */       
-  
-  -0.13em 0.1em 1.2em rgba(255,255,255,0.4);  /* ici c'est un mini effet de halo */
-  
-  /* ET ICI LA PoSITION DES BOUTONS 
-  qui sera définie pour chaque 'id' un peu plus bas dans ce custom.css !!*/ 
-   position: absolute;
-  display: inline-block;
-     
-  &:hover {
-			background-color: black;
-			color: white;
-    font-weight: bold;  
-  
-			/* font-size: 26px; text-stroke: 2px black;
-			*/
-			/*text-shadow: 0px 1px 0px white;*/ 
-  font-size: 0.8rem;
-  
-  /* la on ajoute une autre animation pour le bouton qui s'affiche quand la souris passe dessus, avec un effet de glowing !*/
-  -webkit-animation: glowing-blue 1s ease-in-out infinite alternate;
-  -moz-animation:  glowing-blue 1s ease-in-out infinite alternate;
-  animation:  glowing-blue 1s ease-in-out infinite alternate; 
-   
-   /* on fait un effet 3d quand le bouton est cliqué (dans ce contexte où le fond est devenu noir) */
-  text-shadow: 0.75px 0.75px 0 #04040E , 1.5px 1.5px 0 grey ;
-		}
-}
-
-/* ensuite on a crée des id "button1", "button2", etc; */
-
-#button1 {
-  
-   bottom: 10%;
-   left: 12%;  
-}
-
-#button2 { 
-  bottom: 25%;
-   left: 8%;  
-   padding-right: 15px;
-}
-
-#button3 {
-  position: absolute; 
-  border-radius: 50%;  
-    
-  font-weight: bold;
-  font-size: 1rem;
-  padding-right: 23px;
-  padding-left: 25px;
-  padding-top: 8px;
-  padding-bottom: 10.5px;
-  bottom: 52%;
-  left: 17%;  
-   
-}
-
-/*tu peux aussi effacer toutes les animations des boutons (déclenchées au changement de slides) et rajouter les tiennes, par exemple avec => */
-/*
-
-.slider a.button {   
-       transform: rotate3d(1, 1, 1, 15deg); 
-   } 
-   
-   */
-
-/* un petit exemple de ce que tu trouve dans le css slideshow_texte_et_image.css
-
-.slider h2, .slider .button {
-  -webkit-transition: opacity 750ms, -webkit-transform 750ms;
-  transition: transform 500ms, opacity 800ms;
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-}  */
-  /* --webkit est pour Safari */
-  
- 
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-  ← → Réglages flèches de défilement ← →
-  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-.previous.control, .next.control { 
-border: none;
-width: 8%;
-position: absolute;
-top: 87%;
-transform: translateY(-20%);
-font-size: 2rem;  
-
-/* ici c'est l'icône de la flèche elle même */
-label {  
-color: darkred;
-font-size: 3rem;    
-  border-radius: 50%; 
-background: rgba(255,255,255, 0.4);  
-	 text-shadow: 1px 3px 0.2px black; 
-			 
- animation: flippy 8s infinite;
-	 
-	 &:hover {
-			color: black;
-			opacity: 1}
-}
-
-/* quand la personne clique dessus elle passe "active" un bref instant ce qui nous permet de caler un effet très bref */
-
-label:active {  
-color: white;
-font-size: 3.4rem;  
-    font-weight: bold;   
-                }
-  
-    }  /*fin des flèches de navigation "label" */
- 
-
-/* °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
- ° LES CHOSES A MODIFIER POUR AJOUTER UNE DIAPO ° 
-_________________________________________________________*/
-
-/* il y a plein de valeurs à modifier pour ajouter une diapo, comme c'est du full css ce slideshow */
-
-/* le backgound color de chaque slide est hardcodé en css
-==> cet objet est super important pour le bon déroulement du diapositive (l'alignement à 0, 100%, 200%, etc.) !  */
-.slide1 {
-  background: rgba(0,0,0, 0.9);
-  left: 0;
-}
-
-.slide2 {
-  background: rgba(0,0,0,0.85);
-  
-   
-  
-  left: 100%;
-}
-
-.slide3 {
-  background: rgba(0,0,0, 0.85); 
-  /*background:  #04040E;*/
-  left: 200%;
-}
-
-.slide4 {
-  
-  background: rgba(0,0,0,0.85); 
-  /*background:   #04040E;*/
-  left: 300%;
-   
-}
-
-.slide5 {
-  
-  background: rgba(0,0,0, 0.85); 
-  left: 400%;
-}
-
-
-.slide6 {
-  background: rgba(0,0,0,0.97); 
-  left: 500%;
-}
-
-
-.slide7 {
-  background: rgba(0,0,0, 0.70); 
-  left: 600%;
-}
-
-.slide8 {
-  background: rgba(0,0,0, 0.8); 
-  left: 700%;
-}
-
-/* ici il faudrait refondre tout ça pour alléger le css */
-
-/* Slider Pagger arrow event */
-.slide-radio1:checked ~ .next .numb2, 
-.slide-radio2:checked ~ .next .numb3, 
-.slide-radio3:checked ~ .next .numb4,
-.slide-radio4:checked ~ .next .numb5,
-.slide-radio5:checked ~ .next .numb6,
-.slide-radio6:checked ~ .next .numb7,
-.slide-radio7:checked ~ .next .numb8,  
-
-.slide-radio2:checked ~ .previous .numb1, 
-.slide-radio3:checked ~ .previous .numb2, 
-.slide-radio4:checked ~ .previous .numb3,
-.slide-radio5:checked ~ .previous .numb4,
-.slide-radio6:checked ~ .previous .numb5,
-.slide-radio7:checked ~ .previous .numb6,
-.slide-radio8:checked ~ .previous .numb7  {
+.diapo-pleine-page  {
   display: block;
-  z-index: 1
+  /*background: black;*/
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2%;
+  bottom: 0;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/2560px-BlackMarble20161km.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Slider Pagger event */
-.slide-radio1:checked ~ .slider-pagination .page1, 
-.slide-radio2:checked ~ .slider-pagination .page2, 
-.slide-radio3:checked ~ .slider-pagination .page3, 
-.slide-radio4:checked ~ .slider-pagination .page4,
-.slide-radio5:checked ~ .slider-pagination .page5,
-.slide-radio6:checked ~ .slider-pagination .page6,
-.slide-radio7:checked ~ .slider-pagination .page7,
-.slide-radio8:checked ~ .slider-pagination .page8 {
-  
-  transform: scale(1.5); 
-  background: white; 
- animation: color-change 2.5s infinite;
-}
-    
- 
-
-/* Slider slide effect */
-.slide-radio1:checked ~ .slider {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
-}
-.slide-radio2:checked ~ .slider {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-.slide-radio3:checked ~ .slider {
-  -webkit-transform: translateX(-200%);
-  transform: translateX(-200%);
-}
-.slide-radio4:checked ~ .slider {
-  -webkit-transform: translateX(-300%);
-  transform: translateX(-300%);
+ /* LANDING VIGNETTES  */
+ .gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  width: 99vw;
+  margin-top: 75px; 
 }
 
 
-.slide-radio5:checked ~ .slider {
-  -webkit-transform: translateX(-400%);
-  transform: translateX(-400%);
+.gallery-item {
+  margin: 10px 15px 75px 10px; /* ajouter 50px pour la marge inférieure */
+  width: 29%;
+  background-color: rgba(0,0,0, 0.3);
+  height: 43%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.slide-radio6:checked ~ .slider {
-  -webkit-transform: translateX(-500%);
-  transform: translateX(-500%);
+
+.item-image img {
+  left: 3%;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
 }
 
-.slide-radio7:checked ~ .slider {
-  -webkit-transform: translateX(-600%);
-  transform: translateX(-600%);
+.item-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
 }
 
-.slide-radio8:checked ~ .slider {
-  -webkit-transform: translateX(-700%);
-  transform: translateX(-700%);
+.item-text {
+  color: black;  
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9),
+  -1px -1px 1px rgba(255, 255,255, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 99%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*background-color: #f5f5f5;*/
+  text-align: center;
+  padding: 3px;
 }
 
-.slide-radio1:checked ~ .slide1 h2,  
-.slide-radio2:checked ~ .slide2 h2,  
-.slide-radio3:checked ~ .slide3 h2,  
-.slide-radio4:checked ~ .slide4 h2,  
-.slide-radio5:checked ~ .slide5 h2,  
-.slide-radio6:checked ~ .slide6 h2,   
-.slide-radio7:checked ~ .slide7 h2,  
-.slide-radio8:checked ~ .slide8 h2,
-
-.slide-radio1:checked ~ .slide1 .button,  
-.slide-radio2:checked ~ .slide2 .button,  
-.slide-radio3:checked ~ .slide3 .button,  
-.slide-radio4:checked ~ .slide4 .button,
-.slide-radio5:checked ~ .slide5 .button,
-.slide-radio6:checked ~ .slide6 .button,
-.slide-radio7:checked ~ .slide7 .button,
-.slide-radio8:checked ~ .slide8 .button {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  opacity: 1
+.item-text h3-little {
+  margin-top: 10px;
+  background: rgba(255,255,255,0.65);
 }
- 
+
+.item-text p {
+  line-height: 1.2;
+  color: black;
+  margin: 0px 0 0 0;
+  background: rgba(255,255,255,0.8);
+}
  
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 on justifie le texte des articles
@@ -626,6 +288,7 @@ h5-little {
 
 h3-little {
   
+  line-height: 1.5;
   text-align: left; font-size: 1em;
 }
 

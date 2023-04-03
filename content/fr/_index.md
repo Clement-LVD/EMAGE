@@ -5,81 +5,68 @@ subtitle:  BIENVENUE SUR LE SITE D'EMAGE DIAG, consulting & analyses
 type: landing
 # si tu te sens un peu perdu, va voir : https://connorrothschild.github.io/v2/post/animate-hugo-academic/
 sections:
-
-- block: diaporama-pleine-largeur 
+             
+- block: markdown_pleine_page
   id: home
+  content:
+    title: 
+    subtitle: 
+    text:  |- 
+        <div class="gallery-container">
+            <a href= '#methodes'> 
+            <div class="gallery-item"> 
+            <div class="item-image">
+             <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="width: 110px; height: 120px;">
+            </div>
+            <div class="item-text">
+             <h3-little> <strong>   RÉVÉLEZ VOS DONNÉES   </strong></h3-little>
+            </div></a>
+          </div>
+          <div class="gallery-item">
+            <a href= '/post/exemple_implantation_business_maps/exemple_utilisation_voronoi/'> 
+            <div class="item-image">
+              <img src='media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg' style="width: 320px; height: 70px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" ></div>
+              <div class="item-text">
+              <h3-little> <center> <strong> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR S'IMPLANTER</strong> </center> </h3-little>
+              <p>  & calculs de zones d'influences des concurrents </p>
+            </div>  </a>
+          </div>
+          <div class="gallery-item">
+            <a href= '/tag/communication/'> 
+                 <div class="item-image"> 
+             </div>
+            <div class="item-text">
+              <h3-little> <strong>   OPTIMISEZ VOS MESSAGES   </strong> </h3-little>
+               <p> Comparaisons de messages & bilan d'influences </p>
+              </div> </a>
+          </div>
+          <div class="gallery-item">
+          <a href= "/category/strategies-analyses-de-communications/">
+                 <div class="item-image">
+                <img src='/graphiques/vue_ensemble_visibilite_journalistes_facebook.png'  style="width: 340px; height: 100px;" alt= "Graphique des influences journalistique" >              </div>
+            <div class="item-text">
+              <h3-little> <strong> <center> MESUREZ VOTRE INFLUENCE ET CELLE DE VOS CONCURRENTS </strong> </center> </h3-little>
+              </div> </a>
+          </div>
+          <div class="gallery-item">
+          <a href= "/category/enquetes/">
+                 <div class="item-image">
+                <img src='/media/resume_conditions_questionnaire.png'  style="width: 300px; height: 120px;" alt= "Résumé des conditions expérimentales d'un questionnaire / expérience en ligne" >
+             </div>
+            <div class="item-text">
+              <h3-little> <strong>  BÉNÉFICIEZ D'UNE ENQUÊTE SUR-MESURE   </strong> </h3-little>
+              </div> </a>
+          </div>
   design:
+    columns: '1'  
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["410px", "0", "5px", "0"] 
-  slider_id: "my-slider"
-  slides:
-  - text:   <strong> <hh style="color:white">CONSULTING, ANALYSES & ENQUÊTES <br> Révélez vos données </hh></strong>
-    url_image: "logos/logo_emage_texte_cartes_reseaux.gif"
-    img_width: "32%"
-    # img_height: "120px"
-    button_text:
-      - "  📃 Optimisez votre implantation"
-      - "🔬 Affinez vos messages"
-      - '☎️ CONTACTS'
-    button_link:
-      - '/tag/calculs-dimplantation/' 
-      - '/tag/influence-des-messages'
-      - '/page_contacts/page_contact'
-  - text:  <strong>  <hh style="color:white"> CARTES ET ANALYSES GÉOSPATIALES</strong>  </hh> 
-    url_image:  "/logos/emage-rotating-earth-optimized.gif"
-    img_width: "130px"
-    button_text:
-      - "  🔬 Voir les cas d'études"
-    button_link:
-      - '/category/cartes-et-analyses-geospatiales/'
-  - text: <strong> <hh style="color:white"> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION </hh> </strong>
-    url_image: "media/albums/voroinoi_business_paris/B_enseignes_bricolage_et_materiaux.jpg"
-    button_text:
-      # - "  📃 Voir un rapport-type"
-      - "  🔬 Voir les cas d'études"
-      # - "🌍 CARTES"
-    # img_width: "40%"
-    button_link:
-      # - '/project/page_presentation_rapports'
-      - '/category/cartes-et-analyses-geospatiales/'
-      # - '/tags/cartes/' 
-  - text:  <strong>  <hh style="color:white"> MESUREZ VOTRE VISIBILITÉ EN LIGNE ET CELLE DE VOS CONCURRENTS</hh> </strong> 
-    url_image: "/graphiques/vue_ensemble_visibilite_journalistes_facebook.png"
-    # img_width: "40%" 
-    button_text:
-      # - "  📃 Visibilité des concurrents"
-      - "  🔬 Voir les cas d'études"
-      # - 'Votre visibilité'
-    button_link:
-      # - '/project/page_presentation_rapports'
-      - '/category/strategies-analyses-de-communications/'
-      # - '/tags/cartes/'
-  - text: <hh style="color:white"><strong> ÉVALUEZ LA PERTINENCE DE VOS MESSAGES </strong> </hh>
-    url_image: "/graphiques/influence_arguments_presidentiels_affaire_benalla.png"
-    button_text:
-      - "  🔬 Voir les cas d'études"
-    button_link:
-      - '/category/strategies-analyses-de-communications/'
-    img_width: "45%" 
-  - text:  <strong>  <hh style="color:white"> ANALYSES DE TEXTES <br> (SUPERVISÉES OU NON)</strong>  </hh> 
-    url_image:  "/logos/emage_texte_mining_supervise.gif"
-    img_width: "45%"
-    button_text:
-      - "  🔬 Voir les cas d'études"
-    button_link:
-      - '/category/analyse-de-textes'
-  - text: <hh style="color:white"><strong> ANALYSES D'ENQUÊTES ET DE COMMUNICATIONS </strong> </hh>
-    url_image: "/logos/animation_logo_voronoi_optimise.gif" 
-    button_text:
-      # - "  📃 Voir un rapport-type"
-      - "  🔬 Voir des cas d'études"
-    button_link:
-      # - '/project/page_presentation_rapports'
-      - '/tag/enquetes/' 
-  - text: <hh style="color:white"><strong> ET BIEN D'AUTRES MÉTHODES </strong> </hh> 
- 
-
+      padding: ["455px", "0", "10px", "0"] 
+    background:
+      gradient_end: '#000000'
+      gradient_start: '#000000'
+      text_color_light: true
+      
 
 - block: features_avec_tooltip 
   id: services
