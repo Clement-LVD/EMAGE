@@ -13,15 +13,17 @@ sections:
     subtitle: 
     text:  |- 
         <div class="gallery-container">
-            <a href= '#methodes'> 
-            <div class="gallery-item"> 
+            <a href= '#methodes'>  
+            <div class="gallery-item" style= "border-style: solid;">
             <div class="item-image">
-             <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="width: 110px; height: 120px;">
+             <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="width: 120px; height: 120px;">
             </div>
+            <br> 
             <div class="item-text">
              <h3-little> <strong>   RÉVÉLEZ VOS DONNÉES   </strong></h3-little>
             </div></a>
           </div>
+          
           <div class="gallery-item">
             <a href= '/post/exemple_implantation_business_maps/exemple_utilisation_voronoi/'> 
             <div class="item-image">
@@ -29,8 +31,8 @@ sections:
               <div class="item-text">
               <h3-little> <center> <strong> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION</strong> </center> </h3-little>
               <p>  & calculs de zones d'influences des concurrents </p>
-            </div>  </a>
-          </div>
+            </div> </div> </a>
+            
           <div class="gallery-item">
             <a href= '/tag/communication/'> 
                  <div class="item-image"> 
