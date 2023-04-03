@@ -68,10 +68,10 @@ sections:
           <div class="gallery-item">
           <a href= "/category/enquetes/">
                  <div class="item-image">
-                <img src='/media/resume_conditions_questionnaire.png'  style="width: 280px; height: 100px;" alt= "Résumé des conditions expérimentales d'un questionnaire / expérience en ligne" >
+                <img src='/media/resume_conditions_questionnaire.png'  style="width: 150px; height: 80px;" alt= "Résumé des conditions expérimentales d'un questionnaire / expérience en ligne" >
              </div>
             <div class="item-text">
-              <h3-little> <strong> <i class="fa fa-search-plus" ></i> BÉNÉFICIEZ D'UNE ENQUÊTE SUR-MESURE   </strong> </h3-little>
+              <h3-little> <strong> <i class="fa fa-search-plus" ></i> BÉNÉFICIEZ D'UNE ENQUÊTE SUR MESURE   </strong> </h3-little>
               </div> </a>
           </div>
   design:
