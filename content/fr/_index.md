@@ -6,7 +6,7 @@ type: landing
 # si tu te sens un peu perdu, va voir : https://connorrothschild.github.io/v2/post/animate-hugo-academic/
 sections:
              
-- block: markdown_pleine_page
+- block: markdown
   id: home
   content:
     title: 
@@ -25,9 +25,9 @@ sections:
           <div class="gallery-item">
             <a href= '/post/exemple_implantation_business_maps/exemple_utilisation_voronoi/'> 
             <div class="item-image">
-              <img src='media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg' style="width: 320px; height: 70px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" ></div>
+              <img src='media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg' style="width: 250px; height: 60px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" ></div>
               <div class="item-text">
-              <h3-little> <center> <strong> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR S'IMPLANTER</strong> </center> </h3-little>
+              <h3-little> <center> <strong> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION</strong> </center> </h3-little>
               <p>  & calculs de zones d'influences des concurrents </p>
             </div>  </a>
           </div>
@@ -43,7 +43,7 @@ sections:
           <div class="gallery-item">
           <a href= "/category/strategies-analyses-de-communications/">
                  <div class="item-image">
-                <img src='/graphiques/vue_ensemble_visibilite_journalistes_facebook.png'  style="width: 340px; height: 100px;" alt= "Graphique des influences journalistique" >              </div>
+                <img src='/graphiques/vue_ensemble_visibilite_journalistes_facebook.png'  style="width: 250px; height: 80px;" alt= "Graphique des influences journalistique" >              </div>
             <div class="item-text">
               <h3-little> <strong> <center> MESUREZ VOTRE INFLUENCE ET CELLE DE VOS CONCURRENTS </strong> </center> </h3-little>
               </div> </a>
@@ -51,7 +51,7 @@ sections:
           <div class="gallery-item">
           <a href= "/category/enquetes/">
                  <div class="item-image">
-                <img src='/media/resume_conditions_questionnaire.png'  style="width: 300px; height: 120px;" alt= "Résumé des conditions expérimentales d'un questionnaire / expérience en ligne" >
+                <img src='/media/resume_conditions_questionnaire.png'  style="width: 280px; height: 100px;" alt= "Résumé des conditions expérimentales d'un questionnaire / expérience en ligne" >
              </div>
             <div class="item-text">
               <h3-little> <strong>  BÉNÉFICIEZ D'UNE ENQUÊTE SUR-MESURE   </strong> </h3-little>
@@ -61,10 +61,11 @@ sections:
     columns: '1'  
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["455px", "0", "10px", "0"] 
+      padding: ["0px", "0", "0px", "0"] 
     background:
-      gradient_end: '#000000'
-      gradient_start: '#000000'
+      # gradient_end: black
+      # gradient_start: black
+      # gradient_angle: -180
       text_color_light: true
       
 
