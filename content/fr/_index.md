@@ -21,10 +21,7 @@ sections:
           </div>
           <div class="gallery-item"> 
             <a href= '/categories/' title= "Voir les principales thématiques du site">  
-              <div class="item-image">
-             <img src="/logos/logo_emage.png" style="width: 80px; height: 120px;">
-              </div>
-            <div class="item-text">
+               <div class="item-text">
             <strong>   Diagnostics <br> Analyses & Conseils   </strong>
             </div></a>
           </div>
