@@ -256,12 +256,6 @@ et la classe "col-12" si deux colonnes
   }
 
 
-#home {
-  
-   background-color: black;
-  color: white;
-  
-}
 
 /* couleurs de fond du footer  */
 
@@ -270,6 +264,7 @@ et la classe "col-12" si deux colonnes
   background-color: lightgrey; 
   
 }
+
 
 /* Les styles standards de classes de titres */
 h1 {
@@ -284,9 +279,8 @@ h3 {color: white;
 
 /* ON VA FAIRE 3 STYLES DE TEXTES EN BLANC POUR CENTRER AISEMENT*/
 h3.little {color: white;
-  font-size: 2;
   line-height: 1em; /* ça veut dire égal à la taille du texte !*/
-  text-align: left; font-size: 18px;
+  text-align: left;
 }
 
 h4 {color: white; font-size: 28px;

@@ -13,6 +13,12 @@ sections:
     subtitle: 
     text:  |- 
         <div class="gallery-container">
+            <a href= '/page_contacts/page_contact/' title= "Vers la page de contacts">  
+            <div class="gallery-item">  
+            <div class="item-text">
+             <h3-little> <strong>   E-MAGE Diagnostics, Analyses & Conseils   </strong> </h3-little>
+            </div></a>
+          </div>
             <a href= '#methodes'>  
             <div class="gallery-item" style= "border-style: solid;">
             <div class="item-image">
@@ -31,7 +37,7 @@ sections:
               <div class="item-text">
               <h3-little> <center> <strong> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION</strong> </center> </h3-little>
               <p>  & calculs de zones d'influences des concurrents </p>
-            </div> </div> </a>
+            </div> </a> </div>
             
           <div class="gallery-item">
             <a href= '/tag/communication/'> 
