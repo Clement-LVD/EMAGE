@@ -49,10 +49,10 @@ et la docu hugo : https://gohugo.io/templates/introduction/
 
 
 .gallery-item {
-  margin: 10px 20px 40px 10px; /* ajouter 50px pour la marge inférieure */
+  margin: 10px 20px 48px 10px; /* ajouter 50px pour la marge inférieure */
   width: 29%;
   background-color: rgba(255,255,255, 0.1);
-  height: 43%; 
+  height: 33%; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,7 +83,7 @@ et la docu hugo : https://gohugo.io/templates/introduction/
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 99%;
+  width: 105%;
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@ et la docu hugo : https://gohugo.io/templates/introduction/
   /*background-color: #f5f5f5;*/
   text-align: center;
   padding: 3px;
-  font-size: 0.85rem
+  font-size: 0.84rem
 }
 
 .item-text h3-little {
@@ -100,10 +100,11 @@ et la docu hugo : https://gohugo.io/templates/introduction/
   margin-top: 10px;
   text-align: center;
   background: rgba(255,255,255,0.75);
+  line-height: 1.45;
 }
 
 .item-text p {
-  line-height: 1.2;
+  line-height: 1.18;
   color: black;
   margin: 0px 0 0 0;
   background: rgba(255,255,255,0.7);

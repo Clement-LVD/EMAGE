@@ -21,8 +21,11 @@ sections:
           </div>
           <div class="gallery-item"> 
             <a href= '/categories/' title= "Voir les principales thématiques du site">  
+              <div class="item-image">
+             <img src="/logos/logo_emage.png" style="width: 80px; height: 120px;">
+              </div>
             <div class="item-text">
-              <strong>   Diagnostics, Analyses & Conseils   </strong>
+            <strong>   Diagnostics <br> Analyses & Conseils   </strong>
             </div></a>
           </div>
             <a href= '#methodes' title= "Voir les principales méthodes">  
@@ -32,7 +35,7 @@ sections:
             </div>
             <br> 
             <div class="item-text">
-             <h3-little> <strong>   RÉVÉLEZ VOS DONNÉES   </strong></h3-little>
+             <h3-little> <strong>  <i class="fa fa-line-chart" ></i> RÉVÉLEZ VOS DONNÉES </strong></h3-little>
             </div></a>
           </div>
           
@@ -41,7 +44,7 @@ sections:
                  <div class="item-image"> 
              </div>
             <div class="item-text">
-              <h3-little> <strong>   OPTIMISEZ VOS MESSAGES   </strong> </h3-little>
+              <h3-little> <strong>  <i class="fa fa-comments"></i> OPTIMISEZ VOS MESSAGES   </strong> </h3-little>
               </div> </a>
           </div>
           
@@ -50,16 +53,16 @@ sections:
             <div class="item-image">
               <img src='media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg' style="width: 250px; height: 60px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" ></div>
               <div class="item-text">
-              <h3-little> <center> <strong> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION</strong> </center> </h3-little>
-              <p>  & calculs de zones d'influences des concurrents </p>
-            </div> </a> </div>
+              <h3-little> <center> <strong> <i class="fa fa-map-pin" ></i> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION</strong> </center> </h3-little>
+              <p>  & les zones d'influences des concurrents </p>
+            </div> </a> </div> 
             
           <div class="gallery-item">
           <a href= "/category/strategies-analyses-de-communications/">
                  <div class="item-image">
                 <img src='/graphiques/vue_ensemble_visibilite_journalistes_facebook.png'  style="width: 250px; height: 80px;" alt= "Graphique des influences journalistique" >              </div>
             <div class="item-text">
-              <h3-little> <strong> <center> MESUREZ VOTRE INFLUENCE ET CELLE DE VOS CONCURRENTS </strong> </center> </h3-little>
+              <h3-little> <strong> <center> <i class="fa fa-braille" ></i> MESUREZ VOTRE INFLUENCE ET CELLE DE VOS CONCURRENTS </strong> </center> </h3-little>
               </div> </a>
           </div>
           <div class="gallery-item">
@@ -68,7 +71,7 @@ sections:
                 <img src='/media/resume_conditions_questionnaire.png'  style="width: 280px; height: 100px;" alt= "Résumé des conditions expérimentales d'un questionnaire / expérience en ligne" >
              </div>
             <div class="item-text">
-              <h3-little> <strong>  BÉNÉFICIEZ D'UNE ENQUÊTE SUR-MESURE   </strong> </h3-little>
+              <h3-little> <strong> <i class="fa fa-search-plus" ></i> BÉNÉFICIEZ D'UNE ENQUÊTE SUR-MESURE   </strong> </h3-little>
               </div> </a>
           </div>
   design:
