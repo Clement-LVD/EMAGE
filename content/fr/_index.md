@@ -16,7 +16,7 @@ sections:
           <div class="gallery-item"> 
             <a href= '/categories/' title= "Voir les principales thématiques du site">  
                <div class="item-text">
-            <pp style= "border-style: solid;"> Diagnostics <br> Analyses & Conseils </pp>
+            <gros-titre style= "border-style: solid;"> Diagnostics <br> Analyses & Conseils </gros-titre>
             </div></a>
           </div>
             <div class="gallery-item">  

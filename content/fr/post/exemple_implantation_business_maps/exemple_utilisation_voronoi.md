@@ -44,14 +44,17 @@ Par exemple, il faut prendre en compte des indicateurs relatifs aux concurrents 
 
 {{< /spoiler >}}
 
-Les figures ci-dessous présentent la densité des cliniques et de plusieurs enseignes parisiennes (vente de matériaux; supérettes et restaurants).
+Les figures ci-dessous présentent la densité des cliniques et de plusieurs enseignes parisiennes (vente de matériaux, supérettes et restaurants).
 
 
-<figure>  <figcaption> ↓ A. Cliniques et hopitaux parisiens <i class="fa-solid fa-user-doctor"></i>; <br>↓  B. Points de vente de 9 enseignes de vente de matériaux <i class="fa-solid fa-helmet-safety"></i>; <br>↓ C. Supérettes et supermarchés parisiens de 9 groupes concurrents <i class="fa-solid fa-cart-shopping"></i>; <br>D. Restaurants à Paris <i class="fa-solid fa-utensils"></i>{{< gallery album="voroinoi_business_paris" >}}
+<figure>  <figcaption> ↓ A. Cliniques et hopitaux parisiens <i class="fa-solid fa-user-doctor"></i>; <br>↓  B. Points de vente de 9 enseignes de vente de matériaux <i class="fa-solid fa-helmet-safety"></i>; <br>↓ C. Supérettes et supermarchés parisiens de 9 groupes concurrents <i class="fa-solid fa-cart-shopping"></i>; <br>D. Restaurants à Paris <i class="fa-solid fa-utensils"></i>
+
+{{< gallery album="voroinoi_business_paris" >}}
+
    <figcaption> Les "zones d'influences" (A, B et C) sont calculées en Voronoï. Data ODbL (CC-BY-SA 2.0)</figcaption> </figcaption>
 </figure>
 
-De même pour planifier le démarrage de l'activité de certains vendeurs itinérants, comme un camion de restaurateurs ou de coiffeurs ambulants. 
+De même pour planifier l'activité de vendeurs itinérants, comme un camion de restaurateurs ou de coiffeurs ambulants. 
 
 - <i class="fa-solid fa-hat-wizard"></i> 🔮 Lister les commerces comparables et identifier les zones les moins denses
 
