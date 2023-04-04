@@ -206,11 +206,11 @@ sections:
              <br>  ✅ - d'influences de l'enfant sur le parent <i class="fa fa-child fa-1x"></i>
              
 
-    - name:   <a href="/home/" title="Vers des explications plus détaillées"> Bases de données</a>
+    - name:  Bases de données
       icon: database
       icon_pack: fa
       icon_class: 
-      tooltip_titre: "Cliquez pour voir des exemples"  
+      tooltip_titre:
       description: |-
            -  API <i class="fa-brands fa-facebook"></i> / <i class="fa-brands fa-twitter" ></i> / <i class="fa-brands fa-google" ></i> / etc.
            <br><i class="ai ai-dataverse ai-1x"></i>  SQL, SQLite, etc.

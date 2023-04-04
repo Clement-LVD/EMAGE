@@ -29,23 +29,14 @@ gallery_item:
 ---
 
 
- <strong> 🎯 Dans cet article, nous allons voir comment calculer une zone d'implantation pour un service, en fonction de la densité de la concurrence. </strong>
+ <strong> 🎯 Cet article présente le calcule d'une zone d'influence ou d'une zone d'implantation pour un service, en fonction des emplacements d'autres commerces et services (p. ex. en identifiant les zones les moins denses en concurrents). </strong>
 
 
 
  <img src="/logos/emage-rotating-earth-optimized.gif" style= "float: left" width="140px" >
- 
-✨La densité des concurrents aide à déterminer un lieu d'implantation pour un point de vente, un service ou un service public. On peut aussi apprécier l'évolution de la pertinence d'un emplacement au cours du temps, en fonction de l'évolution des services à proximité.
 
-{{< spoiler text="Il existe d'autres indicateurs à exploiter pour déterminer une implantation et identifier les concurrents les plus menaçants. " >}} 
-
-<br>
-Par exemple, il faut prendre en compte des indicateurs relatifs aux concurrents (p. ex. réputation et prix pratiqués), aux zones et aux cibles (le prix des locaux au m², la densité de population et ses revenus moyens, le temps de trajet ou le flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>, etc.).
-
-{{< /spoiler >}}
-
-Une manière d'apprécier les zones d'influences consiste à "enfermer" chaque entité dans son propre espace, notamment en établissant un *diagramme de Voronoï* (d'après le calcul formalisé par Gueorgui Voronoï en 1908). Les figures ci-dessous présentent la localisation des cliniques et de plusieurs enseignes parisiennes (vente de matériaux, supérettes et restaurants).
-
+Une manière d'apprécier les zones d'influences consiste à "enfermer" chaque entité dans son propre espace, en établissant un *diagramme de Voronoï* (d'après le calcul formalisé par G. Voronoï en 1908). Les figures ci-dessous présentent la localisation des cliniques et d'autres types d'enseignes parisiennes (vente de matériaux, supérettes et restaurants).
+types
 
 <figure>  <figcaption> ↓ A. Cliniques et hopitaux parisiens <i class="fa-solid fa-user-doctor"></i>; <br>↓  B. Points de vente de 9 enseignes de vente de matériaux <i class="fa-solid fa-helmet-safety"></i>; <br>↓ C. Supérettes et supermarchés parisiens de 9 groupes concurrents <i class="fa-solid fa-cart-shopping"></i>; <br>D. Restaurants à Paris <i class="fa-solid fa-utensils"></i>
 
@@ -54,8 +45,34 @@ Une manière d'apprécier les zones d'influences consiste à "enfermer" chaque e
    <figcaption> Les "zones d'influences" (A, B et C) sont calculées en Voronoï. Data ODbL (CC-BY-SA 2.0)</figcaption> </figcaption>
 </figure>
 
-De même pour planifier l'activité de vendeurs itinérants, comme un camion de restaurateurs ou de coiffeurs ambulants. 
+ 
 
-- <i class="fa-solid fa-hat-wizard"></i> 🔮 Lister les commerces comparables et identifier les zones les moins denses
+ <img src="/graphiques/map_voronoi_boucheries_Tours.png" style= "float: right; margin-top: 1px; margin-left: 15px" width="300px" >
 
-- <i class='fa fa-magic' aria-hidden='true'></i>🌟 Produire une liste des meilleurs emplacements et d'autres rendus (e.g., une carte dynamique)
+✨ Le calcul de zones d'influences concerne également la vente itinérante (p. ex. un camion de restaurateurs ou de coiffeurs ambulants) et les artisans-commerçants (p. ex. ci-contre les emplacements et zones d'influences des boucheries tourangelles).
+
+
+{{< spoiler text="À noter, il faut généralement exploiter d'autres indicateurs que la seule localisation des concurrents, pour déterminer une implantation. " >}} 
+
+<br>
+Il faut généralement prendre en compte des indicateurs relatifs aux menaces que représentent les différents concurrents (p. ex. réputation et prix pratiqués), aux zones et aux cibles (le prix des locaux au m², la densité de population et ses revenus moyens, le flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>, etc.).
+
+{{< /spoiler >}}
+
+<br> 
+
+{{% callout note %}}
+
+La localisation des concurrents permet de calculer la zone d'influence de chacun et, *in fine*, d'identifier un lieu d'implantation optimal pour un point de vente, un service ou un service public.
+
+<i class="fa fa-info-circle"></i> Les calculs d'implantation nécessitent généralement de s'intéresser à d'autres services, en synergie avec l'activité à implanter (e.g., les arrêts de bus à proximité).
+
+{{% /callout %}}
+
+
+
+<strong> <i class='fa fa-magic' aria-hidden='true'></i>🌟 Nous pouvons vous aider à identifier un lieu d'implantation idéal. </strong>
+
+<div> <a href= '/page_contacts/page_contact/' title= "Vers la page de contacts">  <button class= "button button-rond"> <i class="fa fa-paper-plane"> </i> CONTACTEZ E-MAGE </button> </a> </div> <br> <br>
+
+
