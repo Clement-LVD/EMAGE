@@ -29,14 +29,13 @@ gallery_item:
 ---
 
 
- <strong> 🎯 Cet article présente le calcule d'une zone d'influence ou d'une zone d'implantation pour un service, en fonction des emplacements d'autres commerces et services (p. ex. en identifiant les zones les moins denses en concurrents). </strong>
+ <strong> 🎯 Cet article présente le calcul d'une zone d'influence ou d'une zone d'implantation pour un service, en fonction des emplacements d'autres commerces et services (p. ex. en identifiant les zones les moins denses en concurrents). </strong>
 
 
 
  <img src="/logos/emage-rotating-earth-optimized.gif" style= "float: left" width="140px" >
 
-Une manière d'apprécier les zones d'influences consiste à "enfermer" chaque entité dans son propre espace, en établissant un *diagramme de Voronoï* (d'après le calcul formalisé par G. Voronoï en 1908). Les figures ci-dessous présentent la localisation des cliniques et d'autres types d'enseignes parisiennes (vente de matériaux, supérettes et restaurants).
-types
+Une manière d'apprécier les zones d'influences consiste à "enfermer" chaque entité dans son propre espace avec un *diagramme de Voronoï* - d'après le calcul formalisé par G. Voronoï en 1908. Les figures ci-dessous présentent la localisation des cliniques et d'autres types d'enseignes parisiennes (vente de matériaux, supérettes et restaurants).
 
 <figure>  <figcaption> ↓ A. Cliniques et hopitaux parisiens <i class="fa-solid fa-user-doctor"></i>; <br>↓  B. Points de vente de 9 enseignes de vente de matériaux <i class="fa-solid fa-helmet-safety"></i>; <br>↓ C. Supérettes et supermarchés parisiens de 9 groupes concurrents <i class="fa-solid fa-cart-shopping"></i>; <br>D. Restaurants à Paris <i class="fa-solid fa-utensils"></i>
 
@@ -47,15 +46,15 @@ types
 
  
 
- <img src="/graphiques/map_voronoi_boucheries_Tours.png" style= "float: right; margin-top: 1px; margin-left: 15px" width="300px" >
+ <img src="/graphiques/map_voronoi_boucheries_Tours.png" style= "float: right; margin-top: 1px; margin-left: 15px" width="280px" >
 
 ✨ Le calcul de zones d'influences concerne également la vente itinérante (p. ex. un camion de restaurateurs ou de coiffeurs ambulants) et les artisans-commerçants (p. ex. ci-contre les emplacements et zones d'influences des boucheries tourangelles).
 
 
-{{< spoiler text="À noter, il faut généralement exploiter d'autres indicateurs que la seule localisation des concurrents, pour déterminer une implantation. " >}} 
+{{< spoiler text="Il faut généralement exploiter d'autres indicateurs en complément de la localisation des concurrents, pour déterminer une implantation." >}} 
 
 <br>
-Il faut généralement prendre en compte des indicateurs relatifs aux menaces que représentent les différents concurrents (p. ex. réputation et prix pratiqués), aux zones et aux cibles (le prix des locaux au m², la densité de population et ses revenus moyens, le flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>, etc.).
+Il faut parfois estimer les menaces que représentent les différents concurrents (p. ex. réputation et prix pratiqués), et prendre en compte les caractéristiques des zones et des cibles : prix des locaux au m², densité de populatio, revenus moyens dans la zone, flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>, etc.
 
 {{< /spoiler >}}
 
