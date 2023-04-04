@@ -89,7 +89,8 @@ sections:
       padding: ["21px", "0", "0px", "0"]
     background:
       gradient_end: '#000000'
-      gradient_start: '#000000'
+      gradient_start: '#05050F'
+      gradient_angle: 180
       text_color_light: true
   content:
     title: <h4> Nos services </h4>
