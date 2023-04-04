@@ -13,20 +13,20 @@ sections:
     subtitle: 
     text:  |- 
         <div class="gallery-container">
-            <div class="gallery-item">  
-            <a href= '/page_contacts/page_contact/' title= "Vers la page de contacts">  
-            <div class="item-text">
-             <h3-little> <strong>  <i class="fa fa-paper-plane"> </i> CONTACTEZ E-MAGE   </strong> </h3-little>
-            </div></a>
-          </div>
           <div class="gallery-item"> 
             <a href= '/categories/' title= "Voir les principales thématiques du site">  
                <div class="item-text">
-            <strong>   Diagnostics <br> Analyses & Conseils   </strong>
+            <pp style= "border-style: solid;"> Diagnostics <br> Analyses & Conseils </pp>
+            </div></a>
+          </div>
+            <div class="gallery-item">  
+            <a href= '/page_contacts/page_contact/' title= "Vers la page de contacts">  
+            <div class="item-text">
+             <button class= "button button-rond"> <i class="fa fa-paper-plane"> </i> CONTACTEZ E-MAGE </button>
             </div></a>
           </div>
             <a href= '#methodes' title= "Voir les principales méthodes">  
-            <div class="gallery-item" style= "border-style: solid;">
+            <div class="gallery-item">
             <div class="item-image">
              <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="width: 120px; height: 120px;">
             </div>
@@ -41,7 +41,7 @@ sections:
                  <div class="item-image"> 
              </div>
             <div class="item-text">
-              <h3-little> <strong>  <i class="fa fa-comments"></i> OPTIMISEZ VOS MESSAGES   </strong> </h3-little>
+               <button> <i class="fa fa-comments"></i> OPTIMISEZ VOS MESSAGES </button> </h3-little>
               </div> </a>
           </div>
           
@@ -50,8 +50,7 @@ sections:
             <div class="item-image">
               <img src='media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg' style="width: 250px; height: 60px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" ></div>
               <div class="item-text">
-              <h3-little> <center> <strong> <i class="fa fa-map-pin" ></i> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION</strong> </center> </h3-little>
-              <p>  & les zones d'influences des concurrents </p>
+              <h3-little> <center> <strong> <i class="fa fa-map-pin" ></i> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION & les zones d'influences des concurrents</strong> </center> </h3-little> 
             </div> </a> </div> 
             
           <div class="gallery-item">
