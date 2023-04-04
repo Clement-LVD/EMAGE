@@ -29,13 +29,13 @@ gallery_item:
 ---
 
 
-> <strong>✨Dans cet article, nous allons voir comment calculer une zone d'implantation pour un service, en fonction de la densité de  la conccurence. </strong>
+ <strong> 🎯 Dans cet article, nous allons voir comment calculer une zone d'implantation pour un service, en fonction de la densité de la concurrence. </strong>
 
 
 
  <img src="/logos/emage-rotating-earth-optimized.gif" style= "float: left" width="140px" >
  
- Par exemple, la densité des concurrents aide à déterminer un lieu d'implantation (point de vente, service ou service public) 🎯. On peut aussi apprécier l'évolution de la pertinence d'un emplacement au cours du temps, avec l'évolution des services à proximité.
+✨La densité des concurrents aide à déterminer un lieu d'implantation pour un point de vente, un service ou un service public. On peut aussi apprécier l'évolution de la pertinence d'un emplacement au cours du temps, en fonction de l'évolution des services à proximité.
 
 {{< spoiler text="Il existe d'autres indicateurs à exploiter pour déterminer une implantation et identifier les concurrents les plus menaçants. " >}} 
 
@@ -44,7 +44,7 @@ Par exemple, il faut prendre en compte des indicateurs relatifs aux concurrents 
 
 {{< /spoiler >}}
 
-Les figures ci-dessous présentent la densité des cliniques et de plusieurs enseignes parisiennes (vente de matériaux, supérettes et restaurants).
+Une manière d'apprécier les zones d'influences consiste à "enfermer" chaque entité dans son propre espace, notamment en établissant un *diagramme de Voronoï* (d'après le calcul formalisé par Gueorgui Voronoï en 1908). Les figures ci-dessous présentent la localisation des cliniques et de plusieurs enseignes parisiennes (vente de matériaux, supérettes et restaurants).
 
 
 <figure>  <figcaption> ↓ A. Cliniques et hopitaux parisiens <i class="fa-solid fa-user-doctor"></i>; <br>↓  B. Points de vente de 9 enseignes de vente de matériaux <i class="fa-solid fa-helmet-safety"></i>; <br>↓ C. Supérettes et supermarchés parisiens de 9 groupes concurrents <i class="fa-solid fa-cart-shopping"></i>; <br>D. Restaurants à Paris <i class="fa-solid fa-utensils"></i>
