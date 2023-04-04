@@ -54,7 +54,7 @@ Une manière d'apprécier les zones d'influences consiste à "enfermer" chaque e
 {{< spoiler text="Il faut généralement exploiter d'autres indicateurs en complément de la localisation des concurrents, pour déterminer une implantation." >}} 
 
 <br>
-Il faut parfois estimer les menaces que représentent les différents concurrents (p. ex. réputation et prix pratiqués), et prendre en compte les caractéristiques des zones et des cibles : prix des locaux au m², densité de populatio, revenus moyens dans la zone, flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>, etc.
+Il faut parfois estimer les menaces que représentent les différents concurrents (p. ex. réputation et prix pratiqués), et prendre en compte les caractéristiques des zones et des cibles : prix des locaux au m², densité de population, revenus moyens dans la zone, flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>, etc.
 
 {{< /spoiler >}}
 
