@@ -50,7 +50,7 @@ sections:
             <div class="item-image">
               <img src='media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg' style="width: 250px; height: 60px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" ></div>
               <div class="item-text">
-              <h3-little> <center> <i class="fa fa-map-pin" ></i> IDENTIFIEZ : </center> <br> ➾ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION   <br> ➾ les zones d'influences des concurrents   </h3-little> 
+              <h3-little> <center> <i class="fa fa-map-pin" ></i> IDENTIFIEZ : </center> ➾ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION   <br> ➾ les zones d'influences des concurrents </h3-little> 
             </div> </a> </div> 
             
           <div class="gallery-item">
@@ -58,7 +58,7 @@ sections:
                  <div class="item-image">
                 <img src='/graphiques/vue_ensemble_visibilite_journalistes_facebook.png'  style="width: 250px; height: 80px;" alt= "Graphique des influences journalistique" >              </div>
             <div class="item-text">
-              <h3-little> <center> <i class="fa fa-braille" ></i> MESUREZ : </center> <br> ➾  VOTRE INFLUENCE   <br>➾ CELLE DE VOS CONCURRENTS   </h3-little>
+              <h3-little> <center> <i class="fa fa-braille" ></i> MESUREZ : </center> ➾  VOTRE INFLUENCE <br>➾ CELLE DE VOS CONCURRENTS </h3-little>
               </div> </a>
           </div>
           <div class="gallery-item">
