@@ -28,17 +28,20 @@ gallery_item:
   caption: Carte des restaurants parisiens (Data ODbL - CC-BY-SA 2.0)
 ---
 
-> <strong> ✨Dans cet article, nous allons voir comment calculer une zone d'implantation pour un service, en fonction de la densité de  la conccurence. </strong>
 
-Par exemple, la densité des concurrents aide à déterminer un lieu d'implantation et à apprécier l'évolution de la pertinence d'un emplacement au cours du temps, avec la prise en compte des services du même type (point de vente, service ou service public) 🎯.
+> <strong>✨Dans cet article, nous allons voir comment calculer une zone d'implantation pour un service, en fonction de la densité de  la conccurence. </strong>
 
-{{< spoiler text="La proximité géographique des concurrents est parfois un très bon indicateur, mais il en existe d'autres. " >}} 
 
-Il faut généralement recouper ces données au sujet des emplacements des concurrents avec d'autres données, que ce soit pour :
 
-- définir un lieu d'implantation et évaluer l'évolution de sa pertinence au cours du temps (p. ex. le prix des locaux au m², la densité de population et ses revenus moyens, le flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>).
+ <img src="/logos/emage-rotating-earth-optimized.gif" style= "float: left" width="140px" >
+ 
+ Par exemple, la densité des concurrents aide à déterminer un lieu d'implantation et à apprécier l'évolution de la pertinence d'un emplacement au cours du temps, avec la prise en compte des services du même type (point de vente, service ou service public) 🎯.
 
--  identifier les concurrents les plus menaçants: (p. ex. le prix pratiqués)
+{{< spoiler text="Il existe d'autres indicateurs à exploiter pour déterminer une implantation et identifier les concurrents les plus menaçants. " >}} 
+
+<br>
+Par exemple des indicateurs relatifs aux relatifs aux concurrents (p. ex. réputation et prix pratiqués) et aux zones ou aux cibles (le prix des locaux au m², la densité de population et ses revenus moyens, le flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>, etc.).
+
 {{< /spoiler >}}
 
 Les figures ci-dessous présentent la densité des cliniques et de plusieurs enseignes parisiennes (vente de matériaux; supérettes et restaurants).
@@ -52,4 +55,4 @@ De même pour planifier le démarrage de l'activité de certains vendeurs itiné
 
 - <i class="fa-solid fa-hat-wizard"></i> 🔮 Lister les commerces comparables et identifier les zones les moins denses
 
--  <i class='fa fa-magic' aria-hidden='true'></i>🌟 Produire une liste des meilleurs emplacements et d'autres rendus (e.g., une carte dynamique)
+- <i class='fa fa-magic' aria-hidden='true'></i>🌟 Produire une liste des meilleurs emplacements et d'autres rendus (e.g., une carte dynamique)
