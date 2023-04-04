@@ -32,7 +32,7 @@ sections:
             </div>
             <br> 
             <div class="item-text">
-             <h3-little> <strong>  <i class="fa fa-line-chart" ></i> RÉVÉLEZ VOS DONNÉES </strong></h3-little>
+             <h3-little> <center><i class="fa fa-line-chart" ></i> RÉVÉLEZ VOS DONNÉES</center></h3-little>
             </div></a>
           </div>
           
@@ -50,7 +50,7 @@ sections:
             <div class="item-image">
               <img src='media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg' style="width: 250px; height: 60px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" ></div>
               <div class="item-text">
-              <h3-little> <center> <strong> <i class="fa fa-map-pin" ></i> IDENTIFIEZ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION & les zones d'influences des concurrents</strong> </center> </h3-little> 
+              <h3-little> <center> <i class="fa fa-map-pin" ></i> IDENTIFIEZ : </center> <br> ➾ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION   <br> ➾ les zones d'influences des concurrents   </h3-little> 
             </div> </a> </div> 
             
           <div class="gallery-item">
@@ -58,16 +58,16 @@ sections:
                  <div class="item-image">
                 <img src='/graphiques/vue_ensemble_visibilite_journalistes_facebook.png'  style="width: 250px; height: 80px;" alt= "Graphique des influences journalistique" >              </div>
             <div class="item-text">
-              <h3-little> <strong> <center> <i class="fa fa-braille" ></i> MESUREZ VOTRE INFLUENCE ET CELLE DE VOS CONCURRENTS </strong> </center> </h3-little>
+              <h3-little> <center> <i class="fa fa-braille" ></i> MESUREZ : </center> <br> ➾  VOTRE INFLUENCE   <br>➾ CELLE DE VOS CONCURRENTS   </h3-little>
               </div> </a>
           </div>
           <div class="gallery-item">
           <a href= "/category/enquetes/">
                  <div class="item-image">
-                <img src='/media/resume_conditions_questionnaire.png'  style="width: 150px; height: 80px;" alt= "Résumé des conditions expérimentales d'un questionnaire / expérience en ligne" >
+                <img src='/media/resume_conditions_questionnaire.png'  style="width: 130px; height: 60px;" alt= "Résumé des conditions expérimentales d'un questionnaire / expérience en ligne" >
              </div>
             <div class="item-text">
-              <h3-little> <strong> <i class="fa fa-search-plus" ></i> BÉNÉFICIEZ D'UNE ENQUÊTE SUR MESURE   </strong> </h3-little>
+              <h3-little> <center> <i class="fa fa-search-plus" ></i> BÉNÉFICIEZ D'UNE ENQUÊTE SUR MESURE   </center> </h3-little>
               </div> </a>
           </div>
   design:

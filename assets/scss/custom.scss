@@ -50,10 +50,11 @@ et la docu hugo : https://gohugo.io/templates/introduction/
   height: auto; 
 }
 
+/* et ensuite on met des genre de vignettes gallery-item*/
 
 .gallery-item {
-  margin: 50px 25px 15px 10px; /* ajouter 55px d'écart (45px marge sup et 15px pour la marge inférieure en 3eme position)*/
-  width: 30%;
+  margin: 45px 20px 25px 20px; /* ajouter 55px d'écart entre les vignettes (50px marge sup et 15px pour la marge inférieure en 3eme position)*/
+  width: 30%; /* au maximum elles s'affichent par 3 */
   background-color: rgba(255,255,255, 0.05); 
   /*height: 80%; */
   display: flex;
@@ -87,7 +88,7 @@ et la docu hugo : https://gohugo.io/templates/introduction/
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 108%;
+  width: 104%;
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -102,9 +103,12 @@ text-transform: uppercase;
 
 .item-text h3-little { 
   margin-top: 10px; 
+  padding-left: 6px;
+  padding-right: 6px;
   text-align: center;
   background: rgba(255,255,255,0.75);
   line-height: 1.45;
+    text-align: justify;
 }
 
 .item-text p { 
