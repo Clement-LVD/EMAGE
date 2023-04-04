@@ -35,12 +35,12 @@ gallery_item:
 
  <img src="/logos/emage-rotating-earth-optimized.gif" style= "float: left" width="140px" >
  
- Par exemple, la densité des concurrents aide à déterminer un lieu d'implantation et à apprécier l'évolution de la pertinence d'un emplacement au cours du temps, avec la prise en compte des services du même type (point de vente, service ou service public) 🎯.
+ Par exemple, la densité des concurrents aide à déterminer un lieu d'implantation (point de vente, service ou service public) 🎯. On peut aussi apprécier l'évolution de la pertinence d'un emplacement au cours du temps, avec l'évolution des services à proximité.
 
 {{< spoiler text="Il existe d'autres indicateurs à exploiter pour déterminer une implantation et identifier les concurrents les plus menaçants. " >}} 
 
 <br>
-Par exemple des indicateurs relatifs aux relatifs aux concurrents (p. ex. réputation et prix pratiqués) et aux zones ou aux cibles (le prix des locaux au m², la densité de population et ses revenus moyens, le flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>, etc.).
+Par exemple, il faut prendre en compte des indicateurs relatifs aux concurrents (p. ex. réputation et prix pratiqués), aux zones et aux cibles (le prix des locaux au m², la densité de population et ses revenus moyens, le temps de trajet ou le flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>, etc.).
 
 {{< /spoiler >}}
 
