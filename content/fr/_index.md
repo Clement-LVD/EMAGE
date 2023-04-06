@@ -45,6 +45,15 @@ sections:
           </div>
           
           <div class="gallery-item">
+            <a href= "/category/enquetes/" title= "Voir des exemples"> 
+                 <div class="item-image"> 
+             </div>
+            <div class="item-text">
+               <button> <i class="fa fa-search-plus" ></i> BÉNÉFICIEZ D'UNE ENQUÊTE SUR MESURE </button> </h3-little>
+              </div> </a>
+          </div>
+          
+          <div class="gallery-item">
             <a href= '/post/exemple_implantation_business_maps/exemple_utilisation_voronoi/'> 
             <div class="item-image">
               <img src='media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg' style="width: 280px; height: 80px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" ></div>
@@ -58,15 +67,6 @@ sections:
                 <img src='/graphiques/vue_ensemble_visibilite_journalistes_facebook.png'  style="width: 230px; height: 70px;" alt= "Graphique des influences journalistique" >              </div>
             <div class="item-text">
               <h3-little> <center> <i class="fa fa-braille" ></i> MESUREZ : </center> ➾  VOTRE INFLUENCE <br>➾ et CELLE DE VOS CONCURRENTS </h3-little>
-              </div> </a>
-          </div>
-          <div class="gallery-item">
-          <a href= "/category/enquetes/">
-                 <div class="item-image">
-                <img src='/media/resume_conditions_questionnaire.png'  style="width: 220px; height: 70px;" alt= "Résumé des conditions expérimentales d'un questionnaire / expérience en ligne" >
-             </div>
-            <div class="item-text">
-              <h3-little> <center> <i class="fa fa-search-plus" ></i> BÉNÉFICIEZ D'UNE ENQUÊTE SUR MESURE   </center> </h3-little>
               </div> </a>
           </div>
   design:
