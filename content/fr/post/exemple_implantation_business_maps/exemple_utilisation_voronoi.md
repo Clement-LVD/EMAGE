@@ -46,15 +46,17 @@ Une manière d'apprécier les zones d'influences consiste à "enfermer" chaque e
 
  
 
- <img src="/graphiques/map_voronoi_boucheries_Tours.png" style= "float: right; margin-top: 1px; margin-left: 15px" width="280px" >
+ <img src="/graphiques/map_voronoi_boucheries_Tours.png" style= "float: right; margin-top: 1px; margin-left: 15px" width="260px" >
 
 ✨ Le calcul de zones d'influences concerne également la vente itinérante (p. ex. un camion de restaurateurs ou de coiffeurs ambulants) et les artisans-commerçants (p. ex. ci-contre les emplacements et zones d'influences des boucheries tourangelles).
 
 
-{{< spoiler text="Il faut généralement exploiter d'autres indicateurs en complément de la localisation des concurrents, pour déterminer une implantation." >}} 
+{{< spoiler text="Il faut généralement exploiter d'autres indicateurs en complément de la localisation des concurrents, pour déterminer une zone d'implantation idéale (cliquez pour voir des exemples)." >}} 
 
-<br>
-Il faut parfois estimer les menaces que représentent les différents concurrents (p. ex. réputation et prix pratiqués), et prendre en compte les caractéristiques des zones et des cibles : prix des locaux au m², densité de population, revenus moyens dans la zone, flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>, etc.
+
+- Il faut parfois estimer les menaces que représentent les différents concurrents (p. ex. réputation et prix pratiqués), et prendre en compte les caractéristiques des zones et des cibles : prix des locaux au m², densité de population, revenus moyens dans la zone, flux de voyageurs à proximité d'une gare <i class="fa-solid fa-person-walking-luggage"></i>, etc. 
+
+- Le système de coordonnées conduisant à calculer le diagramme de Voronoï peut également être ajusté ou remplacé par d'autres référentiels. Par exemple, il faut parfois exploiter les temps de trajets comme référentiel de distances spatiales, notamment en cas d'implantation en dehors des centres urbains.
 
 {{< /spoiler >}}
 
@@ -66,8 +68,9 @@ La localisation des concurrents permet de calculer la zone d'influence de chacun
 
 <i class="fa fa-info-circle"></i> Les calculs d'implantation nécessitent généralement de s'intéresser à d'autres services, en synergie avec l'activité à implanter (e.g., les arrêts de bus à proximité).
 
-{{% /callout %}}
+<i class="fa fa-info-circle"></i> Ce calcul des "zones d'influences" est complémentaire d'autres sources de données, relatives aux concurrents, aux populations et aux zones concernées (e.g., le revenu moyen dans la zone d'influence, les prix pratiqués par les concurrents à proximité).
 
+{{% /callout %}}
 
 
 <strong> <i class='fa fa-magic' aria-hidden='true'></i>🌟 Nous pouvons vous aider à identifier un lieu d'implantation idéal. </strong>
