@@ -51,8 +51,9 @@ sections:
     # Customize the section spacing. Order is top, right, bottom, left.
       padding: ["25px", "0", "25px", "0"]
     background:
-      gradient_end: '#000000'
+      gradient_end: '#05050F'
       gradient_start: '#000000'
+      gradient_angle: 180
       text_color_light: true
   content:
     title:
@@ -102,7 +103,7 @@ sections:
     columns: "2"
   content:
     date_format: Jan 2006
-    title: Parcours professionnel
+    title: <b> Parcours professionnel </b>
     items:
     - company:  **E-Mage**
       location: France
