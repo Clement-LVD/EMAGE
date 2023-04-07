@@ -39,7 +39,7 @@ sections:
              <br>  VALORISEZ VOS TEXTES <br> À LEURS JUSTES VALEURS  </center></button>
             </div>
             <div class="item-image">
-             <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="height: 145px;">
+             <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="height: 145px;"> <br> <br> <br>
             </div> </a>
           </div>
           
@@ -48,7 +48,7 @@ sections:
                  <div class="item-image"> 
              </div>
             <div class="item-text">
-               <button> <i class="fa fa-comment"></i> CONSEILS :
+                 <button class= "button button-rond"> <i class="fa fa-comment"></i> CONSEILS :
                <br> CHOISISSEZ ET OPTIMISEZ VOS MESSAGES </button> </h3-little>
               </div> </a>
           </div>
@@ -66,6 +66,7 @@ sections:
           <div class="gallery-item">
           <a href= "/category/strategies-analyses-de-communications/">
                  <div class="item-image">
+                 <br> <br> <br>
                  </div>
             <div class="item-text">
               <button> <center> <i class="fa fa-braille" ></i> MESUREZ : </center> ➾  VOTRE INFLUENCE <br>➾ ET CELLE DE VOS CONCURRENTS </button>
@@ -73,9 +74,12 @@ sections:
           </div> 
           
           <div class="gallery-item">
+          <div class="item-text">  </div>  </div>  
+          
+          <div class="gallery-item">
             <a href= '/post/exemple_implantation_business_maps/exemple_utilisation_voronoi/'> 
             <div class="item-image">
-              <img src='banieres/baniere_map_voronoi_superettes_parisiennes.jpg' style="height: 175px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" >
+              <img src='banieres/baniere_map_voronoi_superettes_parisiennes.jpg' style="height: 160px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" >
               </div>
               <div class="item-text">
               <h3-little> <center> <i class="fa fa-map-pin" ></i> IDENTIFIEZ : </center> ➾ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION  <br> ➾ et les zones d'influences des concurrents </h3-little> 
@@ -85,7 +89,7 @@ sections:
     columns: '1'  
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["0px", "0", "0px", "0"] 
+      padding: ["85px", "0", "0px", "0"] 
     background:
       # gradient_end: black
       # gradient_start: black
