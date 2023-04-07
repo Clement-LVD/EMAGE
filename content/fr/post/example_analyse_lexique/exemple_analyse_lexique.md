@@ -32,7 +32,7 @@ url_video: ""
 <div style="background-color: black"> <img src="/logos/emage_texte_mining_supervise.gif" style= "float: left" width="140px" > 
  
 
-> <aaa style="color: white"> <strong> 🎯 Cet article présente une méthode d'analyse thématique supervisée par des lexiques. Cette méthode vise à catégoriser un ensemble 'restreints' de textes: quelques dizaines d'entretiens retranscrits, ou encore quelques centaines de textes de quelques phrases renseignés dans des questionnaires, dans les posts Facebook des concurrents, des commentaires en ligne, etc. </strong> </aaa> </div>
+> <aaa style="color: white"> <strong> 🎯 Cet article présente une méthode d'analyse thématique supervisée par des lexiques. Cette méthode vise à catégoriser un ensemble 'restreint' de textes: quelques dizaines d'entretiens retranscrits, quelques centaines de textes de quelques phrases renseignés dans des questionnaires, dans les posts Facebook des concurrents, des commentaires en ligne, etc. </strong> </aaa> </div>
 
 
 
