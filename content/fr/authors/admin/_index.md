@@ -18,7 +18,7 @@ interests:
 last_name: Laverdet
 organizations:
 - name: E-MAGE
-  url: https://www.emage.net
+  url: https://emage.netlify.app
 role: Psychosociologue & Ph.D.
 social:
 - icon: envelope
@@ -39,6 +39,6 @@ social:
 status:
   icon: 🧙
 superuser: yes
-bio:  
+bio: 
 ---
  

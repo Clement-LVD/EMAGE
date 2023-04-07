@@ -19,7 +19,7 @@ main:
     weight: 20
   - name:  "  L'ÉQUIPE"
     pre: "|  <span class='gray-emoji'>🧙</span> "
-    url: '#about'
+    url: '/about/vignette_cLVD/'
     weight: 30
   # - name: "  RAPPORTS-TYPES"
   #   pre: "|  🧾"

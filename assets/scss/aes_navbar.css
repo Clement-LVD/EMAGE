@@ -31,7 +31,7 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
 *//* ↑ this is the part that takes out the shadow */
 
 .navbar {
-  height: 2.13rem;
+  height: 2.5rem;
   background: $sta-menu-primary;
 /* this is the part that takes out the shadow & the only edit */
   box-shadow: none;  
@@ -52,7 +52,7 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
 
 .navbar-brand {
     text-align: left;
-    font-size: 2.3em;
+    font-size: 2.8em;
      letter-spacing: -2.5px;
      word-spacing: -2px;
     color: black;

@@ -16,24 +16,30 @@ sections:
           <div class="gallery-item"> 
             <a href= '/categories/' title= "Voir les principales thématiques du site">  
                <div class="item-text">
-            <gros-titre style= "border-style: solid;"> Diagnostics <br> Analyses & Conseils </gros-titre>
+            <gros-titre style= "border-style: solid; padding: 5px 12px 10px 12px"> Diagnostics <br> Analyses & Conseils </gros-titre>
             </div></a>
           </div>
             <div class="gallery-item">  
             <a href= '/page_contacts/page_contact/' title= "Vers la page de contacts">  
             <div class="item-text">
-             <button class= "button button-rond">📞 CONTACTEZ E-MAGE <i class="fa fa-paper-plane fa-2x"> </i>   </button>
+             <button class= "button button-rond">📞 📧  <br> CONTACTS <i class="fa fa-paper-plane fa-2x"> </i>   </button>
             </div></a>
           </div>
             <a href= '#methodes' title= "Voir les principales méthodes">  
             <div class="gallery-item">
             <div class="item-text">
-             <button class= "button button-rond"> <center><i class="fa fa-chart-area"></i> <i class="fa fa-brain"></i> 
-             <br> <i class="fa fa-line-chart" ></i> ANALYSES :
-             <br> VALORISEZ ET RÉVÉLEZ VOS DONNÉES</center></button>
+             <button class= "button button-rond"> <center> <i class="fa fa-line-chart" ></i> ANALYSES :
+             <br>   RÉVÉLEZ VOS DONNÉES   </center></button>
+            </div>  </a>
+          </div>
+            <a href= '/category/analyse-de-textes/' title= "Voir les principales méthodes d'analyses de textes">  
+            <div class="gallery-item">
+            <div class="item-text">
+             <button class= "button"> <center><i class="fa fa-comments"></i> <i class="fa fa-book"></i> 
+             <br>  VALORISEZ VOS TEXTES <br> À LEURS JUSTES VALEURS  </center></button>
             </div>
             <div class="item-image">
-             <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="width: 120px; height: 120px;">
+             <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="height: 145px;">
             </div> </a>
           </div>
           
@@ -42,7 +48,7 @@ sections:
                  <div class="item-image"> 
              </div>
             <div class="item-text">
-               <button> <i class="fa fa-comments"></i> CONSEILS :
+               <button> <i class="fa fa-comment"></i> CONSEILS :
                <br> CHOISISSEZ ET OPTIMISEZ VOS MESSAGES </button> </h3-little>
               </div> </a>
           </div>
@@ -367,68 +373,11 @@ sections:
     view: masonry
     show_project_dates: false
 
-             
-- block: markdown
-  id: about
-  content:
-    title: <hr>
-    subtitle: 
-    text: <img src="svg/clem_himself.jpg" alt="Clément" class="avatar-custom-crop" id = "myself_picture"> <h1> <strong> L'ÉQUIPE E-MAGE </strong>
-          <br><br>**Clément L.**<br> 
-          <div class="waviy"><span style="--i:1"> Ph.</span><span style="--i:2">D.</span></div>   
-           <a href="{{< ref "/academic_resume/description_clement" >}}" class="btn btn-cligno"><i class="fa fa-graduation-cap"></i> Voir le profil universitaire</a></h1>
-            <span> <a href="https://www.linkedin.com/in/cl%C3%A9ment-laverdet-503879188/"><i class="fab fa-linkedin fa-2x"></i></a> </span>
-        <span> <a href="/cv_clement/cv_LVD_2023_compressed.pdf"> <i class="ai ai-cv ai-2x"></i></a> </span>
-  design:
-    columns: '1'  
-    spacing:
-    # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["25px", "0", "0px", "0"] 
-    background:
-      gradient_end: '#000000'
-      gradient_start: '#000000'
-      text_color_light: true
-      
-
-
-- block: features_avec_tooltip 
-  id: caracteristiques-myself
-  design:
-    spacing:
-    # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["25px", "0", "25px", "0"]
-    background:
-      gradient_end: '#000000'
-      gradient_start: '#000000'
-      text_color_light: true
-  content:
-    title:
-    items:
-    - icon: code
-      icon_pack: fa
-      name: PROGRAMMATION
-      description: '
-      <i class="fa-brands fa-r-project fa-1x"></i> <i class="fa-brands fa-python fa-1x"></i>   R & Python
-      <br><i class="fa fa-asterisk fa-1x"></i>     RegEx      
-      <br> [_+_] APIs, SQL, html, etc. </h5> </span> '
-    - icon: scirate
-      icon_pack: ai
-      name: PSYCHO-SOCIOLOGUE
-      tooltip_titre: "Titre de psychologue social"
-      description: '
-      <i class="fa fa-user-secret fa-1x"></i>   Secret pro     
-      <br><i class="fa fa-user-md" aria-hidden="true"></i>  Déontologie'
-    - icon: graduation-cap
-      icon_pack: fa
-      name: Ph.D. ❪Ψ❫
-      tooltip_titre: "Thèse ：Bilans de l'influence sur Facebook et des rôles des communications et de Facebook pendant les crises <br> <a href='theses.hal.science/tel-03457426'> Voir cette thèse en ligne </a>"  
-      description: "Travaux de recherches sur :<br>- La communication préventive<br>- La communication de crise<br>-Les accidents de la route<br>- Les crises politiques, catastrophes naturelles, accidents majeurs et conflits"
-     
 
 
 - block: category_cloud
   content:
-    title: 
+    title: '<aaa style= "color: white;"> <hr> <hr> <br> Thématique du site </aaa>'
   id: categories-cloud
   design:
     columns: "1" 
