@@ -12,11 +12,11 @@ tags:
 categories:
 - Analyse de textes
 title: "Analyses non-supervisées"
-summary: Les méthodes d'analyses non-supervisées ou 'naïves' catégorisent des ensembles de textes sans s'appuyer sur des modélisations ou des lexiques sélectionés au préalables par l'analyste. Elles s'appliquent à toute forme de textes, de préference structurés en phrases. 
+summary: Les méthodes d'analyses non-supervisées ou 'naïves' catégorisent des ensembles de textes directement d'après les données, sans s'appuyer sur des modélisations ou des lexiques sélectionés au préalables par l'analyste. Elles s'appliquent à toute forme de textes, de préference structurés en phrases. 
 ---
 *[!!! ARTICLE EN CHANTIER, à compléter !!!]*
 
-Les méthodes d'analyses non-supervisées ne s'appuient pas sur un lexique ou un modèle à sélectionner pour procéder à l'analyse. Ces méthodes non-supervisées sont exploitables "immédiatement". 
+Les méthodes d'analyses non-supervisées ne s'appuient pas sur un lexique ou un modèle à sélectionner pour procéder à l'analyse. Ces méthodes non-supervisées se basent uniquement sur le jeu de données à catégoriser. Au contraire, les méthodes supervisées catégorisent les textes d'après un autre ensemble de données (i.e. des modèles ou des lexiques). 
 
 
 # Quelques exemples de méthodes non-supervisées
