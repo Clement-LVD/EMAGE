@@ -6,6 +6,8 @@ translationKey: "category-analyse-de-texte/"
 # headerimage: 
 description: "Les articles qui présentent des méthodes d'analyses de textes (text-mining)."
 ---
-<hr><hr><strong> 
-<img src="/logos/logo_emage_textes_miniformat.gif" alt="Text-mining" width=10% height=10% title="Text-mining" class= "floating-left" >
-Les articles qui présentent des méthodes d'analyses de textes: </strong> <br> 
+<hr>  <hr>
+<div style="background-color: black"> 
+<img src="/logos/logo_emage_textes_miniformat.gif" style= "float: left" width="75px" >
+
+<br> <br> <aaa style="color: white"> <strong>   Les articles qui présentent des méthodes d'analyses de textes: </strong> </div> </aaa>  
