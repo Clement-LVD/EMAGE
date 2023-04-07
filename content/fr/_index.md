@@ -66,7 +66,7 @@ sections:
           <div class="gallery-item">
           <a href= "/category/strategies-analyses-de-communications/">
                  <div class="item-image">
-                 <br> <br> <br>
+                 <br> <br> <br> <br>
                  </div>
             <div class="item-text">
               <button> <center> <i class="fa fa-braille" ></i> MESUREZ : </center> ➾  VOTRE INFLUENCE <br>➾ ET CELLE DE VOS CONCURRENTS </button>
