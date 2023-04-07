@@ -52,28 +52,30 @@ sections:
                <button> <i class="fa fa-search-plus" ></i> BÉNÉFICIEZ D'UNE ENQUÊTE SUR MESURE </button> </h3-little>
               </div> </a>
           </div>
-          
-          <div class="gallery-item">
-            <a href= '/post/exemple_implantation_business_maps/exemple_utilisation_voronoi/'> 
-            <div class="item-image">
-              <img src='media/albums/voroinoi_business_paris/C_map_voronoi_superettes_parisiennes.jpg' style="width: 280px; height: 80px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" ></div>
-              <div class="item-text">
-              <h3-little> <center> <i class="fa fa-map-pin" ></i> IDENTIFIEZ : </center> ➾ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION  <br> ➾ et les zones d'influences des concurrents </h3-little> 
-            </div> </a> </div> 
             
           <div class="gallery-item">
           <a href= "/category/strategies-analyses-de-communications/">
                  <div class="item-image">
-                <img src='/graphiques/vue_ensemble_visibilite_journalistes_facebook.png'  style="width: 230px; height: 70px;" alt= "Graphique des influences journalistique" >              </div>
+                 </div>
             <div class="item-text">
-              <h3-little> <center> <i class="fa fa-braille" ></i> MESUREZ : </center> ➾  VOTRE INFLUENCE <br>➾ et CELLE DE VOS CONCURRENTS </h3-little>
+              <button> <center> <i class="fa fa-braille" ></i> MESUREZ : </center> ➾  VOTRE INFLUENCE <br>➾ ET CELLE DE VOS CONCURRENTS </button>
               </div> </a>
+          </div> 
+          
+          <div class="gallery-item">
+            <a href= '/post/exemple_implantation_business_maps/exemple_utilisation_voronoi/'> 
+            <div class="item-image">
+              <img src='banieres/baniere_map_voronoi_superettes_parisiennes.jpg' style="width: 500px; height: 100px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" >
+              </div>
+              <div class="item-text">
+              <h3-little> <center> <i class="fa fa-map-pin" ></i> IDENTIFIEZ : </center> ➾ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION  <br> ➾ et les zones d'influences des concurrents </h3-little> 
+            </div> </a> </div> 
           </div>
   design:
     columns: '1'  
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["0px", "0", "0px", "0"] 
+      padding: ["0px", "0", "15px", "0"] 
     background:
       # gradient_end: black
       # gradient_start: black

@@ -13,7 +13,7 @@ tags:
 - Influence des messages
 categories: 
 - Stratégies & analyses de communications
-title: Bilan de l'efficacité de communications de crise
+title: Bilan de l'efficacité et de la pertinence de communications de crise
 
 ---
 
