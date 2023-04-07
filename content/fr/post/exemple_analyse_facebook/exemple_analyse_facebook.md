@@ -24,7 +24,7 @@ tags:
 categories: 
 - Analyse de textes
 - Stratégies & analyses de communications
-title: "Analyser l'influence et la visibilité sur Facebook & comparaisons entre concurrents"
+title: "Influence et visibilité sur Facebook & comparaisons entre concurrents"
 url_code: ""
 url_pdf: ""
 url_slides: ""
