@@ -5,7 +5,7 @@ image:
   filename: map_voronoi_superettes_parisiennes.jpg
   caption: 
   focal_point: Smart
-summary: Un petit résumé.
+summary: Déterminer une zone d'implantation idéale, en fonction des emplacements et des zones d'influences d'autres commerces et services (p. ex. dans les zones les moins denses en concurrents, et situées à proximité d'autres services complémentaires).
 tags:
 - Cartes
 - Geomarketing
