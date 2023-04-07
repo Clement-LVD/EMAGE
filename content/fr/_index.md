@@ -22,7 +22,7 @@ sections:
             <div class="gallery-item">  
             <a href= '/page_contacts/page_contact/' title= "Vers la page de contacts">  
             <div class="item-text">
-             <button class= "button button-rond">📞 📧  <br> CONTACTS <i class="fa fa-paper-plane fa-2x"> </i>   </button>
+             <button class= "button button-rond">📞 📧  <br> CONTACTS <i class="fa fa-paper-plane fa-2x"> </i> </button>
             </div></a>
           </div>
             <a href= '#methodes' title= "Voir les principales méthodes">  
@@ -35,11 +35,11 @@ sections:
             <a href= '/category/analyse-de-textes/' title= "Voir les principales méthodes d'analyses de textes">  
             <div class="gallery-item">
             <div class="item-text">
-             <button class= "button"> <center><i class="fa fa-comments"></i> <i class="fa fa-book"></i> 
-             <br>  VALORISEZ VOS TEXTES <br> À LEURS JUSTES VALEURS  </center></button>
+             <button class= "button button-rond"> <center><i class="fa fa-comments"></i> <i class="fa fa-book"></i> 
+             <br>  VALORISEZ VOS TEXTES </center></button>
             </div>
             <div class="item-image">
-             <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="height: 145px;"> <br> <br> <br>
+             <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="height: 145px;"> <br> <br> 
             </div> </a>
           </div>
           
@@ -48,7 +48,7 @@ sections:
                  <div class="item-image"> 
              </div>
             <div class="item-text">
-                 <button class= "button button-rond"> <i class="fa fa-comment"></i> CONSEILS :
+                 <button class= "button"> <i class="fa fa-comment"></i> CONSEILS :
                <br> CHOISISSEZ ET OPTIMISEZ VOS MESSAGES </button> </h3-little>
               </div> </a>
           </div>
