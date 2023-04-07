@@ -29,7 +29,8 @@ sections:
             <div class="gallery-item">
             <div class="item-text">
              <button class= "button button-rond"> <center><i class="fa fa-chart-area"></i> <i class="fa fa-brain"></i> 
-             <br> <i class="fa fa-line-chart" ></i> ANALYSES : <br> VALORISEZ ET RÉVÉLEZ VOS DONNÉES</center></button>
+             <br> <i class="fa fa-line-chart" ></i> ANALYSES :
+             <br> VALORISEZ ET RÉVÉLEZ VOS DONNÉES</center></button>
             </div>
             <div class="item-image">
              <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="width: 120px; height: 120px;">
@@ -41,7 +42,8 @@ sections:
                  <div class="item-image"> 
              </div>
             <div class="item-text">
-               <button> <i class="fa fa-comments"></i> CONSEILS : <br> CHOISISSEZ ET OPTIMISEZ VOS MESSAGES </button> </h3-little>
+               <button> <i class="fa fa-comments"></i> CONSEILS :
+               <br> CHOISISSEZ ET OPTIMISEZ VOS MESSAGES </button> </h3-little>
               </div> </a>
           </div>
           
@@ -50,7 +52,8 @@ sections:
                  <div class="item-image"> 
              </div>
             <div class="item-text">
-               <button> <i class="fa fa-search-plus" ></i> DIAGNOSTICS : <br> BÉNÉFICIEZ D'UNE ENQUÊTE SUR MESURE </button> </h3-little>
+               <button><i class="fa fa-search-plus" ></i> DIAGNOSTICS :
+               <br> BÉNÉFICIEZ D'UNE ENQUÊTE SUR MESURE </button> </h3-little>
               </div> </a>
           </div>
             
