@@ -1,6 +1,6 @@
 ---
-title: "Text-mining"
-aliases: ["Text-analysis", "Analyses de textes"]
+title: "Text-analysis"
+aliases: ["Text-mining", "Analyses de textes"]
 url: "tags/text-analysis/"
 translationKey: "tags-text-analysis/"
 description: "Présentation de méthodes d'analyses de textes."
