@@ -12,7 +12,7 @@ image:
 #   name: Connect
 #   url: https://www.linkedin.com/in/clément-laverdet-503879188
 # slides: example
-summary: Méthode par lexiques, **sans erreur et reproductible**<br>Pour analyser de petits ensembles de texte efficacement
+summary: Méthode par lexiques, **sans erreur et reproductible**. Pour analyser de petits ensembles de texte efficacement.
 tags:
 - Text-analysis
 - Analyse thématique supervisée
