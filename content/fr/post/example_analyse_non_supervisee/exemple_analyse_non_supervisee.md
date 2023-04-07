@@ -12,11 +12,11 @@ tags:
 categories:
 - Analyse de textes
 title: "Analyses non-supervisées"
-summary: Les méthodes d'analyses non-supervisées ou 'naïves' ne s'appuient **pas** sur un modèle identifiant la présence de certains termes ou de certaines formulations. Ainsi, elles s'appliquent à des ensembles de textes qui ne sont pas l'objet de modèlisations préalables. 
+summary: Les méthodes d'analyses non-supervisées ou 'naïves' catégorisent des ensembles de textes sans s'appuyer sur des modélisations ou des lexiques sélectionés au préalables par l'analyste. Elles s'appliquent à toute forme de textes, de préference structurés en phrases. 
 ---
+*[!!! ARTICLE EN CHANTIER, à compléter !!!]*
 
-
-Les méthodes d'analyses non-supervisées ne s'appuient pas sur un lexique ou un modèle dépendant de certaines formulations. Ainsi, ces méthodes sont exploitables "immédiatement", pour n'importe quel ensemble de textes (théoriquement cela implique également l'analyse de textes dans des langues inconnues de l'analyste). 
+Les méthodes d'analyses non-supervisées ne s'appuient pas sur un lexique ou un modèle à sélectionner pour procéder à l'analyse. Ces méthodes non-supervisées sont exploitables "immédiatement". 
 
 
 # Quelques exemples de méthodes non-supervisées
@@ -24,14 +24,18 @@ Les méthodes d'analyses non-supervisées ne s'appuient pas sur un lexique ou un
 {{< toc >}}
 
 ## Modèle GLOVE (Google)
+*[à expliquer]*
 
 ## Dirichlet LDA
 *[... à faire]*
 
 # Modifications ou extractions supervisées du texte suivies d'analyses non-supervisées
-Parfois, l'analyste constitue un sous-échantillon de textes d'après un critère précis, pour déployer ensuite des analyses non-supervisées sur ce sous-ensemble de textes identifiés de façon supervisées (p. ex. textes qui contiennent un terme précis ou un ensemble de termes exprimant l'insatisfaction d'un client, d'après un lexique exhaustif et validé des formulations exprimant l'insatisfaction). 
+Parfois, l'analyste constitue un sous-échantillon de textes d'après un critère précis, pour déployer ensuite des analyses non-supervisées sur ce sous-ensemble de textes identifiés de façon supervisées (p. ex. textes qui contiennent un terme précis ou un ensemble de termes exprimant l'insatisfaction d'un client, d'après un lexique des formulations exprimant l'insatisfaction). 
 
 *[À compléter]*
+
+## Dépendances lexicales
+*[présenter les dépendances lexicales et pointer vers spacy.io par exemple]*
 
 ## Les analyses sans modèles sous-jacents 
 Certaines formes d'analyses non-supervisées servent à prendre contact rapidement avec le corpus de données, de façon exploratoire : termes les plus fréquents, ou qui occasionnent le plus de réactions sur Facebook, qui apparaîssent dans les rapports au sujet des catastrophes les plus importantes mais pas dans les rapports au sujet des accidents de moindre importance, etc. 

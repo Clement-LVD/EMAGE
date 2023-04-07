@@ -44,9 +44,10 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
   right: 0;
   left: 0;
   z-index: 1030; /* on peut jouer avec cette valeur pour prioriser ce qui s'affiche dans le site  */
-  padding: 0 1rem;
-  
-
+  padding-top: 3px;
+  padding-right: 25px;
+  padding-left: 8px;
+  padding-bottom: 4px;
 /* ici on pourrait ajouter une image dans la zone du logo (va voir le brouillons.rmd) ! 
 (on surexpose donc : parce qu'on demande aussi a wowcherry d'afficher le nmoo du site dans cette zone ! */
 
@@ -73,13 +74,13 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
   content: ""; /* pour l'image de fond */
   position: absolute;
   bottom: -3%;
-  left: -35%;
+  left: -33%;
   width: 50%;
   height: 100%;
   transform: scale(0.85);
   background-image: url("/icon_voronoi.png");
   
-  filter:  saturate(60%) drop-shadow(1px 20px 20px rgba(255, 255, 255, 0.7));
+  filter: drop-shadow(1px 20px 20px rgba(255, 255, 255, 0.7));
   /* les paramètres drop-shadow ici c'est un léger décalage horizontal de 1px (pas tout à fait centré), la longueur de la traînée verticale (20px) et un genre d'effet de flou */
   
 
@@ -89,7 +90,7 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
     /*font-family: "Serif";*/
   /*border: 3px solid null; *//* pas de couleurs spécifiée on s'en sert juste pour cropper l'image! */
  /* border-radius: 30px;*/
-  opacity: 0.9; /* opacité de l'image de fond */
+  opacity: 1; /* opacité de l'image de fond */
   z-index: 1; /* l'image est en arrière plan */
 }
 
