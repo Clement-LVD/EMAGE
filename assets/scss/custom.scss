@@ -150,14 +150,14 @@ et la docu hugo : https://gohugo.io/templates/introduction/
   justify-content: center;
   align-items: center; 
   width: auto;
-  padding-top: 65px; 
+  padding-top: 40px; 
   height: auto; 
 }
 
 /* et ensuite on met des genre de vignettes gallery-item*/
 
 .gallery-item {
-  margin: 35px 15px 40px 10px; /* ajouter 70px d'écart entre les vignettes (35px marge sup et 35px pour la marge inférieure en 3eme position)*/
+  margin: 60px 15px 35px 10px; /* ajouter 95px d'écart entre les vignettes (60px marge sup et 35px pour la marge inférieure en 3eme position)*/
   width: 31%; /* au maximum elles s'affichent par 3 */
   background-color: rgba(255,255,255, 0.05); 
   /*height: 80%; */

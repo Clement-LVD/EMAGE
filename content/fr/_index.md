@@ -65,7 +65,7 @@ sections:
           <div class="gallery-item">
             <a href= '/post/exemple_implantation_business_maps/exemple_utilisation_voronoi/'> 
             <div class="item-image">
-              <img src='banieres/baniere_map_voronoi_superettes_parisiennes.jpg' style="width: 500px; height: 100px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" >
+              <img src='banieres/baniere_map_voronoi_superettes_parisiennes.jpg' style="height: 175px; display: table; " alt= "Supérettes et supermarchés parisiens et zones d'influences (Voronoï)" >
               </div>
               <div class="item-text">
               <h3-little> <center> <i class="fa fa-map-pin" ></i> IDENTIFIEZ : </center> ➾ L'EMPLACEMENT IDÉAL POUR VOTRE IMPLANTATION  <br> ➾ et les zones d'influences des concurrents </h3-little> 
