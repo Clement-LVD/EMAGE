@@ -29,11 +29,15 @@ url_video: ""
 ---
 <!--Les textes sont généralement constitués de plusieurs thématiques. L'analyse thématique vise notamment à identifier ces thématiques et à caractériser la composition d'un ensemble de textes (présence ou absence des différentes thématiques).-->
 
+<div style="background-color: black"> <img src="/logos/emage_texte_mining_supervise.gif" style= "float: left" width="140px" > 
+ 
 
-Cet article résume une méthode d'analyse thématique supervisée par des lexiques. Cette méthode vise à catégoriser un ensemble 'restreints' de textes: quelques dizaines d'entretiens retranscrits, ou encore quelques centaines de textes de quelques phrases renseignés dans des questionnaires, dans les posts Facebook de vos concurrents, etc.
+> <aaa style="color: white"> <strong> 🎯 Cet article présente une méthode d'analyse thématique supervisée par des lexiques. Cette méthode vise à catégoriser un ensemble 'restreints' de textes: quelques dizaines d'entretiens retranscrits, ou encore quelques centaines de textes de quelques phrases renseignés dans des questionnaires, dans les posts Facebook des concurrents, des commentaires en ligne, etc. </strong> </aaa> </div>
+
+
 
 {{% callout note %}}
-La construction de lexiques sur-mesure permet de catégoriser les textes de façon très fiable, en garantissant que l'intégralité du texte est catégorisée. 
+La construction de lexiques sur-mesure permet de catégoriser les textes de façon très fiable, en garantissant que l'intégralité du texte est catégorisée et en minimisant les erreurs. 
 {{% /callout %}}
 
 {{% callout warning %}}
@@ -129,7 +133,7 @@ Les RegEx permettent:
 On peut ensuite réaliser des statistiques descriptives pour présenter les textes, typiquement en détaillant les thématiques les plus prégnantes dans les textes, celles qui coexistent entre elles - éventuellement systématiquement, etc. 
 
 # Exemples
-Cette méthode d'analyse par lexiques à été déployé pour mieux comprendre les facteurs des accidents de la route. L'analyse par lexiques concernait des textes explicatifs de situations accidentogènes et d'accidents, renseignés par des personnes impliquées dans de telles situations pendant leurs trajets en voiture, en vélo, à pied, en trottinette électrique, etc. Un exemple d'article universitaire mobilisant cette méthode est en cours de publication (**xxx à faire xxx**). Ci-ensuite, un exemple de recherche universitaire mobilisant cette méthode d'analyse par lexiques (présentation à la conférence IRTAD 2022 - [itf-oecd.org](https://www.itf-oecd.org/7th-irtad-conference-better-road-safety-data-better-safety-outcomes)). 
+Cette méthode d'analyse par lexiques à été déployé pour mieux comprendre les facteurs des accidents de la route. L'analyse par lexiques concernait des textes explicatifs de situations accidentogènes et d'accidents, renseignés par des personnes impliquées dans de telles situations pendant leurs trajets en voiture, en vélo, à pied, en trottinette électrique, etc. Un exemple d'article universitaire mobilisant cette méthode est en cours de publication. Ci-ensuite, un exemple de recherche universitaire mobilisant cette méthode d'analyse par lexiques (présentation à la conférence IRTAD 2022 - [itf-oecd.org](https://www.itf-oecd.org/7th-irtad-conference-better-road-safety-data-better-safety-outcomes)). 
 
 <embed src= "https://www.itf-oecd.org/sites/default/files/repositories/typology_of_risky_situations.pdf"  type="application/pdf" width="100%" height="600px" />
 

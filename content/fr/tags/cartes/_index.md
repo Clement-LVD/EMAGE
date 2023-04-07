@@ -6,6 +6,8 @@ translationKey: "tags-cartes/"
 headerimage: "assets/media/mountain.png"
 description: "Les articles qui présentent des cartes."
 ---
-<hr><hr>
+<hr>  <hr>
 
-<strong> Les articles qui présentent des analyses géospatiales : </strong> <br> <br> 
+<img src="/logos/emage-rotating-earth-optimized.gif" style= "float: left" width="50px" >
+
+<br> <br> <strong> Les articles qui présentent des analyses géospatiales : </strong> <br> <br> 
