@@ -22,13 +22,14 @@ sections:
             <div class="gallery-item">  
             <a href= '/page_contacts/page_contact/' title= "Vers la page de contacts">  
             <div class="item-text">
-             <button class= "button button-rond">📞 CONTACTEZ E-MAGE <i class="fa fa-paper-plane"> </i>   </button>
+             <button class= "button button-rond">📞 CONTACTEZ E-MAGE <i class="fa fa-paper-plane fa-2x"> </i>   </button>
             </div></a>
           </div>
             <a href= '#methodes' title= "Voir les principales méthodes">  
             <div class="gallery-item">
             <div class="item-text">
-             <button class= "button button-rond"> <center><i class="fa fa-line-chart" ></i> VALORISEZ ET RÉVÉLEZ VOS DONNÉES</center></button>
+             <button class= "button button-rond"> <center><i class="fa fa-chart-area"></i> <i class="fa fa-brain"></i> 
+             <br> <i class="fa fa-line-chart" ></i> ANALYSES : <br> VALORISEZ ET RÉVÉLEZ VOS DONNÉES</center></button>
             </div>
             <div class="item-image">
              <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="width: 120px; height: 120px;">
@@ -40,7 +41,7 @@ sections:
                  <div class="item-image"> 
              </div>
             <div class="item-text">
-               <button> <i class="fa fa-comments"></i> OPTIMISEZ VOS MESSAGES </button> </h3-little>
+               <button> <i class="fa fa-comments"></i> CONSEILS : <br> CHOISISSEZ ET OPTIMISEZ VOS MESSAGES </button> </h3-little>
               </div> </a>
           </div>
           
@@ -49,7 +50,7 @@ sections:
                  <div class="item-image"> 
              </div>
             <div class="item-text">
-               <button> <i class="fa fa-search-plus" ></i> BÉNÉFICIEZ D'UNE ENQUÊTE SUR MESURE </button> </h3-little>
+               <button> <i class="fa fa-search-plus" ></i> DIAGNOSTICS : <br> BÉNÉFICIEZ D'UNE ENQUÊTE SUR MESURE </button> </h3-little>
               </div> </a>
           </div>
             
@@ -149,12 +150,12 @@ sections:
       gradient_start: '#000000'
       text_color_light: true 
   content:
-    title:  <hr><hr> <h4> Méthodes </h4>
+    title:  <hr><hr> <h4> Analyses de données </h4>
     items:
     - icon: "book_stylised.svg"
       icon_pack: custom
       icon_class: "inverted-image"
-      name: <a href="/category/analyse-de-textes/" title="Vers des explications plus détaillées"> Analyses de textes </a>
+      name: <a href="/category/analyse-de-textes/" title="Vers des explications plus détaillées"> Text-mining </a>
       description: |-
             <i class="fa fa-code" ></i> Méthodes programmées, supervisées & non-supervisées
              <br><i class="fa fa-file" ></i> <i class="fa fa-book" ></i>  ''Petits'' et gros ensembles de textes
