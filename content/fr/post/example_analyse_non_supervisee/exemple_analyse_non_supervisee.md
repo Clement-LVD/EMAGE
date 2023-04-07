@@ -5,7 +5,7 @@ image:
   filename: wordcloud_analyse_non_supervisée.png
   caption: Principaux thèmes du site, d'après la [section "tags"](/#tag_cloud)
   focal_point: Smart
-summary: Analyse non supervisée
+summary: [article à faire]
 tags:
 - Web-analysis
 - Text-analysis

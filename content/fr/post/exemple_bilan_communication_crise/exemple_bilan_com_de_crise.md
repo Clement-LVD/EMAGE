@@ -5,7 +5,7 @@ image:
   filename: inondation_yvette_2016.png
   caption: Inondations de 2016 à<br>Bures-sur-Yvette (gauche)<br> et Longjumeau (droite)
   focal_point: Smart
-summary: [À faire]
+summary: [article à faire]
 tags:
 - Cartes
 - Communication

@@ -1,5 +1,5 @@
 ---
-date: "2023-01-24T00:00:00Z"
+date:  "2023-03-11T00:00:00Z"
 # le filename en fait c'est dans le asset/media folder qu'il va chercher l'image !
 external_link: ""
 image:
@@ -12,7 +12,7 @@ image:
 #   name: Connect
 #   url: https://www.linkedin.com/in/clément-laverdet-503879188
 # slides: example
-summary: [à faire]
+summary: [article à faire]
 tags:
 - Cartes
 - Facebook
