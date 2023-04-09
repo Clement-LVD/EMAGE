@@ -31,11 +31,11 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
 *//* ↑ this is the part that takes out the shadow */
 
 .navbar {
-  height: 2.76rem;
-  background: ivory;
-/* this is the part that takes out the shadow & the only edit */
-  box-shadow: none;  
-  font-size: 0.75em;
+  height: 2.77rem;
+  background:  rgb(255,255,220);
+/* uncomment le box-shadow si tu veux enlever le petit trait sous le menu...
+  box-shadow: none;  */
+  font-size: 0.74em;
      letter-spacing: 0.3px;
   font-family: serif;
   font-weight: 500 !important;
@@ -44,7 +44,7 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
   right: 0;
   left: 0;
   z-index: 1030; /* on peut jouer avec cette valeur pour prioriser ce qui s'affiche dans le site  */
-  padding-top: 3px;
+  padding-top: 2.5px;
   padding-right: 38px;
   padding-left: 10px;
   padding-bottom: 4px;
