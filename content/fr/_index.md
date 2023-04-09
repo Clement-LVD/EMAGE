@@ -22,7 +22,7 @@ sections:
             <div class="gallery-item">  
             <a href= '/page_contacts/page_contact/' title= "Vers la page de contacts">  
             <div class="item-text">
-             <button class= "button button-rond">📞 📧  <br> CONTACTEZ-MOI <i class="fa fa-paper-plane"> </i> </button>
+             <button class= "button button-rond">📞<br> CONTACTEZ-MOI <i class="fa fa-paper-plane"> </i> </button>
             </div></a>
           </div>
             <a href= '#methodes' title= "Voir les principales méthodes">  
