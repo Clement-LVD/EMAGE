@@ -32,7 +32,7 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
 
 .navbar {
   height: 2.76rem;
-  background: $sta-menu-primary;
+  background: ivory;
 /* this is the part that takes out the shadow & the only edit */
   box-shadow: none;  
   font-size: 0.75em;
@@ -114,6 +114,7 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
   animation: glowing-blue 2s ease-in-out infinite alternate;
   border-radius: 0.5rem;
 border-style: groove;
+height: 110%;
 border-color: grey;
 background: black;  
 
