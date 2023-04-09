@@ -22,21 +22,21 @@ sections:
             <div class="gallery-item">  
             <a href= '/page_contacts/page_contact/' title= "Vers la page de contacts">  
             <div class="item-text">
-             <button class= "button button-rond">📞<br> CONTACTEZ-MOI <i class="fa fa-paper-plane"> </i> </button>
+             <button class= "button button-rond">📞<br>  CONTACTEZ-MOI <i class="fa fa-paper-plane"> </i> </button>
             </div></a>
           </div>
             <a href= '#methodes' title= "Voir les principales méthodes">  
             <div class="gallery-item">
             <div class="item-text">
              <button class= "button button-rond"> <center> <i class="fa fa-line-chart" ></i> ANALYSES :
-             <br>   RÉVÉLEZ VOS DONNÉES   </center></button>
+             <br>  RÉVÉLEZ VOS DONNÉES  </center></button>
             </div>  </a>
           </div>
             <a href= '/category/analyse-de-textes/' title= "Voir les principales méthodes d'analyses de textes">  
             <div class="gallery-item">
             <div class="item-text">
              <button class= "button button-rond"> <center><i class="fa fa-comments"></i> <i class="fa fa-book"></i> 
-             <br>  VALORISEZ VOS TEXTES </center></button>
+             <br>  VALORISEZ VOS TEXTES </center></button>
             </div>
             <div class="item-image">
              <img src='/logos/animation_logo_voronoi_optimise.gif' alt= "Logo animé" style="height: 145px;"> <br> <br> 
