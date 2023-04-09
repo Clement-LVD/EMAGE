@@ -45,7 +45,7 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
   left: 0;
   z-index: 1030; /* on peut jouer avec cette valeur pour prioriser ce qui s'affiche dans le site  */
   padding-top: 3px;
-  padding-right: 28px;
+  padding-right: 38px;
   padding-left: 10px;
   padding-bottom: 4px;
 /* ici on pourrait ajouter une image dans la zone du logo (va voir le brouillons.rmd) ! 
@@ -67,7 +67,7 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
     font-family: "Arial black", sans-serif;
     position: relative; /* permet d'utiliser z-index */
     z-index: 3; /* le texte est au premier plan */
-  left: -3%;
+  left: -4%;
 }
 
 
@@ -75,7 +75,7 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
   content: ""; /* pour l'image de fond */
   position: absolute;
   bottom: -3%;
-  left: -27%;
+  left: -33%;
   width: 50%;
   height: 100%;
   transform: scale(0.85);
