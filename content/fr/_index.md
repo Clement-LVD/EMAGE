@@ -378,6 +378,19 @@ sections:
     show_project_dates: false
 
 
+ 
+- block: markdown
+  id: titres-themes-du-site
+  design:
+    spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+      padding: ["15px", "0px", "1px", "0"]
+    background:
+      gradient_end: black
+      gradient_start: black
+      text_color_light: true
+  content:
+    title: <hr> Thèmes du site (types d'analyses)
 
 - block: category_cloud
   content:
@@ -387,7 +400,7 @@ sections:
     columns: "1" 
     spacing:
     # Customize the section spacing. Order is top, right, bottom, left.
-      padding: ["15px", "0", "40px", "0"]
+      padding: ["1px", "0", "30px", "0"]
     background:
       gradient_end: "#202020"
       gradient_start: '#000000'
