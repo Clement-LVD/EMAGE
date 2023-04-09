@@ -120,26 +120,26 @@ sections:
                       <div><a href="/category/reseaux-de-relations/" title="Vers des exemples"> Réseaux <img src="/media/icons/network.png" width="15px" height="15" class="inverted-image"> </a></div>
                       <div><a href="/category/strategies-analyses-de-communications/" title="Vers des exemples"> Analyse des communications <i class="fa fa-commenting" fa-1x></i></a></div> '
                       
-    - icon: open-data #description: 85%
-      icon_pack: ai
-      name: Présentation des résultats
-      description: 'Rendus programmés et vérifiés : <br>- Figures & tables   <i class="fa fa-file-image" fa-2x></i> <i class="fa fa-table" aria-hidden="true"></i>
-      <br> - Cartes                  <img src="/media/icons/globe-bw.svg" width="33px" height="55"  > 
-      <br>- Réseaux & diagrammes <img src="/media/icons/network.png" width="25px" height="30" class="inverted-image"> 
-      <br> - Analyses statistiques <i class="fa fa-bar-chart" fa-2x></i> <i class="fa fa-pie-chart" ></i>'
-    - icon: handshake-angle
-      icon_pack: fa 
-      name: Conseils
-      description: "<b>- Calculs d'implantation et géomarketing<br>- Conseils théoriques pour améliorer l'efficacité de préventions <br> - Mesures d'influences en ligne <br> - Identification des stratégies éditoriales et des types de commentaires  <br>  ... </b>"
+    # - icon: open-data #description: 85%
+    #   icon_pack: ai
+    #   name: Présentation des résultats
+    #   description: 'Rendus programmés et vérifiés : <br>- Figures & tables   <i class="fa fa-file-image" fa-2x></i> <i class="fa fa-table" aria-hidden="true"></i>
+    #   <br> - Cartes                  <img src="/media/icons/globe-bw.svg" width="33px" height="55"  > 
+    #   <br>- Réseaux & diagrammes <img src="/media/icons/network.png" width="25px" height="30" class="inverted-image"> 
+    #   <br> - Analyses statistiques <i class="fa fa-bar-chart" fa-2x></i> <i class="fa fa-pie-chart" ></i>'
+    # - icon: handshake-angle
+    #   icon_pack: fa 
+    #   name: Conseils
+    #   description: "<b>- Calculs d'implantation et géomarketing<br>- Conseils théoriques pour améliorer l'efficacité de préventions <br> - Mesures d'influences en ligne <br> - Identification des stratégies éditoriales et des types de commentaires  <br>  ... </b>"
       # tooltip_titre: '<a href="theses.hal.science/tel-03457426">Voir ma thèse sur la communication de crise et le maintien de réputation</a>'
-    - icon: scirate
-      icon_pack: ai
-      name: Enquêtes et recherches 
-      # tooltip_titre: ↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>→ 
-      description: "Reprise ou conception d'enquêtes : <br>✅<b>Programmation <br>&<br>✅ Méthodes de sciences sociales <br>       - Psychosociologue   <i class='fa fa-user-secret fa-1x'></i> <br> - Docteur en psychologie <i class='fa fa-graduation-cap'></i> </b>"
+    # - icon: scirate
+    #   icon_pack: ai
+    #   name: Enquêtes et recherches 
+    #   # tooltip_titre: ↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>→ 
+    #   description: "Reprise ou conception d'enquêtes : <br>✅<b>Programmation <br>&<br>✅ Méthodes de sciences sociales <br>       - Psychosociologue   <i class='fa fa-user-secret fa-1x'></i> <br> - Docteur en psychologie <i class='fa fa-graduation-cap'></i> </b>"
     - icon: envelopes-bulk
       icon_pack: fa
-      name: Bilans
+      name: Rapports et bilans
       description: "<b> Analyses et rapports programmés : <br>
              <i class='fa fa-check-square'></i> Vérifiables              <i class='fa fa-file' ></i>🔍→💾<br>
              <i class='fa fa-check-square'></i> Actualisables           💾⃕◌⃕◌⃕<i class='fa fa-refresh'></i> <br>
@@ -147,7 +147,7 @@ sections:
     - icon: signs-post
       icon_pack: fa
       name:   Aide à la décision
-      description: "<b>
+      description: " <b>- Conseils en communication  </b> <br> (p. ex. communication de crise ou communication préventive) <br> <b>
             - Conception et organisation d'enquêtes </b> <br> 
              (p. ex. mesure de l'efficacité d'une campagne) <br> <b>
             - Rapports et analyses </b> <br> (p. ex. calculs d'implantation / géomarketing, <br> bilan de l'influence sur Facebook)"
