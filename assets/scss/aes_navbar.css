@@ -37,7 +37,8 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
 transform: scale(0.8); /* pour les autres navigateurs */
   text-align: center;  
 position: fixed;
-right: 6%;
+right: 5%;
+margin-left: 15px;
 margin-right: 5px;
 margin-top: 5px;
 }
@@ -64,8 +65,8 @@ margin-top: 5px;
  
 .navbar-brand {
     text-align: center;
-    font-size: 3em;
-     letter-spacing: -2.5px;
+    font-size: 2.7em;
+     letter-spacing: -2.6px;
      word-spacing: -2px;
     color: black;
     font-weight: bold;
@@ -78,7 +79,7 @@ margin-top: 5px;
     position: relative; /* permet d'utiliser z-index */
     z-index: 3; /* le texte est au premier plan */
  
- left: 12px;
+ left: 15px;
   
 }
 
