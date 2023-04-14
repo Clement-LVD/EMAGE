@@ -133,12 +133,16 @@ et la docu hugo : https://gohugo.io/templates/introduction/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/2560px-BlackMarble20161km.jpg");
+  
+ background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/1200px-BlackMarble20161km.jpg");
+  
+  /*background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/2016-europe.jpg");*/
+  /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/2560px-BlackMarble20161km.jpg");*/
   
   
     -o-background-size: cover;
     -moz-background-size: cover;
-    -webkit-background-size:cover;
+    -webkit-background-size: cover;
   
 }
 

@@ -32,7 +32,8 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
 
 .navbar {
   height: 2.77rem;
-  background:  rgb(255,255,220);
+  background:  rgb(255,255,230);
+  background-color: rgb(255,255,230);
 /* uncomment le box-shadow si tu veux enlever le petit trait sous le menu...
   box-shadow: none;  */
   font-size: 0.74em;
