@@ -32,7 +32,7 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
 *//* ci-dessous c'est les icônes de recherche / de choix de la langue qui ne sont pas vraiment dans la navbar */
 
 .nav-icons { 
-  text-align: right;  
+  text-align: center;  
 position: fixed;
 right: 5%;
 }
