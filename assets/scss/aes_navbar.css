@@ -28,7 +28,14 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
   box-shadow: none;
   transition: all 0.2s ease-out;
 }
-*//* ↑ this is the part that takes out the shadow */
+
+*//* ci-dessous c'est les icônes de recherche / de choix de la langue */
+
+.nav-icons { 
+  text-align: right;  
+position: fixed;
+right: 0;
+}
 
 .navbar {
   height: 2.77rem;
@@ -39,21 +46,19 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
   font-size: 0.74em;
      letter-spacing: 0.3px;
   font-family: serif;
-  font-weight: 500 !important;
+  font-weight: 500;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030; /* on peut jouer avec cette valeur pour prioriser ce qui s'affiche dans le site  */
-  padding-top: 2.5px;
-  padding-right: 38px;
-  padding-left: 10px;
+  z-index: 1030;  
+  padding-top: 2.75px;/*
+  padding-right: auto;
+  padding-left: 20px;*/
   padding-bottom: 4px;
-/* ici on pourrait ajouter une image dans la zone du logo (va voir le brouillons.rmd) ! 
-(on surexpose donc : parce qu'on demande aussi a wowcherry d'afficher le nmoo du site dans cette zone ! */
-
+ 
 .navbar-brand {
-    text-align: left;
+    text-align: center;
     font-size: 3em;
      letter-spacing: -2.5px;
      word-spacing: -2px;
@@ -61,23 +66,26 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
     font-weight: bold;
     display: inline-block;
     -webkit-text-stroke: 0.6px white; /* ici on va appliquer un effet stroke au texte ! */
-    text-stroke: 2px black;
-    
+    text-stroke: 2px black; 
   text-shadow: 0.56px 0.56px 0 #04040E , 1.1px 1.1px 0 grey ; /* on complete le stroke avec une ombre */
   
     font-family: "Arial black", sans-serif;
     position: relative; /* permet d'utiliser z-index */
     z-index: 3; /* le texte est au premier plan */
-  left: -4%;
+ 
+ left: 12px;
+  
 }
 
 
 .navbar-brand::before {
   content: ""; /* pour l'image de fond */
   position: absolute;
+  text-align: left;
   bottom: -3%;
-  left: -33%;
-  width: 50%;
+  left: 0;
+  margin-left: -65px;
+  width: 40%;
   height: 100%;
   transform: scale(0.85);
   background-image: url("/icon_voronoi.png");
@@ -96,7 +104,10 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
   z-index: 1; /* l'image est en arrière plan */
 }
 
-
+.navbar-collapse {
+  margin-right: 60px;
+  margin-left: 30px; 
+}
   
   /* icones font awesome black dans ce contexte */
   
