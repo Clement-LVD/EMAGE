@@ -165,7 +165,7 @@
         </li>
         {{ end }}
 
-        {{ $show_day_night := site.Params.header.navbar.show_day_night | default false }}
+        {{ $show_day_night := site.Params.header.navbar.show_day_night | default true }}
         {{ $has_day_night_themes := (and site.Params.appearance.theme_day site.Params.appearance.theme_night) }}
         {{ if and $has_day_night_themes $show_day_night }}
         <li class="nav-item dropdown theme-dropdown">
@@ -177,7 +177,7 @@
               <span>{{ i18n "theme_light" | default "Light" }}</span>
             </a>
             <a href="#" class="dropdown-item js-set-theme-dark">
-              <span>{{ i18n "theme_dark" | default "Light" }}</span>
+              <span>{{ i18n "theme_dark" | default "Dark" }}</span>
             </a>
             <a href="#" class="dropdown-item js-set-theme-auto">
               <span>{{ i18n "theme_auto" | default "Automatic" }}</span>

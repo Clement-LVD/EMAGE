@@ -134,9 +134,9 @@ et la docu hugo : https://gohugo.io/templates/introduction/
   background-position: center;
   background-repeat: no-repeat;
   
- background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/1200px-BlackMarble20161km.jpg");
+ /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/1200px-BlackMarble20161km.jpg");*/
   
-  /*background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/2016-europe.jpg");*/
+  background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/2016-europe.jpg");
   /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/BlackMarble20161km.jpg/2560px-BlackMarble20161km.jpg");*/
   
   
@@ -258,8 +258,8 @@ word-spacing: 0.75px; /* espacement entre les lettres */
   background: rgba(0,0,0,0.6);
 letter-spacing: 1.65px; /* espacement entre les lettres */
   line-height: 1.22; 
-  padding: 3px;
-  font-size: 1.35rem;
+  padding: 2.7px;
+  font-size: 1.3rem;
   font-weight: bold; 
    /* on fait un effet 3d quand le bouton est cliqué (dans ce contexte où le fond est devenu noir) */
   text-shadow: 0.75px 0.75px 0 black, 1.25px 1.25px 0 #04040E, 
@@ -278,8 +278,8 @@ button {
   font-family: system-ui;  
   
   padding-top: 5px;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 9px;
   background: rgba(255,255,255, 1); 
   /*line-height: 30px;
@@ -324,7 +324,7 @@ button {
 
  
 .button-rond {
-  padding-left: 15px;
+  padding-left: 12px;
   padding-right: 15px;
   padding-bottom: 18px;
   padding-top: 10px;
