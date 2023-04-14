@@ -37,7 +37,7 @@ et un autre code qui ne sert à rien (pareil, dans le code de .navbar)
 transform: scale(0.8); /* pour les autres navigateurs */
   text-align: center;  
 position: fixed;
-right: 5%;
+right: 3%;
 margin-left: 15px;
 margin-right: 5px;
 margin-top: 5px;
